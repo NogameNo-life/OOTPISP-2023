@@ -180,4 +180,4 @@ QWidget widget2(0);
     widget2.show();
     return app.exec();
 }
-```s
+```
