@@ -101,7 +101,7 @@ public slots:
 #endif // MAINWINDOW_H
 ```
 
-mainwindow.cpp
+mainwindow.cpp (constructor)
 
 ```c++
 #include "mainwindow.h"
@@ -172,33 +172,6 @@ MainWindow::MainWindow(QWidget *parent)
     connect(sb1, &QSpinBox::valueChanged, this, &MainWindow::setRed);
     connect(sb2, &QSpinBox::valueChanged, this, &MainWindow::setGreen);
     connect(sb3, &QSpinBox::valueChanged, this, &MainWindow::setBlue);
-}
-
-MainWindow::~MainWindow()
-{
-    delete ui;
-}
-
-void MainWindow::setRed(int r_){
-    this->r = r_;
-    sl1->setValue(r_);
-    sb1->setValue(r_);
-    setColor();
-}
-void MainWindow::setGreen(int g_){
-    this->g = g_;
-    sl2->setValue(g_);
-    sb2->setValue(g_);
-    setColor();
-}
-void MainWindow::setBlue(int b_){
-    this->b = b_;
-    sl3->setValue(b_);
-    sb3->setValue(b_);
-    setColor();
-}
-void MainWindow::setColor(){
-    this->txtEdit->setStyleSheet(QString("background: rgb(%1, %2, %3)").arg(r).arg(g).arg(b));
 }
 ```
 
