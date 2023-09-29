@@ -5,7 +5,6 @@
 	},
 	"remarkConfig": {
 		"settings": {
-			"listItemIndent": "mixed",
 			"emphasis": "*",
 			"strong": "*"
 		},
