@@ -17,11 +17,11 @@
 			],
 			[
 				"remark-lint-emphasis-marker",
-				"*"
+				"consistent"
 			],
 			[
 				"remark-lint-strong-marker",
-				"*"
+				"consistent"
 			]
 		]
 	},
