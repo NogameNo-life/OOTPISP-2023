@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>TextEditor</class>
+ <widget class="QWidget" name="TextEditor">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>TextEditor</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <widget class="QTextEdit" name="textEdit"/>
+   </item>
+  </layout>
+  <action name="actionNew">
+   <property name="icon">
+    <iconset resource="texteditor.qrc">
+     <normaloff>:/resources/new.png</normaloff>:/resources/new.png</iconset>
+   </property>
+   <property name="text">
+    <string>Создать</string>
+   </property>
+   <property name="toolTip">
+    <string>Создать новый документ</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+N</string>
+   </property>
+  </action>
+  <action name="actionClose">
+   <property name="text">
+    <string>Закрыть</string>
+   </property>
+   <property name="toolTip">
+    <string>Закрыть текущее окно</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+W</string>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="text">
+    <string>Выход</string>
+   </property>
+   <property name="toolTip">
+    <string>Закрыть приложение</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="texteditor.qrc"/>
+ </resources>
+ <connections/>
+</ui>
