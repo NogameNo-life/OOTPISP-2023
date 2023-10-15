@@ -44,15 +44,15 @@ protected:
     void closeEvent(QCloseEvent *e);
 
 private slots:
-    void on_actionNew_triggered();
-    void documentModified();
+    void on_action_New_triggered();
+    void documentEdited();
 
-    void on_actionSelectFont_triggered();
-    void on_actionAbout_triggered();
-    void on_actionOpen_triggered();
+    void on_action_SelectFont_triggered();
+    void on_action_About_triggered();
+    void on_action_Open_triggered();
 
-    bool saveFile();
-    bool saveFileAs();
+    bool save_File();
+    bool save_File_As();
 
 private:
     void loadFile(const QString &filename);
