@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.5)
+cmake_minimum_required(VERSION 3.0.0)
 
 project(task_02)
 
@@ -15,6 +15,6 @@ add_executable(po8_210641_task_02
         texteditor.cpp
         texteditor.ui
         texteditor.h
-        icons.qrc
+        texteditor.qrc
 )
 target_link_libraries(po8_210641_task_02 Qt${QT_VERSION_MAJOR}::Widgets)
