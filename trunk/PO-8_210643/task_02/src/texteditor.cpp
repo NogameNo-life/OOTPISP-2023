@@ -18,7 +18,7 @@ TextEditor::TextEditor(const QString &filename, QWidget *parent)
 
     connect(ui->actionClose, SIGNAL(triggered()), this, SLOT(close()));
     connect(ui->actionExit, SIGNAL(triggered()), qApp, SLOT(closeAllWindows()));
-    connect(ui->textEdit, SIGNAL(textChanged()), this, SLOT(documentEdited()));
+    connect(ui->textEdit, SIGNAL(textChanged()), this, SLOT(documentEdited210643()));
     connect(ui->actionAboutQt, SIGNAL(triggered()), qApp, SLOT(aboutQt()));
     connect(ui->actionCut, SIGNAL(triggered()), ui->textEdit, SLOT(cut()));
     connect(ui->actionCopy, SIGNAL(triggered()), ui->textEdit, SLOT(copy()));
@@ -29,8 +29,8 @@ TextEditor::TextEditor(const QString &filename, QWidget *parent)
     connect(ui->textEdit, SIGNAL(copyAvailable(bool)), ui->actionCut, SLOT(setEnabled(bool)));
     connect(ui->textEdit, SIGNAL(undoAvailable(bool)), ui->actionUndo, SLOT(setEnabled(bool)));
     connect(ui->textEdit, SIGNAL(redoAvailable(bool)), ui->actionRedo, SLOT(setEnabled(bool)));
-    connect(ui->actionSave, SIGNAL(triggered()), this, SLOT(save_File()));
-    connect(ui->actionSaveAs, SIGNAL(triggered()), this, SLOT(save_File_As()));
+    connect(ui->actionSave, SIGNAL(triggered()), this, SLOT(save_File210643()));
+    connect(ui->actionSaveAs, SIGNAL(triggered()), this, SLOT(save_File210643_As()));
 
     ui->actionCopy->setEnabled(false);
     ui->actionCut->setEnabled(false);
@@ -48,13 +48,13 @@ TextEditor::~TextEditor()
 }
 
 
-void TextEditor::on_action_New_triggered()
+void TextEditor::on_action_New_triggered210643()
 {
     auto newWindow = new TextEditor();
     newWindow->show();
 }
 
-void TextEditor::documentEdited(){
+void TextEditor::documentEdited210643(){
     setWindowModified(true);
 }
 
@@ -69,7 +69,7 @@ void TextEditor::closeEvent(QCloseEvent *e){
                                      QMessageBox::Cancel))
         {
         case QMessageBox::Yes:
-            save_File();
+            save_File210643();
             break;
         case QMessageBox::No:
             e->accept();
@@ -88,7 +88,7 @@ void TextEditor::closeEvent(QCloseEvent *e){
 
 }
 
-void TextEditor::on_action_SelectFont_triggered()
+void TextEditor::on_action_SelectFont_triggered210643()
 {
     auto font = ui->textEdit->font();
     bool status;
@@ -101,7 +101,7 @@ void TextEditor::on_action_SelectFont_triggered()
 }
 
 
-void TextEditor::on_action_About_triggered()
+void TextEditor::on_action_About_triggered210643()
 {
     QMessageBox::about(this, "About program", "The task will be to develop a complete window application — a text editor that works with several documents with the ability to open and save, undo actions, work with the clipboard and others.");
 }
@@ -136,7 +136,7 @@ void TextEditor::setFileName(const QString &fileName){
 
 }
 
-void TextEditor::on_action_Open_triggered()
+void TextEditor::on_action_Open_triggered210643()
 {
     QString fileName = QFileDialog::getOpenFileName(this, "Open document", QDir::currentPath(), "Text documents (*.txt)");
     if (fileName.isNull()){
@@ -151,19 +151,19 @@ void TextEditor::on_action_Open_triggered()
     }
 }
 
-bool TextEditor::save_File_As(){
-    QString fileName = QFileDialog::getsave_FileName(this, "Save document",
+bool TextEditor::save_File210643_As(){
+    QString fileName = QFileDialog::getsave_File210643Name(this, "Save document",
                                                     m_fileName.isNull()?QDir::currentPath():m_fileName, "Text documents (*.txt)");
     if (fileName.isNull()){
         return false;
     }
     setFileName(fileName);
-    return save_File();
+    return save_File210643();
 }
 
-bool TextEditor::save_File(){
+bool TextEditor::save_File210643(){
     if (m_fileName.isNull()){
-        return save_File_As();
+        return save_File210643_As();
     }
 
     QFile file(m_fileName);

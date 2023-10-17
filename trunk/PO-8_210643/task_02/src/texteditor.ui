@@ -77,7 +77,7 @@
      <normaloff>:/icons/new.png</normaloff>:/icons/new.png</iconset>
    </property>
    <property name="text">
-    <string>&amp;Create/string>
+    <string>&amp;Create</string>
    </property>
    <property name="toolTip">
     <string>Create new document</string>
