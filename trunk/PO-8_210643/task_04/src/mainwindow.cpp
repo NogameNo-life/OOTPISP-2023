@@ -26,27 +26,27 @@ MainWindow::~MainWindow()
 void MainWindow::on_tableView_clicked
 (const QModelIndex &index)
 {
-    int row = index.row(), column = index.column();
-    QAbstractItemModel *model = ui->tableView->model();
+    int rowValue = index.row(), columnValue = index.column();
+    QAbstractItemModel *itemModel = ui->tableView->model();
     int value = model->data(index).toInt();
 
-    ui->textLabel5->setText(QString("(%1, %2)").arg(row+1).arg(column+1));
-    ui->textLabel6->setText(QString("%1").arg(row*10+column+1));
+    ui->textLabel5->setText(QString("(%1, %2)").arg(rowValue+1).arg(columnValue+1));
+    ui->textLabel6->setText(QString("%1").arg(rowValue*10+columnValue+1));
     ui->textLabel7->setText(QString("%1").arg(value * value));
     ui->textLabel8->setText(QString("%1").arg(value * value * value));
 }
 
 void MainWindow::generateTable(){
-    QTableWidget *table = new QTableWidget(10, 10);
+    QTableWidget *tableWidget = new QTableWidget(10, 10);
 
     for (int i = 0; i < 10; ++i) {
         for (int j = 0; j < 10; ++j) {
-            int randomNumber = rand() % 100;
-            QTableWidgetItem *item = new QTableWidgetItem(QString::number(randomNumber));
-            table->setItem(i, j, item);
+            int randNum = rand() % 100;
+            QTableWidgetItem *tableItem = new QTableWidgetItem(QString::number(randNum));
+            tableWidget->setItem(i, j, tableItem);
         }
     }
-    ui->tableView->setModel(table->model());
+    ui->tableView->setModel(tableWidget->model());
 
     ui->textLabel5->clear();
     ui->textLabel6->clear();
