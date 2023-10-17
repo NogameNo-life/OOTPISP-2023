@@ -1,0 +1,10 @@
+<RCC>
+    <qresource prefix="/icons">
+        <file>D:/GitKraken/OOTPISP-2023/tasks/task_02/images/tables/save.png</file>
+        <file>D:/GitKraken/OOTPISP-2023/tasks/task_02/images/tables/new.png</file>
+        <file>D:/GitKraken/OOTPISP-2023/tasks/task_02/images/tables/cut.png</file>
+        <file>D:/GitKraken/OOTPISP-2023/tasks/task_02/images/tables/copy.png</file>
+        <file>D:/GitKraken/OOTPISP-2023/tasks/task_02/images/tables/paste.png</file>
+        <file>D:/GitKraken/OOTPISP-2023/tasks/task_02/images/tables/open.png</file>
+    </qresource>
+</RCC>
