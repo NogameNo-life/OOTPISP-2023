@@ -36,6 +36,6 @@ private:
 
 
     Ui::TextEditor *ui;
-    QString m_fileName;
+    QString tmp_filename;
 };
 #endif // TEXTEDITOR_H
