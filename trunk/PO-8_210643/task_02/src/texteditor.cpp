@@ -12,9 +12,9 @@ TextEditor::TextEditor(const QString &filename, QWidget *parent)
     , ui(new Ui::TextEditor)
 {
     ui->setupUi(this);
-    QSettings settings;
-    auto font = settings.value("viewFont").value<QFont>();
-    ui->textEdit->setCurrentFont(font);
+    QSettings qsettings;
+    auto fontValue = qsettings.value("viewFont").value<QFont>();
+    ui->textEdit->setCurrentFont(fontValue);
 
     connect(ui->actionClose, SIGNAL(triggered()), this, SLOT(close()));
     connect(ui->actionExit, SIGNAL(triggered()), qApp, SLOT(closeAllWindows()));
@@ -50,8 +50,8 @@ TextEditor::~TextEditor()
 
 void TextEditor::on_action_New_triggered210643()
 {
-    auto newWindow = new TextEditor();
-    newWindow->show();
+    auto new_window = new TextEditor();
+    new_window->show();
 }
 
 void TextEditor::documentEdited210643(){
@@ -61,10 +61,10 @@ void TextEditor::documentEdited210643(){
 void TextEditor::closeEvent(QCloseEvent *e){
     if(isWindowModified())
     {
-        switch(QMessageBox::warning(this, "Document Modified",
-                                     "The document has been modified. "
-                                     "Do you want to save your changes?\n"
-                                     "You will lose and unsaved changes.",
+        switch(QMessageBox::warning(this, "Document Edited",
+                                     "The document has been changed. "
+                                     "Should your changes be saved?\n"
+                                     "Unsaved changes will be lost.",
                                      QMessageBox::Yes | QMessageBox::No | QMessageBox::Cancel,
                                      QMessageBox::Cancel))
         {
@@ -90,13 +90,13 @@ void TextEditor::closeEvent(QCloseEvent *e){
 
 void TextEditor::on_action_SelectFont_triggered210643()
 {
-    auto font = ui->textEdit->font();
-    bool status;
-    auto newFont = QFontDialog::getFont(&status, font);
-    if (status == true){
+    auto fontValue = ui->textEdit->fontValue();
+    bool stats;
+    auto newFont = QFontDialog::getFont(&stats, fontValue);
+    if (stats == true){
         ui->textEdit->setCurrentFont(newFont);
-        QSettings settings;
-        settings.setValue("viewFont", newFont);
+        Qqsettings qsettings;
+        qsettings.setValue("viewFont", newFont);
     }
 }
 
@@ -128,9 +128,9 @@ void TextEditor::loadFile(const QString &fileName){
 }
 
 void TextEditor::setFileName(const QString &fileName){
-    m_fileName = fileName;
+    tmp_filename = fileName;
     setWindowTitle(QString("%1[*] - %2")
-                       .arg(m_fileName.isNull()?"untitled":QFileInfo(m_fileName).fileName())
+                       .arg(tmp_filename.isNull()?"untitled":QFileInfo(tmp_filename).fileName())
                        .arg(QApplication::applicationName())
                    );
 
@@ -143,17 +143,17 @@ void TextEditor::on_action_Open_triggered210643()
         return;
     }
 
-    if (m_fileName.isNull() && !isWindowModified()){
+    if (tmp_filename.isNull() && !isWindowModified()){
         loadFile(fileName);
     } else {
-        auto newWindow = new TextEditor(fileName);
-        newWindow->show();
+        auto new_window = new TextEditor(fileName);
+        new_window->show();
     }
 }
 
 bool TextEditor::save_File210643_As(){
     QString fileName = QFileDialog::getsave_File210643Name(this, "Save document",
-                                                    m_fileName.isNull()?QDir::currentPath():m_fileName, "Text documents (*.txt)");
+                                                    tmp_filename.isNull()?QDir::currentPath():tmp_filename, "Text documents (*.txt)");
     if (fileName.isNull()){
         return false;
     }
@@ -162,14 +162,14 @@ bool TextEditor::save_File210643_As(){
 }
 
 bool TextEditor::save_File210643(){
-    if (m_fileName.isNull()){
+    if (tmp_filename.isNull()){
         return save_File210643_As();
     }
 
-    QFile file(m_fileName);
+    QFile file(tmp_filename);
 
     if (!file.open(QIODevice::WriteOnly  | QIODevice::Text)){
-        QMessageBox::warning(this, "Warning", "Can't save in this file");
+        QMessageBox::warning(this, "Warning", "Can't save inside of this file");
         setFileName(QString());
         return false;
     }
