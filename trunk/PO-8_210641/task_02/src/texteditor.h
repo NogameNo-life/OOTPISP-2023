@@ -13,30 +13,30 @@ class TextEditor : public QMainWindow
     Q_OBJECT
 
 public:
-    TextEditor(const QString &fileName=QString(), QWidget *parent=0);
+    TextEditor(const QString &fileName = QString(), QWidget *parent = 0);
     ~TextEditor();
 
     void updateFont(const QFont &newFont);
 
 protected:
-    void closeEvent(QCloseEvent *e);
+    void closeEvent(QCloseEvent *event);
 
 private slots:
-    void on_actionNew_triggered();
+    void createNewDocument();
     void documentModified();
-    void on_actionClose_triggered();
-    void on_actionExit_triggered();
-    void on_actionSelectFont_triggered();
-    void on_actionAbout_triggered();
-    void on_actionOpen_triggered();
-    bool saveFile();
-    bool saveFileAs();
+    void closeDocument();
+    void exitApplication();
+    void changeFont();
+    void showAboutDialog();
+    void openDocument();
+    bool saveDocument();
+    bool saveDocumentAs();
 
 private:
-    void loadFile(const QString &filename);
-    void setFileName(const QString &fileName);
+    void loadDocument(const QString &filename);
+    void setDocumentName(const QString &fileName);
 
-    QString m_fileName;
+    QString m_documentName;
     Ui::TextEditor *ui;
 };
 #endif // TEXTEDITOR_H
