@@ -11,7 +11,7 @@ set(CMAKE_PREFIX_PATH $ENV{QTDIR})
 find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS Widgets)
 find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets)
 
-add_executable( po8_210643_task_01
+add_executable(po8_210641_task_01
         main.cpp
         mainwindow.cpp
         mainwindow.ui
@@ -19,4 +19,4 @@ add_executable( po8_210643_task_01
         textreviwer.ui
 )
 
-target_link_libraries(po8_210643_task_01 Qt${QT_VERSION_MAJOR}::Widgets)
+target_link_libraries(po8_210641_task_01 Qt${QT_VERSION_MAJOR}::Widgets)
