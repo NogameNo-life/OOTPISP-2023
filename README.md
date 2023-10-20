@@ -38,7 +38,7 @@
 |15|Мисиюк Алексей | [11ALX11](https://github.com/11ALX11) | 210664 | :white_check_mark: | :white_check_mark: | :white_check_mark: ||||||||
 |16|Николайчик Николай |||||||||||||
 |17|Ничингер Кирилл |||||||||||||
-|[18](./trunk/PO-9_210667/)|Оводок Вадим | [Vodemus](https://github.com/Vodemus) | 210667 | :white_check_mark: ||||||||||
+|[18](./trunk/PO-9_210667/)|Оводок Вадим | [Vodemus](https://github.com/Vodemus) | 210667 | :white_check_mark: | :white_check_mark: |||||||||
 |19|Солышко Дмитрий |||||||||||||
 |20|Ступак Дмитрий |||||||||||||
 |21|Тупик Юлия |||||||||||||
