@@ -1,4 +1,4 @@
-#include "mainwindow.h" //a_task_04_kiril
+#include "mainwindow.h" //a_task_04_kiril restart checks
 
 #include <QApplication> //a_task_04_kiril
 
