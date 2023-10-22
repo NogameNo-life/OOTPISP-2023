@@ -12,4 +12,4 @@ add_executable(po8_210643_task_02
         texteditor.ui
         texteditor.qrc
 )
-target_link_libraries(TextEditor Qt${QT_VERSION_MAJOR}::Widgets)
+target_link_libraries(po8_210643_task_02 Qt${QT_VERSION_MAJOR}::Widgets)
