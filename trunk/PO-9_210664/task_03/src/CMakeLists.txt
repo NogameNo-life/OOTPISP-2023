@@ -8,8 +8,9 @@ find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS Widgets)
 find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets)
 add_executable(po9_210664_task_03
         main.cpp
-        mainwindow.cpp
-        mainwindow.h
-        mainwindow.ui
+        t1.cpp t1.h t1.ui
+        t2.h t2.cpp t2.ui
+        t3.h t3.cpp t3.ui
+        t4.h t4.cpp t4.ui
 )
 target_link_libraries(po9_210664_task_03 Qt${QT_VERSION_MAJOR}::Widgets)
