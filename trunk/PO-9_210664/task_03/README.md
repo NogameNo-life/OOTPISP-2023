@@ -104,6 +104,10 @@
 
 ## Пример работы программы
 
+![1.png](./readme_imgs/1.png)
+
+![2.png](./readme_imgs/2.png)
+
 ### Пример задания №1
 
 ![t1-1.png](./readme_imgs/t1-1.png)
@@ -144,12 +148,6 @@
 
 ![t5-2.png](./readme_imgs/t5-2.png)
 
-![t5-3.png](./readme_imgs/t5-3.png)
+### Пример задания №6
 
-![t5-4.png](./readme_imgs/t5-4.png)
-
-![t5-5.png](./readme_imgs/t5-5.png)
-
-![t5-6.png](./readme_imgs/t5-6.png)
-
-![t5-7.png](./readme_imgs/t5-7.png)
+![t6-1.png](./readme_imgs/t6-1.png)

@@ -12,5 +12,7 @@ add_executable(po9_210664_task_03
         t2.h t2.cpp t2.ui
         t3.h t3.cpp t3.ui
         t4.h t4.cpp t4.ui
+        t5.h t5.cpp t5.ui
+        t6.h t6.cpp t6.ui
 )
 target_link_libraries(po9_210664_task_03 Qt${QT_VERSION_MAJOR}::Widgets)
