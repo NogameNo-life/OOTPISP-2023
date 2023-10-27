@@ -167,7 +167,7 @@
 
 - Shop 3
 
-  -  pr1
+  - pr1
 
 ![image](images/image-16.png)
 
