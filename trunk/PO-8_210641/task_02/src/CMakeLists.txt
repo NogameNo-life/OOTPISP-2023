@@ -16,5 +16,6 @@ add_executable(po8_210641_task_02
         texteditor.ui
         texteditor.h
         texteditor.qrc
+        open.pn
 )
 target_link_libraries(po8_210641_task_02 Qt${QT_VERSION_MAJOR}::Widgets)
