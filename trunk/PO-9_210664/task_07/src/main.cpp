@@ -1,11 +1,11 @@
-#include "mainwindow.h" //210664
- //210664
-#include <QApplication> //210664
- //210664
-int main(int argc, char *argv[]) //210664
-{ //210664
-    QApplication a(argc, argv); //210664
-    MainWindow w; //210664
-    w.show(); //210664
-    return a.exec(); //210664
-} //210664
+#include "mainwindow.h" //210664_main
+ //210664_main
+#include <QApplication> //210664_main
+ //210664_main
+int main(int argc, char *argv[]) //210664_main
+{ //210664_main
+    QApplication a(argc, argv); //210664_main
+    MainWindow w; //210664_main
+    w.show(); //210664_main
+    return a.exec(); //210664_main
+} //210664_main
