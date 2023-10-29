@@ -23,4 +23,3 @@ add_executable(po9_210667_lab1
 
 
 target_link_libraries(po9_210667_lab1 Qt${QT_VERSION_MAJOR}::Widgets)
-
