@@ -1,43 +1,43 @@
-#ifndef TEXTEDITOR_H
-#define TEXTEDITOR_H
+#ifndef TEXTEDITOR_H//210674
+#define TEXTEDITOR_H//210674
+//210674
+#include <QMainWindow>//210674
 
-#include <QMainWindow>
-
-QT_BEGIN_NAMESPACE
-namespace Ui { class TextEditor; }
-QT_END_NAMESPACE
-
-class TextEditor : public QMainWindow
+QT_BEGIN_NAMESPACE//210674
+namespace Ui { class TextEditor; }//210674
+QT_END_NAMESPACE//210674
+//210674
+class TextEditor : public QMainWindow//210674
 {
-    Q_OBJECT
+    Q_OBJECT//210674
 
 public:
-    TextEditor(QWidget *parent = nullptr);
-    ~TextEditor();
-    TextEditor(const QString &fileName = QString(), QWidget *parent = 0);
+    TextEditor(QWidget *parent = nullptr);//210674
+    ~TextEditor();//210674
+    TextEditor(const QString &fileName = QString(), QWidget *parent = 0);//210674
 
 protected:
-    void closeEvent(QCloseEvent *e);
+    void closeEvent(QCloseEvent *e);//210674
 
 
 private slots:
-    void on_actionNew_triggered();
+    void on_actionNew_triggered();//210674
 
-    void documentModified();
+    void documentModified();//210674
 
-    void on_actionSelectFont_triggered();
+    void on_actionSelectFont_triggered();//210674
 
-    void on_actionAbout_2_triggered();
+    void on_actionAbout_2_triggered();//210674
 
-    void on_actionOpen_triggered();
-
-    bool saveFile();
-    bool saveFileAs();
+    void on_actionOpen_triggered();//210674
+//210674
+    bool saveFile();//210674
+    bool saveFileAs();//210674
 
 private:
-    Ui::TextEditor *ui;
-    QString m_fileName;
-    void loadFile(const QString &fileName);
-    void setFileName(const QString &fileName);
-};
-#endif // TEXTEDITOR_H
+    Ui::TextEditor *ui;//210674
+    QString m_fileName;//210674
+    void loadFile(const QString &fileName);//210674
+    void setFileName(const QString &fileName);//210674
+};//210674
+#endif // TEXTEDITOR_H//210674
