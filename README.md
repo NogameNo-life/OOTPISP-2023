@@ -47,7 +47,7 @@
 |23|Харитонович Захар |||||||||||||
 |24|Шубич Дарья|[dashubaa](https://github.com/Dashubaa)|210674|✅|✅|✅|✅|✅||||||
 =======
-|24|Шубич Дарья|[dashubaa](https://github.com/Dashubaa)|210674|✅|✅|✅||||||||
+|24|Шубич Дарья|[Dashubaa](https://github.com/Dashubaa)|[210674](https://github.com/brstu/OOTPISP-2023/tree/master/trunk/PO-9_210674)|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:||||||
 |23|Харитонович Захар |[ZakharTS](https://github.com/ZakharTS)|[210672](https://github.com/brstu/OOTPISP-2023/tree/master/trunk/PO-9_210672)|:white_check_mark:|:white_check_mark:|||||||||
 >>>>>>> d2b5dd5c4f3678d1df330b5dca9b929a9b93ce7c
 |25|Зайд Халдун А. Алькатури|||||||||||||
