@@ -14,7 +14,7 @@ using namespace std;
     ui->tableView->horizontalHeader()->setDefaultSectionSize(40);
     ui->tableView->verticalHeader()->setDefaultSectionSize(30);
     ui->tableView->setSelectionMode(QAbstractItemView::SingleSelection);
-    generateTable();
+    generateTable210643();
 }
 
 MainWindow::~MainWindow()
@@ -36,7 +36,7 @@ void MainWindow::on_tableView_clicked
     ui->textLabel8->setText(QString("%1").arg(value * value * value));
 }
 
-void MainWindow::generateTable(){
+void MainWindow::generateTable210643(){
     QTableWidget *tableWidget = new QTableWidget(10, 10);
 
     for (int i = 0; i < 10; ++i) {
@@ -54,7 +54,7 @@ void MainWindow::generateTable(){
     ui->textLabel8->clear();
 }
 
-void MainWindow::on_pushButton_clicked()
+void MainWindow::on_pushButton_clicked210643()
 {
-    generateTable();
+    generateTable210643();
 }

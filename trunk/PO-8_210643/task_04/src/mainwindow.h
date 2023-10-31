@@ -19,11 +19,11 @@ private slots:
     void on_tableView_clicked
 (const QModelIndex &index);
 
-    void on_pushButton_clicked();
+    void on_pushButton_clicked210643();
 
 private:
     Ui::MainWindow *ui;
 
-    void generateTable();
+    void  generateTable210643();
 };
 #endif // MAINWINDOW_H
