@@ -1,5 +1,5 @@
-cmake_minimum_required(VERSION 3.10)
-project(TextEditor VERSION 2023.10.04.0 LANGUAGES CXX)
+cmake_minimum_required(VERSION 3.5)
+project(TextEditor LANGUAGES CXX)
 set(CMAKE_AUTOUIC ON)
 set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTORCC ON)
@@ -14,3 +14,11 @@ add_executable(TextEditor
         texteditor.qrc
 )
 target_link_libraries(TextEditor Qt${QT_VERSION_MAJOR}::Widgets)
+add_executable(po8_210643_task_02
+        main.cpp
+        texteditor.cpp
+        texteditor.ui
+        texteditor.qrc
+)
+target_link_libraries(po8_210643_task_02 Qt${QT_VERSION_MAJOR}::Widgets)
+
