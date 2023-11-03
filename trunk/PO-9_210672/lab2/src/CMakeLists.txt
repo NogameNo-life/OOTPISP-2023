@@ -13,5 +13,6 @@ add_executable(po9_210672_lab2
     mainwindow.cpp
     mainwindow.h
     mainwindow.ui
+    mainwindow.qrc
 )
 target_link_libraries(po9_210672_lab2  Qt${QT_VERSION_MAJOR}::Widgets)
