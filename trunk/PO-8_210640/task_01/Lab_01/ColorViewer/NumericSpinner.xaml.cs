@@ -44,8 +44,8 @@ namespace Stopbyte.Controls
             DependencyPropertyDescriptor.FromProperty(MinValueProperty, typeof(NumericSpinner)).AddValueChanged(this, PropertyChanged);
             DependencyPropertyDescriptor.FromProperty(MaxValueProperty, typeof(NumericSpinner)).AddValueChanged(this, PropertyChanged);
 
-            PropertyChanged += (x, y) => validate();
-            ValueChanged += (x, y) => { };
+            PropertyChanged += (_, _) => validate();
+            ValueChanged += (_, _) => { };
         }
 
         #region ValueProperty
@@ -62,9 +62,13 @@ namespace Stopbyte.Controls
             set
             {
                 if (value < MinValue)
+                {
                     value = MinValue;
+                }
                 if (value > MaxValue)
+                {
                     value = MaxValue;
+                }
                 SetValue(ValueProperty, value);
                 ValueChanged(this, new EventArgs());
             }
@@ -125,7 +129,9 @@ namespace Stopbyte.Controls
             set
             {
                 if (value > MaxValue)
+                {
                     MaxValue = value;
+                }
                 SetValue(MinValueProperty, value);
             }
         }
@@ -146,7 +152,9 @@ namespace Stopbyte.Controls
             set
             {
                 if (value < MinValue)
+                {
                     value = MinValue;
+                }
                 SetValue(MaxValueProperty, value);
             }
         }
@@ -159,10 +167,22 @@ namespace Stopbyte.Controls
         private void validate()
         {
             // Logically, This is not needed at all... as it's handled within other properties...
-            if (MinValue > MaxValue) MinValue = MaxValue;
-            if (MaxValue < MinValue) MaxValue = MinValue;
-            if (Value < MinValue) Value = MinValue;
-            if (Value > MaxValue) Value = MaxValue;
+            if (MinValue > MaxValue) 
+            {
+                MinValue = MaxValue;
+            }
+            if (MaxValue < MinValue) 
+            {
+                MaxValue = MinValue;
+            }
+            if (Value < MinValue) 
+            {
+                Value = MinValue;
+            }
+            if (Value > MaxValue) 
+            {
+                Value = MaxValue;
+            }
 
             Value = decimal.Round(Value, Decimals);
         }
