@@ -6,7 +6,7 @@ set(CMAKE_AUTORCC ON)
 set(CMAKE_PREFIX_PATH $ENV{QTDIR})
 find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS Widgets)
 find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets)
-set(po9_210666_lab3
+add_executable(po9_210666_lab3
         main.cpp
         task1.cpp
         task1.h
