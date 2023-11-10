@@ -49,8 +49,7 @@
     * QPlainTextEdit { background: #rrggbb; }
 
     * задаём стиль при помощи метода setStyleSheet() (таблица стиля передаётся в виде строки).
-        
-        ![2.png](./img/2.png)
+    ![2.png](./img/2.png)
 
 ## Диалоги **(3 балла)**
 
