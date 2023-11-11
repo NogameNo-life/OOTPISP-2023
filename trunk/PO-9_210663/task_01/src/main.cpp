@@ -10,7 +10,7 @@
 
 class ColorChanger : public QWidget {
 public:
-    ColorChanger(QWidget *parent = nullptr) : QWidget(parent) {
+    explicit ColorChanger(QWidget *parent = nullptr) : QWidget(parent) {
         QGridLayout *gridLayout = new QGridLayout(this);
 
         SbRed.setMinimum(0);
