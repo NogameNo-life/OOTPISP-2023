@@ -29,7 +29,6 @@ namespace lab5wpf
         private void ButtonAddData_OnClick(object sender, RoutedEventArgs e)
         {
             AddDataWindow addDataWindow = new AddDataWindow();
-            if(addDataWindow.ShowDialog()== true);
         }
 
         private void ButtonCreateDb_OnClick(object sender, RoutedEventArgs e)
@@ -41,7 +40,6 @@ namespace lab5wpf
         private void ButtonShowRequest_OnClick(object sender, RoutedEventArgs e)
         {
             ShowRequest showRequest = new ShowRequest();
-            if (showRequest.ShowDialog() == true) ;
         }
     }
 }

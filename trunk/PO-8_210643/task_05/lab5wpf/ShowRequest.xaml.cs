@@ -28,6 +28,7 @@ public partial class ShowRequest : Window
                 RadioButtonState.IsChecked = true;
                 RadioButtonReysTime.IsChecked = true;
                 break;
+            default:break;
         }
         SqlConnection sqlConnection = new SqlConnection(DataBase.connectionString);
         SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(sqlCommand, sqlConnection);
