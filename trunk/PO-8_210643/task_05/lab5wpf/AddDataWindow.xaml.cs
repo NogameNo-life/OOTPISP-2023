@@ -10,7 +10,7 @@ public partial class AddDataWindow : Window
     public AddDataWindow()
     {
         InitializeComponent();
-        ComboBoxTables.ItemsSource = new string[]
+        ComboBoxTables.ItemsSource = new string
         {
             "machine",
             "reys",
@@ -18,7 +18,7 @@ public partial class AddDataWindow : Window
             "states"
         };
         ComboBoxTables.SelectedIndex = 3;
-        
+
     }
 
     private DataTable _dataTable;

@@ -9,7 +9,7 @@ using Microsoft.Data.SqlClient;
 namespace lab5wpf;
 
 
-public class DataBase
+public static class DataBase
 {
     public static string connectionString = "Server=ALEXALAPTOP;Database=lab5;TrustServerCertificate=True; Trusted_Connection=True;";
     
