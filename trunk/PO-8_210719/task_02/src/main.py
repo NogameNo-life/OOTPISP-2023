@@ -10,8 +10,8 @@ class TextEditor(QMainWindow):
     def initUI(self):
         self.text_edit = QTextEdit()
         self.setCentralWidget(self.text_edit)
-
         self.create_menu()
+
 
         self.setGeometry(300, 200, 925, 500)
         self.setWindowTitle('Текстовый редактор')
@@ -61,6 +61,7 @@ def main():
     text_editor = TextEditor()
     text_editor.show()
     sys.exit(app.exec_())
+
 
 if __name__ == "__main__":
     main()
