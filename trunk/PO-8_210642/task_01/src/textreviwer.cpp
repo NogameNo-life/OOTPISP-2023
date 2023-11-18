@@ -7,15 +7,15 @@ TextReviwer::TextReviwer(QWidget *parent) :
 {
     ui->setupUi(this);
 
-    textEdit = new QTextEdit(this);
-    openButton = new QPushButton("Open File", this);
-    gridLayout = new QGridLayout;
+    textEdit_210642 = new QTextEdit(this);
+    openButton_210642 = new QPushButton("Open File", this);
+    gridLayout_210642 = new QGridLayout;
 
-    gridLayout->addWidget(textEdit, 0, 0, 1, 2);
-    gridLayout->addWidget(openButton, 1, 0, 1, 2);
-    ui->centralwidget->setLayout(gridLayout);
+    gridLayout_210642->addWidget(textEdit_210642, 0, 0, 1, 2);
+    gridLayout_210642->addWidget(openButton_210642, 1, 0, 1, 2);
+    ui->centralwidget->setLayout(gridLayout_210642);
 
-    connect(openButton, &QPushButton::clicked, this, &TextReviwer::openFile);
+    connect(openButton_210642, &QPushButton::clicked, this, &TextReviwer::openFile_210642);
 }
 
 TextReviwer::~TextReviwer()
@@ -23,7 +23,7 @@ TextReviwer::~TextReviwer()
     delete ui;
 }
 
-void TextReviwer::openFile(){
+void TextReviwer::openFile_210642(){
     QString filePath = QFileDialog::getOpenFileName(this, "Open File", "", "Text Files (*.txt);;All Files (*)");
 
     if (!filePath.isEmpty())
@@ -33,7 +33,7 @@ void TextReviwer::openFile(){
         if (file.open(QIODevice::ReadOnly | QIODevice::Text))
         {
             QTextStream in(&file);
-            textEdit->setPlainText(in.readAll());
+            textEdit_210642->setPlainText(in.readAll());
             file.close();
         }
         else

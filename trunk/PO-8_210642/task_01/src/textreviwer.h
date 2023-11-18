@@ -22,12 +22,12 @@ class TextReviwer : public QMainWindow
 public:
     explicit TextReviwer(QWidget *parent = nullptr);
     ~TextReviwer();
-    QTextEdit *textEdit;
-    QPushButton *openButton;
-    QGridLayout *gridLayout;
+    QTextEdit *textEdit_210642;
+    QPushButton *openButton_210642;
+    QGridLayout *gridLayout_210642;
 
 public slots:
-    void openFile();
+    void openFile_210642();
 
 private:
     Ui::TextReviwer *ui;
