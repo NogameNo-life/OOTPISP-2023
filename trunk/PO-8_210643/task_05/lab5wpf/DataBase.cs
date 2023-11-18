@@ -11,7 +11,7 @@ namespace lab5wpf;
 
 public static class DataBase
 {
-    public static string connectionString = "Server=ALEXALAPTOP;Database=lab5;TrustServerCertificate=True; Trusted_Connection=True;";
+    public static readonly string connectionString = "Server=ALEXALAPTOP;Database=lab5;TrustServerCertificate=True; Trusted_Connection=True;";
     
 
     public static void CreateDb()
