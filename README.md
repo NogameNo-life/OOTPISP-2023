@@ -10,12 +10,12 @@
 |4|Макаревич Екатерина|[Mkrshkk](https://github.com/Mkrshkk)| [210641](./trunk/PO-8_210641/) |:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:||||||
 |5|Печко Валерия| [ValeriaPJul](https://github.com/ValeriaPJul)| [210642](./trunk/PO-8_210642/) |:white_check_mark:|:white_check_mark: | | :white_check_mark:| | | | | | |
 |6|Серко Александра|[AlexaBailey](https://github.com/AlexaBailey)| [210643](./trunk/PO-8_210643/) |:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark: |:white_check_mark:| | | | | |
-|7|Соколов Семен| |                                | | | | | | | | | | |
-|8|Соколовский Никита| |                                | | | | | | | | | | |
-|9|Сорока Вадим| |                                | | | | | | | | | | |
-|10|Таразевич Никита| |                                | | | | | | | | | | |
-|11|Шлыков Андрей| |                                | | | | | | | | | | |
-|12|Янчук Артем| |                                | | | | | | | | | | |
+|7|Соколов Семен| | | | | | | | | | | | |
+|8|Соколовский Никита| | | | | | | | | | | | |
+|9|Сорока Вадим| | | | | | | | | | | | |
+|10|Таразевич Никита| | | | | | | | | | | | |
+|11|Шлыков Андрей| | | | | | | | | | | | |
+|12|Янчук Артем| | | | | | | | | | | | |
 
 ## Группа ПО-9
 
