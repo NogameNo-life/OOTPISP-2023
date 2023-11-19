@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Lab_03"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="800" ResizeMode="CanMinimize">
     <Grid>
         <TabControl>
             <TabItem Header="Task 1">
@@ -95,7 +95,7 @@
                                     EnableRowVirtualization="True"
                                     Initialized="Task5BrandDataGrid_Initialized"
                                     Loaded="Task5BrandDataGrid_Loaded">
-                                    
+
                                     <DataGrid.Columns>
                                         <DataGridTextColumn Header="Name" Binding="{Binding Name}"/>
                                         <DataGridTextColumn Header="Country" Binding="{Binding Country}"/>
@@ -143,7 +143,11 @@
                 </Grid>
             </TabItem>
             <TabItem Header="Task 6">
-                <Grid Background="#FFE5E5E5"/>
+                <Grid Background="#FFE5E5E5">
+                    <Button Content="Choose file" HorizontalAlignment="Left" Margin="10,23,0,0" VerticalAlignment="Top" Width="100" Click="Task6FileButton_Click"/>
+                    <ListBox Name="Task6ListBox" Margin="10,48,684,100" Height="256"/>
+                    <Label Name="Task6Label" HorizontalAlignment="Center" Margin="0,102,0,0" VerticalAlignment="Top" Height="150" Width="300"/>
+                </Grid>
             </TabItem>
         </TabControl>
 

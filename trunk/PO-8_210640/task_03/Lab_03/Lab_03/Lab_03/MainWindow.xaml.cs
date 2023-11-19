@@ -1,6 +1,8 @@
-﻿using System.Collections.Immutable;
+﻿using Microsoft.Win32;
+using System.Collections.Immutable;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
+using System.IO;
 using System.Runtime.CompilerServices;
 using System.Windows;
 using System.Windows.Controls;
@@ -462,7 +464,6 @@ namespace Lab_03
             Error = -1
         }
 
-        #endregion
         private void Task5BrandDataGrid_Initialized(object sender, EventArgs e)
         {
             Task5BrandDataGrid.ItemsSource = Brands;
@@ -556,5 +557,52 @@ namespace Lab_03
                 brand.DeliveredTo = delivery;
             }
         }
+
+        #endregion
+
+        #region Task 6
+
+        private void Task6FileButton_Click(object sender, RoutedEventArgs e)
+        {
+            var fileDialog = new OpenFileDialog();
+            fileDialog.Filter = "Text files (*.txt)|*.txt";
+            var result = fileDialog.ShowDialog();
+            if (result == true)
+            {
+                var path = fileDialog.FileName;
+                var text = File.ReadAllText(path);
+                var components = text.Split(new char[] { ' ', '\n', '\r', '\t' }, StringSplitOptions.RemoveEmptyEntries);
+
+                try
+                {
+                    var numbers = components.Select(int.Parse).ToList();
+
+                    var max = numbers.Max();
+                    var min = numbers.Where((x, i) => i % 2 == 1).Min();
+                    var maxAbs = numbers.Where((x, i) => i % 2 == 0).Select(Math.Abs).Max();
+                    var difference = numbers.First() - numbers.Last();
+
+                    Task6ListBox.ItemsSource = numbers;
+
+                    Task6Label.Content =
+                    $"""
+                    Max component: {max}
+                    Min component(even number): {min}
+                    Max abs component(odd number): {maxAbs}
+                    Difference between first and last: {difference}
+                    """;
+                }
+                catch (Exception)
+                {
+                    Task6Label.Content = "Error";
+                    Task6ListBox.ItemsSource = new List<int>();
+                    return;
+                }
+            }
+        }
+
+        #endregion
+
+
     }
 }
