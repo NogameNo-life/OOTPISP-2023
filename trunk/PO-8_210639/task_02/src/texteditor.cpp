@@ -1,16 +1,16 @@
 #include "texteditor.h"
 #include "ui_texteditor.h"
 
-textEditor::textEditor(const QString &fileName, QWidget *parent)
+textEditor210639::textEditor210639(const QString &fileName, QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::textEditor)
 {
     ui->setupUi(this);
     setWindowTitle("TextEditor[*]");
-    QSettings settings;
-    QFont defaultFont = QApplication::font();
-    QFont viewFont = settings.value("viewFont", QVariant::fromValue(defaultFont)).value<QFont>();
-    ui->textEdit->setFont(viewFont);
+    QSettings settings210639;
+    QFont defaultFont210639 = QApplication::font();
+    QFont viewFont210639 = settings210639.value("viewFont", QVariant::fromValue(defaultFont210639)).value<QFont>();
+    ui->textEdit->setFont(viewFont210639);
 
     ui->actionCopy210639->setEnabled(false);
     ui->actionCut210639->setEnabled(false);
@@ -36,17 +36,17 @@ textEditor::textEditor(const QString &fileName, QWidget *parent)
     connect(ui->actionSaveAS210639, SIGNAL(triggered()), this, SLOT(saveFileAs210639()));
 }
 
-textEditor::~textEditor()
+textEditor210639::~textEditor210639()
 {
     delete ui;
 }
 
-void textEditor::documentModified210639()
+void textEditor210639::documentModified210639()
 {
     this->setWindowModified(true);
 }
 
-void textEditor::closeEvent210639(QCloseEvent *e)
+void textEditor210639::closeEvent210639(QCloseEvent *e)
 {
     if(isWindowModified())
     {
@@ -77,12 +77,12 @@ void textEditor::closeEvent210639(QCloseEvent *e)
     }
 }
 
-void textEditor::loadFile210639(const QString &fileName){
-    if (fileName.isEmpty()){
+void textEditor210639::loadFile210639(const QString &fileName210639){
+    if (fileName210639.isEmpty()){
         setFileName210639(QString());
         return;
     }
-    QFile file(fileName);
+    QFile file(fileName210639);
     if (!file.open(QIODevice::ReadOnly | QIODevice::Text)){
         QMessageBox::warning(this, "Warning", "Can't open this file");
         setFileName210639(QString());
@@ -91,85 +91,85 @@ void textEditor::loadFile210639(const QString &fileName){
     QTextStream stream(&file);
     ui->textEdit->setText(stream.readAll());
     file.close();
-    setFileName210639(fileName);
+    setFileName210639(fileName210639);
     setWindowModified(false);
 }
 
-void textEditor::setFileName210639(const QString &fileName){
-    m_fileName=fileName;
+void textEditor210639::setFileName210639(const QString &fileName210639){
+    m_fileName210639=fileName210639;
     setWindowTitle(QString("%1[*] - %2")
-                    .arg(m_fileName.isNull()?"untitled":QFileInfo(m_fileName).fileName())
+                    .arg(m_fileName210639.isNull()?"untitled":QFileInfo(m_fileName210639).fileName())
                     .arg(QApplication::applicationName()));
 }
 
-bool textEditor::saveFileAs210639(){
-    QString fileName = QFileDialog::getSaveFileName(this, "Save document", m_fileName.isNull()?QDir::currentPath():m_fileName, "Text documents (*.txt)");
-    if(fileName.isNull()){
+bool textEditor210639::saveFileAs210639(){
+    QString fileName210639 = QFileDialog::getSaveFileName(this, "Save document", m_fileName210639.isNull()?QDir::currentPath():m_fileName210639, "Text documents (*.txt)");
+    if(fileName210639.isNull()){
         return false;
     }
     else{
-        setFileName210639(fileName);
+        setFileName210639(fileName210639);
         return saveFile210639();
     }
 }
 
-bool textEditor::saveFile210639(){
-    if(m_fileName.isNull()){
+bool textEditor210639::saveFile210639(){
+    if(m_fileName210639.isNull()){
         return saveFileAs210639();
     }
-    QFile file(m_fileName);
-    if (!file.open(QIODevice::WriteOnly | QIODevice::Text)){
+    QFile file210639(m_fileName210639);
+    if (!file210639.open(QIODevice::WriteOnly | QIODevice::Text)){
         QMessageBox::warning(this, "Warning", "Can't open this file");
         setFileName210639(QString());
         return false;
     }
     else{
-        QTextStream out_stream(&file);
+        QTextStream out_stream(&file210639);
         out_stream << ui->textEdit->toPlainText();
-        file.close();
+        file210639.close();
         setWindowModified(false);
         return true;
     }
 }
 
-void textEditor::on_actionNew210639_triggered()
+void textEditor210639::on_actionNew210639_triggered()
 {
-    textEditor *texteditor= new textEditor();
-    texteditor->show();
+    textEditor210639 *texteditor210639= new textEditor210639();
+    texteditor210639->show();
 }
 
-void textEditor::on_actionSelectFont210639_triggered()
+void textEditor210639::on_actionSelectFont210639_triggered()
 {
-    bool ok;
-    QFont font;
-    QFont initial = ui->textEdit->font();
-    font = QFontDialog::getFont(&ok, initial, this);
-    if(ok){
-        ui->textEdit->setFont(font);
-        QSettings settings;
-        settings.setValue("viewFont", QVariant::fromValue(font));
+    bool ok210639;
+    QFont font210639;
+    QFont initial210639 = ui->textEdit->font();
+    font210639 = QFontDialog::getFont(&ok210639, initial210639, this);
+    if(ok210639){
+        ui->textEdit->setFont(font210639);
+        QSettings settings210639;
+        settings210639.setValue("viewFont", QVariant::fromValue(font210639));
     }
 }
 
-void textEditor::on_actionAbout210639_triggered()
+void textEditor210639::on_actionAbout210639_triggered()
 {
     QMessageBox::about(this, "About", "Text editor.");
 }
 
 
-void textEditor::on_actionOpen210639_triggered()
+void textEditor210639::on_actionOpen210639_triggered()
 {
-    QString fileName = QFileDialog::getOpenFileName(this,
+    QString fileName210639 = QFileDialog::getOpenFileName(this,
                                                     "Open document", QDir::currentPath(), "Text documents (*.txt)");
-    if(fileName.isNull()){
+    if(fileName210639.isNull()){
         return;
     }
-    if(m_fileName.isNull() && !isWindowModified()){
-        loadFile210639(fileName);
+    if(m_fileName210639.isNull() && !isWindowModified()){
+        loadFile210639(fileName210639);
     }
     else{
-        textEditor *texteditor = new textEditor(fileName);
-        texteditor->show();
+        textEditor210639 *texteditor210639 = new textEditor210639(fileName210639);
+        texteditor210639->show();
     }
 }
 

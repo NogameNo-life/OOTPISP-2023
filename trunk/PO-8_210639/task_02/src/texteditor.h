@@ -15,14 +15,14 @@ QT_BEGIN_NAMESPACE
 namespace Ui { class textEditor; }
 QT_END_NAMESPACE
 
-class textEditor : public QMainWindow
+class textEditor210639 : public QMainWindow
 {
     Q_OBJECT
 protected:
-    void closeEvent210639(QCloseEvent *e);
+    void closeEvent210639(QCloseEvent *e210639);
 public:
-    textEditor(const QString &fileName=QString(), QWidget *parent = nullptr);
-    ~textEditor();
+    textEditor210639(const QString &fileName210639=QString(), QWidget *parent210639 = nullptr);
+    ~textEditor210639();
 
 private slots:
     void documentModified210639();
@@ -35,7 +35,7 @@ private slots:
 
 private:
     Ui::textEditor *ui;
-    QString m_fileName;
+    QString m_fileName210639;
     void loadFile210639(const QString &fileName);
     void setFileName210639(const QString &fileName);
 };
