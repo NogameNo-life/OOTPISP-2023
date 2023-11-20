@@ -41,12 +41,223 @@
 
 - [AbstructFactoryWithPrototypes.cpp](./src/AbstructFactory.cpp)
 
-  ![1.png](./readme_imgs/1.png)
+  ```c++
+  #include <QDebug>
+
+  #include <iostream>
+  #include <map>
+
+  // Прототипы
+  class Room {
+  public:
+      virtual void print() const = 0;
+      virtual Room* clone() const = 0;
+  };
+
+  class Door {
+  public:
+      virtual void print() const = 0;
+      virtual Door* clone() const = 0;
+  };
+
+  // Абстрактная фабрика
+  class MazeFactory {
+  public:
+      virtual Room* makeRoom() const = 0;
+      virtual Door* makeDoor(Room* r1, Room* r2) const = 0;
+      virtual Room* cloneRoom(const Room* room) const = 0;
+      virtual Door* cloneDoor(const Door* door) const = 0;
+  };
+
+  // Пример конкретных продуктов
+  class ConcreteRoom : public Room {
+  public:
+      void print() const override {
+          qDebug() << "Concrete Room\n";
+      }
+
+      Room* clone() const override {
+          return new ConcreteRoom(*this);
+      }
+  };
+
+  class ConcreteDoor : public Door {
+  public:
+      ConcreteDoor(Room* r1, Room* r2) : room1(r1), room2(r2) {}
+
+      void print() const override {
+          qDebug() << "Concrete Door\n";
+      }
+
+      Door* clone() const override {
+          return new ConcreteDoor(*this);
+      }
+
+  private:
+      Room* room1;
+      Room* room2;
+  };
+
+  // Пример конкретной фабрики
+  class ConcreteMazeFactory : public MazeFactory {
+  public:
+      Room* makeRoom() const override {
+          return new ConcreteRoom();
+      }
+
+      Door* makeDoor(Room* r1, Room* r2) const override {
+          return new ConcreteDoor(r1, r2);
+      }
+
+      Room* cloneRoom(const Room* room) const override {
+          return room->clone();
+      }
+
+      Door* cloneDoor(const Door* door) const override {
+          return door->clone();
+      }
+  };
+
+  ```
 
 - [Builder.cpp](./src/Builder.cpp)
 
-  ![2.png](./readme_imgs/2.png)
+  ```c++
+  #include <QDebug>
+  #include <QString>
+
+  #include <iostream>
+  #include <string>
+
+  // Части отчета
+  class Header {
+  public:
+      void print() const {
+          qDebug() << "Header\n";
+      }
+  };
+
+  class Block {
+  public:
+      void print() const {
+          qDebug() << "Block\n";
+      }
+  };
+
+  class Ending {
+  public:
+      void print() const {
+          qDebug() << "Ending\n";
+      }
+  };
+
+  // Строитель отчета
+  class ReportBuilder {
+  public:
+      virtual void buildHeader() = 0;
+      virtual void buildBlock() = 0;
+      virtual void buildEnding() = 0;
+      virtual QString getResult() const = 0;
+  };
+
+  // Конкретные строители отчета
+  class HtmlBuilder : public ReportBuilder {
+  public:
+      void buildHeader() override {
+          header.print();
+      }
+
+      void buildBlock() override {
+          block.print();
+      }
+
+      void buildEnding() override {
+          ending.print();
+      }
+
+      QString getResult() const override {
+          return "HTML Report";
+      }
+
+  private:
+      Header header;
+      Block block;
+      Ending ending;
+  };
+
+  class TxtBuilder : public ReportBuilder {
+  public:
+      void buildHeader() override {
+          header.print();
+      }
+
+      void buildBlock() override {
+          block.print();
+      }
+
+      void buildEnding() override {
+          ending.print();
+      }
+
+      QString getResult() const override {
+          return "Text Report";
+      }
+
+  private:
+      Header header;
+      Block block;
+      Ending ending;
+  };
+
+  // Класс-директор
+  class ReportDirector {
+  public:
+      void construct(ReportBuilder* builder) {
+          builder->buildHeader();
+          builder->buildBlock();
+          builder->buildEnding();
+      }
+  };
+  ```
 
 - [FactoryMethodWithAbstructFactory.cpp](./src/FactoryMethodWithAbstructFactory.cpp)
 
-  ![3.png](./readme_imgs/3.png)
+  ```c++
+  #include <QDebug>
+
+  #include <iostream>
+
+  // Продукты
+  class Product {
+  public:
+      virtual void use() const = 0;
+  };
+
+  class ConcreteProduct : public Product {
+  public:
+      void use() const override {
+          qDebug() << "Using Concrete Product\n";
+      }
+  };
+
+  // Абстрактная фабрика
+  class Factory {
+  public:
+      virtual Product* createProduct() const = 0;
+  };
+
+  // Конкретные фабрики
+  class ConcreteFactory : public Factory {
+  public:
+      Product* createProduct() const override {
+          return new ConcreteProduct();
+      }
+  };
+
+  // Клиентский код
+  void clientCode(const Factory& factory) {
+      Product* product = factory.createProduct();
+      product->use();
+      delete product;
+  }
+  ```
