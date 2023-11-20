@@ -602,7 +602,5 @@ namespace Lab_03
         }
 
         #endregion
-
-
     }
 }
