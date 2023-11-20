@@ -5,7 +5,7 @@ using Microsoft.Data.SqlClient;
 
 namespace lab5wpf;
 
-public partial class AddDataWindow : Window
+public class AddDataWindow : Window
 {
     public AddDataWindow()
     {

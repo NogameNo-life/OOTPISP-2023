@@ -18,7 +18,7 @@ namespace lab5wpf
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public class MainWindow : Window
     {
         public MainWindow()
         {
@@ -29,6 +29,9 @@ namespace lab5wpf
         private void ButtonAddData_OnClick(object sender, RoutedEventArgs e)
         {
             AddDataWindow addDataWindow = new AddDataWindow();
+            addDataWindow.Show();
+
+
         }
 
         private void ButtonCreateDb_OnClick(object sender, RoutedEventArgs e)
@@ -40,6 +43,8 @@ namespace lab5wpf
         private void ButtonShowRequest_OnClick(object sender, RoutedEventArgs e)
         {
             ShowRequest showRequest = new ShowRequest();
+            showRequest.Show();
+
         }
     }
 }

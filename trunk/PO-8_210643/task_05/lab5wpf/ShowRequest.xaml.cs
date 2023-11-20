@@ -5,7 +5,7 @@ using MessageBox = System.Windows.Forms.MessageBox;
 
 namespace lab5wpf;
 
-public partial class ShowRequest : Window
+public class ShowRequest : Window
 {
     public ShowRequest()
     {
