@@ -28,7 +28,9 @@ public class ShowRequest : Window
                 RadioButtonState.IsChecked = true;
                 RadioButtonReysTime.IsChecked = true;
                 break;
-            default:break;
+            default:
+                MessageBox.Show("!");
+                break;
         }
         SqlConnection sqlConnection = new SqlConnection(DataBase.connectionString);
         SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(sqlCommand, sqlConnection);
