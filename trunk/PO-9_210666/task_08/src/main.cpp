@@ -15,6 +15,12 @@ int main() {
     inputField->render();
     button->render();
     language->display();
+
+    delete linuxFactory;
+    delete list;
+    delete inputField;
+    delete button;
+    delete language;
     
     return 0;
 }
