@@ -95,6 +95,13 @@ public:
         languagePrototype = lng;
     }
 
+    virtual ~AbstractPrototypeFactory() {
+        delete listPrototype;
+        delete inputFieldPrototype;
+        delete buttonPrototype;
+        delete languagePrototype;
+    }
+
     List* createList() const override {
         return listPrototype->clone();
     }
