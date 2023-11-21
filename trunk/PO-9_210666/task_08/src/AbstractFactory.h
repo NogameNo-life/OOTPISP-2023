@@ -83,6 +83,7 @@ public:
     virtual InputField* createInputField() const = 0;
     virtual Button* createButton() const = 0;
     virtual Language* createLanguage() const = 0;
+    virtual ~AbstractFactory() {}
 };
 
 class AbstractPrototypeFactory : public AbstractFactory {
