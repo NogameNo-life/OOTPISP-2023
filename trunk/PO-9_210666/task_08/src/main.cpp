@@ -11,5 +11,10 @@ int main() {
     Button* button = linuxFactory->createButton();
     Language* language = linuxFactory->createLanguage();
 
+    list->render();
+    inputField->render();
+    button->render();
+    language->display();
+    
     return 0;
 }
