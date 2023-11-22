@@ -43,10 +43,6 @@
 |20|Ступак Дмитрий |[Papriosa](https://github.com/Papirosa225) | [210669](./trunk/PO-9_210669/)|:white_check_mark:|:white_check_mark:||||||||||
 |21|Тупик Юлия |||||||||||||
 |22|Тусюк Тимофей |||||||||||||
-<<<<<<< HEAD
-|23|Харитонович Захар |[ZakharTS](https://github.com/ZakharTS)|[210672](https://github.com/brstu/OOTPISP-2023/tree/master/trunk/PO-9_210672)|:white_check_mark:|:white_check_mark:|||||||||
-=======
 |23|Харитонович Захар |[ZakharTS](https://github.com/ZakharTS)|[210672](https://github.com/brstu/OOTPISP-2023/tree/master/trunk/PO-9_210672)|:white_check_mark:|:white_check_mark:|:white_check_mark:||||||||
->>>>>>> 99c6b996fda90efe0ab5f40c52d7cc48f9e69ad5
 |24|Шубич Дарья|[Dashubaa](https://github.com/Dashubaa)|[210674](https://github.com/brstu/OOTPISP-2023/tree/master/trunk/PO-9_210674)|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|||:white_check_mark:||
 |25|Зайд Халдун А. Алькатури|||||||||||||
