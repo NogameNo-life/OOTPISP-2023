@@ -26,7 +26,7 @@
 |3|Василюк Виктор|||||||||||||
 |4|Дарашкевич Дмитрий |||||||||||||
 |5|Зейденс Никита |||||||||||||
-|6|Зеленков Константин |[Pandus](https://github.com/Pandusss)|[210655](./trunk/PO-9_210655/)|:white_check_mark:|:white_check_mark:|:white_check_mark:||||||||
+|6|Зеленков Константин |[Pandus](https://github.com/Pandusss)|[210655](./trunk/PO-9_210655/)|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|||||||
 |7|Качаловский Данил |[dkachalovskiy](https://github.com/dkachalovskiy)|[210656](./trunk/PO-9_210656/)|✅|✅|✅|✅|✅|✅|✅|✅|✅|
 |8|Кот Анастасия |[peppemintu](https://github.com/peppemintu)|[210657](./trunk//PO-9_210657)|✅|✅|||||||||
 |9|Кухарев Дмитрий |||||||||||||
@@ -35,7 +35,7 @@
 |12|Марзан Андрей | [Nenroin](https://github.com/Nenroin) | [210661](./trunk/PO-9_210661/) | :white_check_mark: | :white_check_mark: |||||||||
 |13|Матюшик Екатерина |||||||||||||
 |14|Мельничук Владислав | [nikalow1](https://github.com/nikalow1) | [210663](./trunk/PO-9_210663/) | :white_check_mark: | :white_check_mark: |||||||||
-|15|Мисиюк Алексей | [11ALX11](https://github.com/11ALX11) | [210664](./trunk/PO-9_210664/) | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |||
+|15|Мисиюк Алексей | [11ALX11](https://github.com/11ALX11) | [210664](./trunk/PO-9_210664/) | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: ||
 |16|Николайчик Николай | [ProstoMyk](https://github.com/ProstoMyk) | [210665](./trunk/PO-9_210665) | :white_check_mark: | :white_check_mark: ||:white_check_mark:| :white_check_mark: ||| :white_check_mark: |||
 |17|Ничингер Кирилл |[HeyJIOBUM](https://github.com/HeyJIOBUM)|[210666](./trunk/PO-9_210666/)|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:||:white_check_mark:|:white_check_mark:||
 |18|Оводок Вадим | [Vodemus](https://github.com/Vodemus) | [210667](./trunk/PO-9_210667/)| :white_check_mark: | :white_check_mark: | :white_check_mark: ||||||||
