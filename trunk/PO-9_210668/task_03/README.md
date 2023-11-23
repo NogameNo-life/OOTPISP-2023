@@ -146,7 +146,7 @@
 
 ![image](images/image_20.png)
 
-Итоговые файлы
+Итоговые файлы:
 
 ![image](images/image_21.png)
 
