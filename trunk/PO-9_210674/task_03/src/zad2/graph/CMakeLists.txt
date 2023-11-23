@@ -13,4 +13,4 @@ add_executable(po9_210674_zad2
 	mainwindow.cpp
  	mainwindow.ui
 )
-target_link_libraries(ppo9_210674_zad2  Qt${QT_VERSION_MAJOR}::Widgets)
+target_link_libraries(po9_210674_zad2  Qt${QT_VERSION_MAJOR}::Widgets)
