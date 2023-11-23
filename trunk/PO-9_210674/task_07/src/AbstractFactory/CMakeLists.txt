@@ -3,4 +3,4 @@ project(laba7patterns)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(laba7patterns main.cpp)
+add_executable(210674_laba7patterns main.cpp)
