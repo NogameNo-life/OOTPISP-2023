@@ -36,13 +36,13 @@
 |13|Матюшик Екатерина |||||||||||||
 |14|Мельничук Владислав | [nikalow1](https://github.com/nikalow1) | [210663](./trunk/PO-9_210663/) | :white_check_mark: | :white_check_mark: |||||||||
 |15|Мисиюк Алексей | [11ALX11](https://github.com/11ALX11) | [210664](./trunk/PO-9_210664/) | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: ||
-|16|Николайчик Николай | [ProstoMyk](https://github.com/ProstoMyk) | [210665](./trunk/PO-9_210665) | :white_check_mark: | :white_check_mark: ||:white_check_mark:| :white_check_mark: ||| :white_check_mark: |||
-|17|Ничингер Кирилл |[HeyJIOBUM](https://github.com/HeyJIOBUM)|[210666](./trunk/PO-9_210666/)|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:||:white_check_mark:|:white_check_mark:||
+|16|Николайчик Николай | [ProstoMyk](https://github.com/ProstoMyk) | [210665](./trunk/PO-9_210665) | :white_check_mark: | :white_check_mark: | :white_check_mark: |:white_check_mark:| :white_check_mark: | :white_check_mark: || :white_check_mark: | :white_check_mark: ||
+|17|Ничингер Кирилл |[HeyJIOBUM](https://github.com/HeyJIOBUM)|[210666](./trunk/PO-9_210666/)|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:||
 |18|Оводок Вадим | [Vodemus](https://github.com/Vodemus) | [210667](./trunk/PO-9_210667/)| :white_check_mark: | :white_check_mark: | :white_check_mark: ||||||||
-|19|Солышко Дмитрий |[dimasolyshko](https://github.com/dimasolyshko)|[210668](./trunk/PO-9_210668/)|:white_check_mark:|:white_check_mark:|||:white_check_mark:||||||
+|19|Солышко Дмитрий |[dimasolyshko](https://github.com/dimasolyshko)|[210668](./trunk/PO-9_210668/)|:white_check_mark:|:white_check_mark:||:white_check_mark:|:white_check_mark:|||:white_check_mark:|||
 |20|Ступак Дмитрий |[Papriosa](https://github.com/Papirosa225) | [210669](./trunk/PO-9_210669/)|:white_check_mark:|:white_check_mark:||||||||||
 |21|Тупик Юлия |||||||||||||
 |22|Тусюк Тимофей |||||||||||||
 |23|Харитонович Захар |[ZakharTS](https://github.com/ZakharTS)|[210672](https://github.com/brstu/OOTPISP-2023/tree/master/trunk/PO-9_210672)|:white_check_mark:|:white_check_mark:|:white_check_mark:||||||||
-|24|Шубич Дарья|[Dashubaa](https://github.com/Dashubaa)|[210674](https://github.com/brstu/OOTPISP-2023/tree/master/trunk/PO-9_210674)|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:||:white_check_mark:|:white_check_mark:||
+|24|Шубич Дарья|[Dashubaa](https://github.com/Dashubaa)|[210674](https://github.com/brstu/OOTPISP-2023/tree/master/trunk/PO-9_210674)|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:||:white_check_mark:||
 |25|Зайд Халдун А. Алькатури|||||||||||||
