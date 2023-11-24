@@ -13,4 +13,4 @@ add_executable(po9_210674_task_05
 	mainwindow.cpp
 	mainwindow.ui
 )
-target_link_libraries(po9_210674_task_05  Qt${QT_VERSION_MAJOR}::Widgets)
+target_link_libraries(po9_210674_task_05  Qt${QT_VERSION_MAJOR}::Widgets Qt${QT_VERSION_MAJOR}::Sql)
