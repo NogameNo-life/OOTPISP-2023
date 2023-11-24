@@ -13,6 +13,9 @@ int main(int argc, char* argv[])
     faceDirector* director = new faceDirector;
     director->construct(b);
 
+
+    delete b;
+    delete director;
     return a.exec();
 
 }

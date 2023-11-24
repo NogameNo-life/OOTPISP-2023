@@ -12,7 +12,7 @@ Room* concreteMazeFactory::cloneRoom() {
 }
 Room* concreteMazeFactory::makeRoom(int n)
 {
-	Room* newRoom = (Room*)cloneRoom();
+	Room* newRoom = static_cast<Room*>(cloneRoom());
 	newRoom->initialize(n);
 	return newRoom;
 }
@@ -21,7 +21,7 @@ Room* concreteMazeFactory::makeRoom(int n)
 
 Door* concreteMazeFactory::makeDoor(Room* r1, Room* r2)
 {
-	Door* newDoor = (Door*)cloneDoor();
+	Door* newDoor = static_cast<Door*>(cloneDoor());
 	newDoor->initialize(r1, r2);
 	return newDoor;
 }

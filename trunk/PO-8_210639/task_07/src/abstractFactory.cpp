@@ -20,7 +20,9 @@ int main(int argc, char *argv[])
     Door* d = MazeFactory::Instance()->makeDoor(r2, r1);
     d->print();
 
-
+    delete r1;
+    delete r2;
+    delete d;
     return a.exec();
 
 }
