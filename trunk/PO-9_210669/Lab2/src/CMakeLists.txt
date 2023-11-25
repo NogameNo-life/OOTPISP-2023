@@ -19,5 +19,5 @@ add_executable(po9_210669_task_02
         texteditor.ui
 )
 
-target_link_libraries(untitled4 PRIVATE Qt${QT_VERSION_MAJOR}::Widgets)
+target_link_libraries(po9_210669_task_02 PRIVATE Qt${QT_VERSION_MAJOR}::Widgets)
 
