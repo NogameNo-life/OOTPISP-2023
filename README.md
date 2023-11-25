@@ -5,9 +5,9 @@
 |№|ФИО|GitHub username| № зачетки/студенческого        |#0|#1|#2|#3|#4|#5|#6|#7|#8|
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
 |1|Кодиров Бехруз| [KodirovBehruz](https://github.com/KodirovBehruz) | [210719](./trunk/PO210719/) |:white_check_mark: |:white_check_mark: |:white_check_mark: | | | | | | | |
-|2|Липовик Илья|[KARMA-143](https://github.com/KARMA-143)| [210639](./trunk/PO-8_210639/) |:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|||:white_check_mark:||
+|2|Липовик Илья|[KARMA-143](https://github.com/KARMA-143)| [210639](./trunk/PO-8_210639/) |:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:||:white_check_mark:|:white_check_mark:||
 |3|Лобарев Антон| [ToxaChiter](https://github.com/ToxaChiter "GitHub link")| [210661](./trunk/PO-8_210640/) |:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark: | | |:white_check_mark: | | | |
-|4|Макаревич Екатерина|[Mkrshkk](https://github.com/Mkrshkk)| [210641](./trunk/PO-8_210641/) |:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:||||||
+|4|Макаревич Екатерина|[Mkrshkk](https://github.com/Mkrshkk)| [210641](./trunk/PO-8_210641/) |:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|||:white_check_mark:|||
 |5|Печко Валерия| [ValeriaPJul](https://github.com/ValeriaPJul)| [210642](./trunk/PO-8_210642/) |:white_check_mark:|:white_check_mark: | | :white_check_mark:| | | | | | |
 |6|Серко Александра|[AlexaBailey](https://github.com/AlexaBailey)| [210643](./trunk/PO-8_210643/) |:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark: |:white_check_mark:| | | | | |
 |7|Соколов Семен| | | | | | | | | | | | |
@@ -36,7 +36,7 @@
 |13|Матюшик Екатерина |||||||||||||
 |14|Мельничук Владислав | [nikalow1](https://github.com/nikalow1) | [210663](./trunk/PO-9_210663/) | :white_check_mark: | :white_check_mark: |||||||||
 |15|Мисиюк Алексей | [11ALX11](https://github.com/11ALX11) | [210664](./trunk/PO-9_210664/) | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: ||
-|16|Николайчик Николай | [ProstoMyk](https://github.com/ProstoMyk) | [210665](./trunk/PO-9_210665) | :white_check_mark: | :white_check_mark: | :white_check_mark: |:white_check_mark:| :white_check_mark: ||| :white_check_mark: |||
+|16|Николайчик Николай | [ProstoMyk](https://github.com/ProstoMyk) | [210665](./trunk/PO-9_210665) | :white_check_mark: | :white_check_mark: | :white_check_mark: |:white_check_mark:| :white_check_mark: | :white_check_mark: || :white_check_mark: | :white_check_mark: ||
 |17|Ничингер Кирилл |[HeyJIOBUM](https://github.com/HeyJIOBUM)|[210666](./trunk/PO-9_210666/)|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:||
 |18|Оводок Вадим | [Vodemus](https://github.com/Vodemus) | [210667](./trunk/PO-9_210667/)| :white_check_mark: | :white_check_mark: | :white_check_mark: ||||||||
 |19|Солышко Дмитрий |[dimasolyshko](https://github.com/dimasolyshko)|[210668](./trunk/PO-9_210668/)|:white_check_mark:|:white_check_mark:||:white_check_mark:|:white_check_mark:|||:white_check_mark:|||
@@ -44,5 +44,5 @@
 |21|Тупик Юлия |||||||||||||
 |22|Тусюк Тимофей |||||||||||||
 |23|Харитонович Захар |[ZakharTS](https://github.com/ZakharTS)|[210672](https://github.com/brstu/OOTPISP-2023/tree/master/trunk/PO-9_210672)|:white_check_mark:|:white_check_mark:|:white_check_mark:||||||||
-|24|Шубич Дарья|[Dashubaa](https://github.com/Dashubaa)|[210674](https://github.com/brstu/OOTPISP-2023/tree/master/trunk/PO-9_210674)|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|||||
+|24|Шубич Дарья|[Dashubaa](https://github.com/Dashubaa)|[210674](https://github.com/brstu/OOTPISP-2023/tree/master/trunk/PO-9_210674)|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|||:white_check_mark:|
 |25|Зайд Халдун А. Алькатури|||||||||||||
