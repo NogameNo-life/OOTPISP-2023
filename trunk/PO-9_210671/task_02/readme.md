@@ -8,20 +8,20 @@
 
 Общий вид программы
 
-![image](./img/img1.png)
+![image](./img/1.png)
 
 Открытие файла
 
-![image](./img/img2.png)
+![image](./img/2.png)
 
 Открытый файл
 
-![image](./img/img3.png)
+![image](./img/3.png)
 
 Сохранение
 
-![image](./img/img4.png)
+![image](./img/4.png)
 
 Предупреждение о закрытии изменённого файла
 
-![image](./img/img5.png)
+![image](./img/5.png)
