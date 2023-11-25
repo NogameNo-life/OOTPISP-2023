@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.5)
 
-project(Lab_1_OOP VERSION 0.1 LANGUAGES CXX)
+project(po9_210671_lab1 VERSION 0.1 LANGUAGES CXX)
 
 set(CMAKE_AUTOUIC ON)
 set(CMAKE_AUTOMOC ON)
@@ -12,7 +12,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS Widgets)
 find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets)
 
-add_executable(Lab_1_OOP
+add_executable(po9_210671_lab1 
         main.cpp
         widget.cpp
         widget.h
@@ -20,5 +20,5 @@ add_executable(Lab_1_OOP
 )
 
 
-target_link_libraries(Lab_1_OOP PRIVATE Qt${QT_VERSION_MAJOR}::Widgets)
+target_link_libraries(po9_210671_lab1 PRIVATE Qt${QT_VERSION_MAJOR}::Widgets)
 
