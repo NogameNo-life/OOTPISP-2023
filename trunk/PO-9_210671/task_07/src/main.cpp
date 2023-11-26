@@ -6,7 +6,7 @@
 #include <QFontMetrics>
 #include <cmath>
 
-class LabWorkWidget : public QWidget {
+class LabWorkWidget : public QWidget {//////
 public:
     LabWorkWidget(QWidget *parent = nullptr) : QWidget(parent), time(0) {
         QTimer *timer = new QTimer(this);
