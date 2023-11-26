@@ -9,7 +9,7 @@
 #include <QFileDialog>
 
 int main(int argc, char **argv) {
-
+////
     QApplication app(argc, argv);
 
     // 1 Widget
