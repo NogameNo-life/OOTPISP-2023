@@ -6,9 +6,9 @@
 #include <QFontMetrics>
 #include <cmath>
 ////
-explicit class LabWorkWidget : public QWidget {
+class LabWorkWidget : public QWidget {
 public:
-    LabWorkWidget(QWidget *parent = nullptr) : QWidget(parent), time(0) {
+    explicit LabWorkWidget(QWidget *parent = nullptr) : QWidget(parent), time(0) {
         QTimer *timer = new QTimer(this);
         connect(timer, &QTimer::timeout, this, &LabWorkWidget::animate);
         timer->start(16); // 60 FPS
