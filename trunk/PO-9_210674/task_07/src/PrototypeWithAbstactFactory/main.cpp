@@ -15,7 +15,7 @@ private:
     std::string name;
 
 public:
-    OrdinaryUser(const std::string& name) : name(name) {}
+   explicit OrdinaryUser(const std::string& name) : name(name) {}
 
     User* clone() const override {
         return new OrdinaryUser(*this);
@@ -32,7 +32,7 @@ private:
     std::string name;
 
 public:
-    MagicUser(const std::string& name) : name(name) {}
+    explicit MagicUser(const std::string& name) : name(name) {}
 
     User* clone() const override {
         return new MagicUser(*this);
