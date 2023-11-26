@@ -38,6 +38,7 @@ private:
     int tableRows;
     int findMinElement(QVector<int>& arr, int size);
     int findMaxElement(QVector<int>& arr, int size);
+
 private slots:
     void generate();
     void process();
