@@ -1,4 +1,3 @@
-// temperatureconverter.h
 #ifndef TEMPERATURECONVERTER_H
 #define TEMPERATURECONVERTER_H
 

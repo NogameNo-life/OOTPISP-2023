@@ -1,4 +1,3 @@
-// temperatureconverter.cpp
 #include "temperatureconverter.h"
 #include "./ui_temperatureconverter.h"
 
@@ -7,7 +6,7 @@ TemperatureConverter::TemperatureConverter(QWidget *parent)
 {
     ui->setupUi(this);
 
-    temperatureTable = new QTableWidget(0, 3); // Start with 0 rows
+    temperatureTable = new QTableWidget(0, 3); 
     inputLineEdit = new QLineEdit();
     convertButton = new QPushButton("Convert");
     resetButton = new QPushButton("Reset");
