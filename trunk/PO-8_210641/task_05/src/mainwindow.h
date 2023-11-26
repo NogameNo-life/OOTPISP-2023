@@ -22,6 +22,7 @@ class MainWindow : public QMainWindow
 public:
     MainWindow(QWidget* parent = nullptr);
     ~MainWindow();
+    
     QLabel* l;
     QSqlDatabase sdb;
     QSqlQuery* query;
