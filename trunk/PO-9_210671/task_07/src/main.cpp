@@ -5,7 +5,7 @@
 #include <QFont>
 #include <QFontMetrics>
 #include <cmath>
-
+////
 class LabWorkWidget : public QWidget {
 public:
     LabWorkWidget(QWidget *parent = nullptr) : QWidget(parent), time(0) {
