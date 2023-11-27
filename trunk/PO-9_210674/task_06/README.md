@@ -48,9 +48,9 @@ double sortAscendingg(const char* word) {
 ```
 #### Результат работы программы ####
 
-![img.png](img/1.png)
+![img.png](img/1.PNG)
 
-![img_1.png](img/2.png)
+![img_1.png](img/2.PNG)
 #### Вывод ####
 
 Научились создавать простейшие DLL.
