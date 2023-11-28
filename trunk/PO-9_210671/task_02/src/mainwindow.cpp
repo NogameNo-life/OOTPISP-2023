@@ -5,7 +5,7 @@ MainWindow::MainWindow(const QString &fileName, QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
 {
-    // Инициализация главного окна и его компонентов
+    // Инициализация главного ок0на и его компонентов
     ui->setupUi(this);
     this->setAttribute(Qt::WA_DeleteOnClose);
 
