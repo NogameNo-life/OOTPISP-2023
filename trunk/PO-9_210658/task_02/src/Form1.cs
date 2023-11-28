@@ -1,3 +1,4 @@
+using SecondLab1.Properties;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
@@ -5,11 +6,11 @@ namespace SecondLab1
 {
     public partial class Form1 : Form
     {
-        private Stack<string> undoStack = new Stack<string>();
-        private Stack<string> redoStack = new Stack<string>();
-        private bool isUndoing = false;
+        private readonly Stack<string> undoStack = new Stack<string>();
+        private readonly Stack<string> redoStack = new Stack<string>();
+        private bool isUndoing;
         string filePath = "";
-        bool firstSave = false;
+        bool firstSave;
         public Form1()
         {
             InitializeComponent();
@@ -37,12 +38,12 @@ namespace SecondLab1
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            //создано Visual Studio
         }
 
         private void textBox_TextChanged(object sender, EventArgs e)
         {
-
+            //создано Visual Studio
         }
 
         private void Undo()
@@ -213,11 +214,11 @@ namespace SecondLab1
 
             if (openFileDialog.ShowDialog() == DialogResult.OK)
             {
-                string filePath = openFileDialog.FileName;
+                string file_path = openFileDialog.FileName;
 
                 try
                 {
-                    string fileContent = System.IO.File.ReadAllText(filePath);
+                    string fileContent = System.IO.File.ReadAllText(file_path);
                     textBox.Text = fileContent;
                 }
                 catch (Exception ex)
@@ -235,9 +236,6 @@ namespace SecondLab1
                 if (result == DialogResult.Yes)
                 {
                     SaveAs();
-                }
-                else if (result == DialogResult.No)
-                {
                 }
             }
         }
