@@ -12,7 +12,11 @@ public class Student : INotifyPropertyChanged
         get => _name;
         set
         {
-            if (_name == value) return;
+            if (_name == value) 
+            {
+                return;
+            }
+
             _name = value;
             PropertyChanged?.Invoke(this, new(nameof(Name)));
         }
@@ -24,7 +28,11 @@ public class Student : INotifyPropertyChanged
         get => _surname;
         set
         {
-            if (_surname == value) return;
+            if (_surname == value) 
+            {
+                return;
+            }
+
             _surname = value;
             PropertyChanged?.Invoke(this, new(nameof(Surname)));
         }
@@ -36,7 +44,11 @@ public class Student : INotifyPropertyChanged
         get => _patronymic;
         set
         {
-            if (_patronymic == value) return;
+            if (_patronymic == value) 
+            {
+                return;
+            }
+
             _patronymic = value;
             PropertyChanged?.Invoke(this, new(nameof(Patronymic)));
         }

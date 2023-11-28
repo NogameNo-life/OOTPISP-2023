@@ -19,7 +19,11 @@ public class Session : INotifyPropertyChanged
         get => _discipline;
         set
         {
-            if (_discipline == value) return;
+            if (_discipline == value) 
+            {
+                return;
+            }
+
             _discipline = value;
             PropertyChanged?.Invoke(this, new(nameof(Discipline)));
         }
@@ -31,7 +35,11 @@ public class Session : INotifyPropertyChanged
         get => _type;
         set
         {
-            if (_type == value) return;
+            if (_type == value) 
+            {
+                return;
+            }
+
             _type = value;
             PropertyChanged?.Invoke(this, new(nameof(Type)));
         }

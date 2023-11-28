@@ -12,7 +12,11 @@ public class Result : INotifyPropertyChanged
         get => _student;
         set
         {
-            if (_student == value) return;
+            if (_student == value)
+            {
+                return;
+            }
+
             _student = value;
             PropertyChanged?.Invoke(this, new(nameof(Student)));
         }
@@ -24,7 +28,11 @@ public class Result : INotifyPropertyChanged
         get => _session;
         set
         {
-            if (_session == value) return;
+            if (_session == value)
+            {
+                return;
+            }
+
             _session = value;
             PropertyChanged?.Invoke(this, new(nameof(Session)));
         }
@@ -36,7 +44,11 @@ public class Result : INotifyPropertyChanged
         get => _passed;
         set
         {
-            if (_passed == value) return;
+            if (_passed == value) 
+            {
+                return;
+            }
+
             _passed = value;
             PropertyChanged?.Invoke(this, new(nameof(Passed)));
         }
