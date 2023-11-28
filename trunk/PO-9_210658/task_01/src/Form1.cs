@@ -114,12 +114,12 @@ namespace FirstLab1
 
         private void greenTrackBar_Scroll_1(object sender, EventArgs e)
         {
-
+            //метод пуст так как был автоматически содан Visual studio и при его удалении программа может некорректно работать
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
-
+            //метод пуст так как был автоматически содан Visual studio и при его удалении программа может некорректно работать
         }
     }
 }
