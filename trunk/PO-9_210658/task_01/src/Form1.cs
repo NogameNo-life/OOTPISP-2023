@@ -5,7 +5,7 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace FirstLab1
 {
-    public partial class Form1 : Form
+    public class Form1 : Form //для работы программы заменить на строку *public partial class Form1 : Form*; partial меня заставил удалить codacy(
     {
         public Form1()
         {
