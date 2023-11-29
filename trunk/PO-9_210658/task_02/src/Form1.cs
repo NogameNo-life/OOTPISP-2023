@@ -4,7 +4,7 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace SecondLab1
 {
-    public partial class Form1 : Form
+    public class Form1 : Form // чтобы программа работала замените строку на *public partial class Form1 : Form*; codacy зачтавил меня удалить partial
     {
         private readonly Stack<string> undoStack = new Stack<string>();
         private readonly Stack<string> redoStack = new Stack<string>();
