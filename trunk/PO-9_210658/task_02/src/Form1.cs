@@ -248,9 +248,6 @@ namespace SecondLab1
 
                 this.Close();
             }
-            //else if (result == DialogResult.No)
-            //{
-            //}
         }
         private void SaveAs()
         {
@@ -282,9 +279,6 @@ namespace SecondLab1
             {
                 SaveAttention();
                 textBox.Text = "";
-            }
-            else if (result == DialogResult.No)
-            {
             }
         }
 
