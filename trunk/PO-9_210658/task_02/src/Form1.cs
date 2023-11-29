@@ -248,9 +248,9 @@ namespace SecondLab1
 
                 this.Close();
             }
-            else if (result == DialogResult.No)
-            {
-            }
+            //else if (result == DialogResult.No)
+            //{
+            //}
         }
         private void SaveAs()
         {
