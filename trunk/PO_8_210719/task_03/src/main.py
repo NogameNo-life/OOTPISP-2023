@@ -322,6 +322,7 @@ class MyWindow(QMainWindow):
 
         else:
             print("Invalid input. Please enter '1' or '2'.")
+            
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)
