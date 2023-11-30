@@ -6,7 +6,7 @@ int main(int argc, char *argv[])
     // Создание объекта приложения
     QApplication a(argc, argv);
 
-    // Установка свойств приложениявывывывы
+    // Установка свойств приложения66вывывывы
     a.setApplicationName("Text Editor");
     a.setApplicationVersion("0.1");
     a.setOrganizationName("ExampleSoft");
