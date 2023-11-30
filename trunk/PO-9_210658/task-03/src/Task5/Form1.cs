@@ -7,7 +7,7 @@ namespace Task5
     public partial class Form1 : Form
     {
 
-        private Dictionary<string, List<string>> carImports; 
+        private readonly Dictionary<string, List<string>> carImports; 
 
         public Form1()
         {
@@ -17,7 +17,7 @@ namespace Task5
 
         private void button1_Click(object sender, EventArgs e)
         {
-            // Создано Visual Studio
+            // СЃРѕР·РґР°РЅРѕ Visual Studio
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -28,11 +28,11 @@ namespace Task5
             {
                 comboBox.Items.Add(selectedValue);
                 comboBox.Text = ""; 
-                MessageBox.Show("Значение сохранено и добавлено в список");
+                MessageBox.Show("Р—РЅР°С‡РµРЅРёРµ СЃРѕС…СЂР°РЅРµРЅРѕ Рё РґРѕР±Р°РІР»РµРЅРѕ РІ СЃРїРёСЃРѕРє");
             }
             else
             {
-                MessageBox.Show("Пожалуйста, выберите или введите значение");
+                MessageBox.Show("РџРѕР¶Р°Р»СѓР№СЃС‚Р°, РІС‹Р±РµСЂРёС‚Рµ РёР»Рё РІРІРµРґРёС‚Рµ Р·РЅР°С‡РµРЅРёРµ");
             }
         }
 
@@ -62,12 +62,16 @@ namespace Task5
                 {
                     bool isImported = random.Next(2) == 1; 
 
-                    if (isImported)
+                    if (isImported){
                         importedCountries.Add(country);
+                    }
+                        
                 }
 
-                if (importedCountries.Count > 0)
+                if (importedCountries.Count > 0){
                     carImports.Add(carBrand, importedCountries);
+                }
+                    
             }
 
             SetTooltips();
@@ -93,15 +97,19 @@ namespace Task5
             {
                 List<string> importedCountries = carImports[carBrand];
 
-                if (importedCountries.Count == comboBox.Items.Count)
-                    return "Машина импортирована во все страны";
+                if (importedCountries.Count == comboBox.Items.Count){
+                    return "РњР°С€РёРЅР° РёРјРїРѕСЂС‚РёСЂРѕРІР°РЅР° РІРѕ РІСЃРµ СЃС‚СЂР°РЅС‹";
+                }
+                    
                 else if (importedCountries.Count > 0)
                 {
                     string countriesList = string.Join(", ", importedCountries);
-                    return $"Машина импортирована в некоторые страны: {countriesList}";
+                    return $"РњР°С€РёРЅР° РёРјРїРѕСЂС‚РёСЂРѕРІР°РЅР° РІ РЅРµРєРѕС‚РѕСЂС‹Рµ СЃС‚СЂР°РЅС‹: {countriesList}";
                 }
-                else
-                    return "Машина не импортирована ни в одну страну";
+                else{
+                    return "РњР°С€РёРЅР° РЅРµ РёРјРїРѕСЂС‚РёСЂРѕРІР°РЅР° РЅРё РІ РѕРґРЅСѓ СЃС‚СЂР°РЅСѓ";
+                }
+                    
             }
 
             return string.Empty;

@@ -18,28 +18,24 @@ namespace Task6
                 string inputFile = openFileDialog.FileName;
                 string outputFile = "g.txt";
 
-                // Чтение чисел из файла f
                 int[] numbers = File.ReadAllText(inputFile)
                     .Split(',')
                     .Select(int.Parse)
                     .ToArray();
 
-                // Фильтрация чисел
                 int[] evenNumbers = numbers.Where(n => n % 2 == 0).ToArray();
                 int[] divisibleBy3NotBy7 = numbers.Where(n => n % 3 == 0 && n % 7 != 0).ToArray();
                 int[] perfectSquares = numbers.Where(n => IsPerfectSquare(n)).ToArray();
 
-                // Запись результатов в файл g
-                File.WriteAllText(outputFile, "а)" + string.Join(", ", evenNumbers) + Environment.NewLine);
-                File.AppendAllText(outputFile, "б)" + string.Join(", ", divisibleBy3NotBy7) + Environment.NewLine);
-                File.AppendAllText(outputFile, "в)" + string.Join(", ", perfectSquares));
+                File.WriteAllText(outputFile, "Р°)" + string.Join(", ", evenNumbers) + Environment.NewLine);
+                File.AppendAllText(outputFile, "Р±)" + string.Join(", ", divisibleBy3NotBy7) + Environment.NewLine);
+                File.AppendAllText(outputFile, "РІ)" + string.Join(", ", perfectSquares));
 
-                // Вывод результатов в TextBox
-                textBox1.Text = "а)" + string.Join(", ", evenNumbers) + Environment.NewLine;
-                textBox1.AppendText("б)" + string.Join(", ", divisibleBy3NotBy7) + Environment.NewLine);
-                textBox1.AppendText("в)" + string.Join(", ", perfectSquares));
+                textBox1.Text = "Р°)" + string.Join(", ", evenNumbers) + Environment.NewLine;
+                textBox1.AppendText("Р±)" + string.Join(", ", divisibleBy3NotBy7) + Environment.NewLine);
+                textBox1.AppendText("РІ)" + string.Join(", ", perfectSquares));
 
-                MessageBox.Show("Результаты записаны в файл g.txt и выведены в TextBox.");
+                MessageBox.Show("Р РµР·СѓР»СЊС‚Р°С‚С‹ Р·Р°РїРёСЃР°РЅС‹ РІ С„Р°Р№Р» g.txt Рё РІС‹РІРµРґРµРЅС‹ РІ TextBox.");
             }
 
         }

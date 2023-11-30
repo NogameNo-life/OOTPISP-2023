@@ -11,6 +11,7 @@ namespace ThirdLab1
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
+            //автоматически создано visual studio 
         }
         private void ProcessText()
         {
@@ -24,7 +25,7 @@ namespace ThirdLab1
                 {
                     isNum = true;
 
-                    if (isFirst) 
+                    if (isFirst == true) 
                     {
                         x = x * 10 + (str[i] - '0'); 
                     }
@@ -35,7 +36,7 @@ namespace ThirdLab1
                 }
                 else
                 {
-                    if (isNum)
+                    if (isNum == true)
                     {
                         isNum = false;
                         isFirst = false; 

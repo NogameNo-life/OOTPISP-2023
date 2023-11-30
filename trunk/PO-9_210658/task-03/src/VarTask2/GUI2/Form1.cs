@@ -75,7 +75,7 @@ namespace GUIvarTask2
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
-            
+            //автоматически создано visual studio
         }
 
         private void num1_ValueChanged(object sender, EventArgs e)

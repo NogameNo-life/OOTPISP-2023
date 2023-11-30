@@ -7,7 +7,7 @@ namespace LR_3_1
 {
     public partial class Form1 : Form
     {
-        private List<int> numbersList;
+        private readonly List<int> numbersList;
 
         public Form1()
         {
@@ -35,7 +35,7 @@ namespace LR_3_1
 
             if (startPosition < 1 || endPosition > numbersList.Count || startPosition > endPosition)
             {
-                MessageBox.Show("Некорректные позиции для удаления");
+                MessageBox.Show("РќРµРєРѕСЂСЂРµРєС‚РЅС‹Рµ РїРѕР·РёС†РёРё РґР»СЏ СѓРґР°Р»РµРЅРёСЏ");
                 return;
             }
 

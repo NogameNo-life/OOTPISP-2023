@@ -59,12 +59,12 @@ namespace LR4_1
 
         private void numericUpDown3_ValueChanged(object sender, EventArgs e)
         {
-            //������� visual studio
+            //автоматически создано visual studio
         }
 
         private void numericUpDown6_ValueChanged(object sender, EventArgs e)
         {
-            //������� visual studio
+            //автоматически создано visual studio
         }
 
         private void button2_Click(object sender, EventArgs e)
