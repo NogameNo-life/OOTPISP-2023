@@ -60,7 +60,7 @@ namespace OOP_7
         }
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-
+            //создано автоматически visual studio
         }
         
 
@@ -77,12 +77,14 @@ namespace OOP_7
                 for (int col = 0; col < dataGridView1.Columns.Count; col++)
                 {
                     int cellValue = Convert.ToInt32(dataGridView1.Rows[row].Cells[col].Value);
-                    if (Math.Log(cellValue, 2) % 1 == 0 && cellValue != 1)
+                    double logarithm2check = Math.Log(cellValue, 2);
+                    double logarithm3check = Math.Log(cellValue, 3);
+                    if (Math.Abs(logarithm2check - Math.Round(logarithm2check)) < 0.000001 && cellValue != 1)
                     {
                         count2++;
                         dataGridView1.Rows[row].Cells[col].Style.BackColor = Color.Blue;
                     }
-                    else if (Math.Log(cellValue, 3) % 1 == 0 && cellValue != 1)
+                    else if (Math.Abs(logarithm3check - Math.Round(logarithm3check)) < 0.000001 && cellValue != 1)
                     {
                         count3++;
                         dataGridView1.Rows[row].Cells[col].Style.BackColor = Color.Red;
@@ -142,17 +144,17 @@ namespace OOP_7
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            //создано автоматически visual studio
         }
 
         private void dataGridView1_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
         {
-
+            //создано автоматически visual studio
         }
 
         private void toolTip1_Popup(object sender, PopupEventArgs e)
         {
-            
+            //создано автоматически visual studio
         }
     }
 }
