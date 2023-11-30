@@ -5,7 +5,7 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace FirstLab1
 {
-    public class Form1 : Form //для работы программы заменить на строку *public partial class Form1 : Form*; partial меня заставил удалить codacy(
+    public partial class Form1 : Form 
     {
         public Form1()
         {
@@ -88,7 +88,7 @@ namespace FirstLab1
         {
             textB.ScrollBars = ScrollBars.Vertical;
             OpenFileDialog openFileDialog = new OpenFileDialog();
-            openFileDialog.Filter = "Текстовые файлы (*.txt)|*.txt";
+            openFileDialog.Filter = "Text files (*.txt)|*.txt";
 
             if (openFileDialog.ShowDialog() == DialogResult.OK)
             {
@@ -101,7 +101,7 @@ namespace FirstLab1
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("Ошибка при чтении файла: " + ex.Message, "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Error while reading file: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
         }
@@ -114,12 +114,12 @@ namespace FirstLab1
 
         private void greenTrackBar_Scroll_1(object sender, EventArgs e)
         {
-            //метод пуст так как был автоматически содан Visual studio и при его удалении программа может некорректно работать
+            //С„СѓРЅРєС†РёСЏ, Р°РІС‚РѕРјР°С‚РёС‡РµСЃРєРё СЃРѕР·РґР°РЅРЅР°СЏ Visual studio, РЅРµР»СЊР·СЏ СѓРґР°Р»СЏС‚СЊ
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
-            //метод пуст так как был автоматически содан Visual studio и при его удалении программа может некорректно работать
+            //С„СѓРЅРєС†РёСЏ, Р°РІС‚РѕРјР°С‚РёС‡РµСЃРєРё СЃРѕР·РґР°РЅРЅР°СЏ Visual studio, РЅРµР»СЊР·СЏ СѓРґР°Р»СЏС‚СЊ
         }
     }
 }
