@@ -4,7 +4,7 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace SecondLab1
 {
-    public class Form1 : Form // чтобы программа работала замените строку на *public partial class Form1 : Form*; codacy зачтавил меня удалить partial
+    public partial class Form1 : Form 
     {
         private readonly Stack<string> undoStack = new Stack<string>();
         private readonly Stack<string> redoStack = new Stack<string>();
@@ -38,12 +38,12 @@ namespace SecondLab1
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            //создано Visual Studio
+            //СЃРѕР·РґР°РЅРѕ Visual Studio
         }
 
         private void textBox_TextChanged(object sender, EventArgs e)
         {
-            //создано Visual Studio
+            //СЃРѕР·РґР°РЅРѕ Visual Studio
         }
 
         private void Undo()
