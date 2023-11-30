@@ -2,13 +2,24 @@ namespace ThirdLab1
 {
     public partial class Form1 : Form
     {
+        bool isFirst = true;
         public Form1()
         {
             InitializeComponent();
             textBox.Text = "X = ; Y = ;";
             textBox.SelectionStart = textBox.TextLength;
         }
-
+        bool Foo()
+        {
+            if (isFirst == true)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
             //автоматически создано visual studio 
@@ -16,16 +27,16 @@ namespace ThirdLab1
         private void ProcessText()
         {
             int x = 0, y = 0;
-            bool isFirst = true, isNum = false;
+            bool isNum = false;
             string str = textBox.Text;
-
+            isFirst = true;
             for (int i = 0; i < str.Length; i++) 
             {
                 if (Char.IsDigit(str[i]))
                 {
                     isNum = true;
 
-                    if (isFirst == true) 
+                    if (Foo()) 
                     {
                         x = x * 10 + (str[i] - '0'); 
                     }
