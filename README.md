@@ -25,12 +25,12 @@
 |2|Бердникова Вероника|||||||||||||
 |3|Василюк Виктор|||||||||||||
 |4|Дарашкевич Дмитрий |||||||||||||
-|5|Зейденс Никита |||||||||||||
+|5|Зейденс Никита |[NiKiTjAOFF](https://github.com/NIKITJAOFF)|[210654](./trunk/PO-9_210654/)||||:white_check_mark:|||||||
 |6|Зеленков Константин |[Pandus](https://github.com/Pandusss)|[210655](./trunk/PO-9_210655/)|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:||:white_check_mark:|||
 |7|Качаловский Данил |[dkachalovskiy](https://github.com/dkachalovskiy)|[210656](./trunk/PO-9_210656/)|✅|✅|✅|✅|✅|✅|✅|✅|✅|
 |8|Кот Анастасия |[peppemintu](https://github.com/peppemintu)|[210657](./trunk//PO-9_210657)|✅|✅|||||||||
 |9|Кухарев Дмитрий |||||||||||||
-|10|Кучко Ярослав |||||||||||||
+|10|Кучко Ярослав |[YaroslavKuchko26](https://github.com/YaroslavKuchko26)|[210659](./trunk//PO-9_210659)|✅|✅|||||||||
 |11|Лебедович Вадим|||||||||||||
 |12|Марзан Андрей | [Nenroin](https://github.com/Nenroin) | [210661](./trunk/PO-9_210661/) | :white_check_mark: | :white_check_mark: |:white_check_mark:|:white_check_mark:|||||||
 |13|Матюшик Екатерина |||||||||||||
