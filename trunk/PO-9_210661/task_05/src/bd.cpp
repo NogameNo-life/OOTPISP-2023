@@ -47,8 +47,6 @@ void BD::disconnectFromDatabase()
     db.removeDatabase(QSqlDatabase::defaultConnection);
 }
 
-#include <QRandomGenerator>
-
 void BD::initializeDatabase()
 {
     connectToDatabase();
