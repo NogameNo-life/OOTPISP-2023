@@ -22,7 +22,7 @@
 |№|ФИО|GitHub username|№ зачетки/студенческого|#0|#1|#2|#3|#4|#5|#6|#7|#8|
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
 |1|Аксютик Демьян|||||||||||||
-|2|Бердникова Вероника|||||||||||||
+|2|Бердникова Вероника|[Veroniiika](https://github.com/Veroniiika)|[210651](./trunk//PO-9_210651)|✅|✅|||||||||
 |3|Василюк Виктор|||||||||||||
 |4|Дарашкевич Дмитрий |||||||||||||
 |5|Зейденс Никита |||||||||||||
@@ -36,7 +36,7 @@
 |13|Матюшик Екатерина |||||||||||||
 |14|Мельничук Владислав | [nikalow1](https://github.com/nikalow1) | [210663](./trunk/PO-9_210663/) | :white_check_mark: | :white_check_mark: ||| :white_check_mark: ||||||
 |15|Мисиюк Алексей | [11ALX11](https://github.com/11ALX11) | [210664](./trunk/PO-9_210664/) | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: ||
-|16|Николайчик Николай | [ProstoMyk](https://github.com/ProstoMyk) | [210665](./trunk/PO-9_210665) | :white_check_mark: | :white_check_mark: | :white_check_mark: |:white_check_mark:| :white_check_mark: | :white_check_mark: || :white_check_mark: | :white_check_mark: ||
+|16|Николайчик Николай | [ProstoMyk](https://github.com/ProstoMyk) | [210665](./trunk/PO-9_210665) | :white_check_mark: | :white_check_mark: | :white_check_mark: |:white_check_mark:| :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
 |17|Ничингер Кирилл |[HeyJIOBUM](https://github.com/HeyJIOBUM)|[210666](./trunk/PO-9_210666/)|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:||
 |18|Оводок Вадим | [Vodemus](https://github.com/Vodemus) | [210667](./trunk/PO-9_210667/)| :white_check_mark: | :white_check_mark: | :white_check_mark: || :white_check_mark: ||||||
 |19|Солышко Дмитрий |[dimasolyshko](https://github.com/dimasolyshko)|[210668](./trunk/PO-9_210668/)|:white_check_mark:|:white_check_mark:||:white_check_mark:|:white_check_mark:|||:white_check_mark:|||
