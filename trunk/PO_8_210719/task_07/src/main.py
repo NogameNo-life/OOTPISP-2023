@@ -50,6 +50,7 @@ class LabWorkApp:
         x = self.center[0] + self.radius * 8 * math.sin(angle * math.pi / 180.0)
         y = self.center[1] + self.radius * 8 * math.cos(angle * math.pi / 180.0)
         return x, y
+        
 
 if __name__ == "__main__":
     root = tk.Tk()
