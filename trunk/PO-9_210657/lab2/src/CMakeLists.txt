@@ -20,7 +20,6 @@ set(PROJECT_SOURCES
 )
 
 add_executable(TextEditor
-        MANUAL_FINALIZATION
         ${PROJECT_SOURCES}
     )
 
