@@ -26,7 +26,7 @@ class MyWindow(QMainWindow):
         self.fifth_exercise = None
         self.sixth_exercise = None
 ```
-# Меню
+## Меню
 ```Python
     def validate_and_execute(self):
         user_input = self.numberEntry.text()
@@ -59,7 +59,7 @@ class MyWindow(QMainWindow):
             print("Invalid input. Please enter '1' or '2'.")
 ```
 
-#Классы заданий 1-6
+## Классы заданий 1-6
 ```Python
 class FirstExercise(QMainWindow):
   pass
