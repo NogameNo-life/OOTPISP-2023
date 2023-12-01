@@ -7,3 +7,5 @@
 ### Скиншоты ###
 
 ![.png](./images/1.png)
+
+![.png](./images/2.png)
