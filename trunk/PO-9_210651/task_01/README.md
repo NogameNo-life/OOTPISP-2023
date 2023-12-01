@@ -14,18 +14,18 @@
 ### Изменение цвета
 
 При запуске первой программы открывается данное окно:
-![Color_change.png](.\images/Color_change.png)
+![Color_change.png](./images/Color_change.png)
 
 При изменении положения ползунка меняется цвет и отображается в поле справа.
-![Change.png](.\images/Change.png)
+![Change.png](./images/Change.png)
 
 Цвет меняется и при изменении числовых значений в полях SpinBox. Все изменения между числовыми значениями и значениями ползунков синхронизированы.
-![Change2.png](.\images/Change2.png)
+![Change2.png](./images/Change2.png)
 
 ### Обозреватель файлов
 
 При запуске программы открывается данное окно:
-![file_opener.png](.\images/file_opener.png)
+![file_opener.png](./images/file_opener.png)
 
 Откроем файл и увидим следующий результат:
-![file_opener_example.png](.\images/file_opener_example.png)
+![file_opener_example.png](./images/file_opener_example.png)
