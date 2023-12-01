@@ -4,40 +4,84 @@
 
 ## Реализация/ход работы
 
-Запуск программы приводит к данному окну, в котором вводим номер задания
-Окно приложения:
+# Окно приложения:
+```Python
+class MyWindow(QMainWindow):
+    def __init__(self):
+        super().__init__()
+        self.setGeometry(650, 200, 300, 200)
+        self.setWindowTitle('Задание')
+        self.numberLabel = QLabel('Введите номер задания', self)
+        self.numberLabel.move(30, 20)
+        self.numberEntry = QLineEdit(self)
+        self.numberEntry.move(30, 70)
+        self.numberEntry.resize(240, 30)
+        self.number_button = QPushButton('Подтвердить', self)
+        self.number_button.move(80, 120)
+        self.number_button.clicked.connect(self.validate_and_execute)
+        self.first_exercise = None
+        self.second_exercise = None
+        self.third_exercise = None
+        self.fourth_exercise = None
+        self.fifth_exercise = None
+        self.sixth_exercise = None
+```
+# Меню
+```Python
+    def validate_and_execute(self):
+        user_input = self.numberEntry.text()
+        if user_input == '1':
+            if not self.first_exercise:
+                self.first_exercise = FirstExercise()
+            self.first_exercise.show()
+        elif user_input == '2':
+            if not self.second_exercise:
+                self.second_exercise = SecondExercise()
+            self.second_exercise.show()
+        elif user_input == '3':
+            if not self.third_exercise:
+                self.third_exercise = ThirdExercise()
+            self.third_exercise.show()
+        elif user_input == '4':
+            if not self.fourth_exercise:
+                self.fourth_exercise = FourthExercise()
+            self.fourth_exercise.show()
+        elif user_input == '5':
+            if not self.fifth_exercise:
+                self.fifth_exercise = FifthExercise()
+            self.fifth_exercise.show()
+        elif user_input == '6':
+            if not self.sixth_exercise:
+                self.sixth_exercise = SixthExercise()
+            self.sixth_exercise.show()
 
-![image](./images/0.png)
+        else:
+            print("Invalid input. Please enter '1' or '2'.")
+```
 
-Число, лежащее в диапазоне от -999 до 999, вводится в lineedit. Вывести информационное сообщение − словесное описание данного числа вида «отрицательное двузначное число», «нулевое число», «положительное однозначное число» и т.д.
-Окно приложения:
+#Классы заданий 1-6
+```Python
+class FirstExercise(QMainWindow):
+  pass
+class SecondExercise(QMainWindow):
+  pass
+class ThirdExercise(QMainWindow):
+  pass
+class FourthExercise(QMainWindow):
+  pass
+class FifthExercise(QMainWindow):
+  pass
+class SixthExercise(QMainWindow):
+  pass
+```
 
-![image](./images/1.png)
 
-Дан массив размера N. Вывести его элементы в обратном порядке.
-Окно приложения:
 
-![image](./images/2.png)
 
-Заполнить список случайными элементами. Реализовать добавление элемента в конец списка и удаления с конца (использовать RadioButton для выбора действия).
-Окно приложения:
 
-![image](./images/3.1.png)
-![image](./images/3.2.png)
 
-Заполнить стек 10 случайными числами из интервала [-10; 20]. Просмотреть содержимое стека. Найти сумму положительных чисел, хранящихся в стеке.
 
-![image](./images/4.png)
 
-Имеется список класса (все имена различны). Определить, есть ли в классе человек, который побывал в гостях у всех. (Для каждого ученика составить множество побывавших у него в гостях друзей, сам ученик в это множество не входит.)
 
-![image](./images/5.png)
 
-Дан файл f, компоненты которого являются действительными числами. Найдите:
-а) наибольший компонент;
-б) наименьший компонент с четным номером;
-в) наибольший модуль компонента с нечётным номером;
-г) разность первого и последнего компонента файла.
 
-![image](./images/6.1.png)
-![image](./images/6.2.png)
