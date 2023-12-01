@@ -15,7 +15,7 @@ MainWindow::MainWindow(QWidget *parent)
     connect(ui->GreenSlider, &QSlider::valueChanged, this, &MainWindow::greenValueChanged);
     connect(ui->BlueValue, &QSpinBox::valueChanged, this, &MainWindow::blueValueChanged);
     connect(ui->BlueSlider, &QSlider::valueChanged, this, &MainWindow::blueValueChanged);
-    connect(ui->enterFile, &QPushButton::clicked, this, &MainWindow::openFile);
+    connect(ui->enterFile, &QPushButton::clicked, this, &MainWindow::openFile); 
     color = {0, 0, 0};
 }
 
