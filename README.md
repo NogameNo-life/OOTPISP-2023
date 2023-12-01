@@ -12,7 +12,7 @@
 |6|Серко Александра|[AlexaBailey](https://github.com/AlexaBailey)| [210643](./trunk/PO-8_210643/) |:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark: |:white_check_mark:| | | | | |
 |7|Соколов Семен| | | | | | | | | | | | |
 |8|Соколовский Никита| | | | | | | | | | | | |
-|9|Сорока Вадим| | | | | | | | | | | | |
+|9|Сорока Вадим| | | | | ✅ | | | | | | | |
 |10|Таразевич Никита|[lolkeklal](https://github.com/lolkeklal) |[210647](./trunk/PO-8_210647/) |✅ |✅ |✅ |✅ | ✅|✅ |✅ |✅ |✅ | |
 |11|Шлыков Андрей| | | | | | | | | | | | |
 |12|Янчук Артем| | | | | | | | | | | | |
