@@ -1,3 +1,4 @@
+
 cmake_minimum_required(VERSION 3.5)
 project(Lab_4 LANGUAGES CXX)
 set(CMAKE_AUTOUIC ON)
