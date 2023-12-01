@@ -2,6 +2,8 @@ import sys
 import sqlite3
 from PyQt5.QtWidgets import QApplication, QMainWindow, QPushButton, QTableWidget, QTableWidgetItem, QVBoxLayout, QWidget
 
+
+
 class MainWindow(QMainWindow):
     def __init__(self):
         super().__init__()
