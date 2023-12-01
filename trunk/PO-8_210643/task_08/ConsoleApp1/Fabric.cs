@@ -8,6 +8,7 @@ public class Fabric
         return new Rectangle(a, b);
     }
 
+
     public virtual Line CreateLine(int length)
     {
         return new Line(length);
