@@ -26,15 +26,15 @@
 |3|Василюк Виктор|||||||||||||
 |4|Дарашкевич Дмитрий |||||||||||||
 |5|Зейденс Никита |||||||||||||
-|6|Зеленков Константин |[Pandus](https://github.com/Pandusss)|[210655](./trunk/PO-9_210655/)|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:||||||
+|6|Зеленков Константин |[Pandus](https://github.com/Pandusss)|[210655](./trunk/PO-9_210655/)|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:||:white_check_mark:|||
 |7|Качаловский Данил |[dkachalovskiy](https://github.com/dkachalovskiy)|[210656](./trunk/PO-9_210656/)|✅|✅|✅|✅|✅|✅|✅|✅|✅|
 |8|Кот Анастасия |[peppemintu](https://github.com/peppemintu)|[210657](./trunk//PO-9_210657)|✅|✅|||||||||
 |9|Кухарев Дмитрий |[Ian3707](https://github.com/Ian3707)|[210658](./trunk//PO-9_210658)|✅|✅|||||||||||
-|10|Кучко Ярослав |||||||||||||
+|10|Кучко Ярослав |[YaroslavKuchko26](https://github.com/YaroslavKuchko26)|[210659](./trunk//PO-9_210659)|✅|✅|||||||||
 |11|Лебедович Вадим|||||||||||||
 |12|Марзан Андрей | [Nenroin](https://github.com/Nenroin) | [210661](./trunk/PO-9_210661/) | :white_check_mark: | :white_check_mark: |:white_check_mark:|:white_check_mark:|||||||
 |13|Матюшик Екатерина |||||||||||||
-|14|Мельничук Владислав | [nikalow1](https://github.com/nikalow1) | [210663](./trunk/PO-9_210663/) | :white_check_mark: | :white_check_mark: |||||||||
+|14|Мельничук Владислав | [nikalow1](https://github.com/nikalow1) | [210663](./trunk/PO-9_210663/) | :white_check_mark: | :white_check_mark: ||| :white_check_mark: ||||||
 |15|Мисиюк Алексей | [11ALX11](https://github.com/11ALX11) | [210664](./trunk/PO-9_210664/) | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: ||
 |16|Николайчик Николай | [ProstoMyk](https://github.com/ProstoMyk) | [210665](./trunk/PO-9_210665) | :white_check_mark: | :white_check_mark: | :white_check_mark: |:white_check_mark:| :white_check_mark: | :white_check_mark: || :white_check_mark: | :white_check_mark: ||
 |17|Ничингер Кирилл |[HeyJIOBUM](https://github.com/HeyJIOBUM)|[210666](./trunk/PO-9_210666/)|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:||
@@ -42,7 +42,7 @@
 |19|Солышко Дмитрий |[dimasolyshko](https://github.com/dimasolyshko)|[210668](./trunk/PO-9_210668/)|:white_check_mark:|:white_check_mark:||:white_check_mark:|:white_check_mark:|||:white_check_mark:|||
 |20|Ступак Дмитрий |[Papriosa](https://github.com/Papirosa225) | [210669](./trunk/PO-9_210669/)|:white_check_mark:|:white_check_mark:|:white_check_mark:||:white_check_mark:|||||:white_check_mark:||
 |21|Тупик Юлия |||||||||||||
-|22|Тусюк Тимофей |[HuKtoHe3HaeT](https://github.com/HuKtoHe3HaeT)|[210671](./trunk/PO-9_210671/)|:white_check_mark:|:white_check_mark:|||||||||
-|23|Харитонович Захар |[ZakharTS](https://github.com/ZakharTS)|[210672](https://github.com/brstu/OOTPISP-2023/tree/master/trunk/PO-9_210672)|:white_check_mark:|:white_check_mark:|:white_check_mark:||||||||
+|22|Тусюк Тимофей |[HuKtoHe3HaeT](https://github.com/HuKtoHe3HaeT)|[210671](./trunk/PO-9_210671/)|||||||||:white_check_mark:||
+|23|Харитонович Захар |[ZakharTS](https://github.com/ZakharTS)|[210672](./trunk/PO-9_210672/)|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:||||||
 |24|Шубич Дарья|[Dashubaa](https://github.com/Dashubaa)|[210674](./trunk/PO-9_210674)|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:||:white_check_mark:||
 |25|Зайд Халдун А. Алькатури|||||||||||||
