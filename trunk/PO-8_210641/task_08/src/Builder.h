@@ -6,23 +6,17 @@
 
 class Head {
 public:
-    std::string getInfo() const {
-        return "Robot Head";
-    }
+    std::string getInfo() const;
 };
 
 class Body {
 public:
-    std::string getInfo() const {
-        return "Robot Body";
-    }
+    std::string getInfo() const;
 };
 
 class Engine {
 public:
-    std::string getInfo() const {
-        return "Robot Engine";
-    }
+    std::string getInfo() const;
 };
 
 class Robot {
@@ -32,18 +26,6 @@ private:
     Engine* engine{ nullptr };
 
 public:
-    void setHead(Head* newHead) {
-        head = newHead;
-    }
-
-    void setBody(Body* newBody) {
-        body = newBody;
-    }
-
-    void setEngine(Engine* newEngine) {
-        engine = newEngine;
-    }
-
     Head* getHead() const {
         return head;
     }
@@ -55,6 +37,10 @@ public:
     Engine* getEngine() const {
         return engine;
     }
+
+    void setHead(Head* newHead);
+    void setBody(Body* newBody);
+    void setEngine(Engine* newEngine);
 };
 
 class RobotBuilder {
@@ -72,6 +58,8 @@ private:
 
 public:
     ConcreteRobotBuilder();
+    ~ConcreteRobotBuilder();
+
     void buildHead() override;
     void buildBody() override;
     void buildEngine() override;
