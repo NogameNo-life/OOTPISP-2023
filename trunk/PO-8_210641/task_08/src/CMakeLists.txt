@@ -13,8 +13,8 @@ find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets)
 
 add_executable(po8_210641_task_08
         main.cpp
-        AbstractFactory.cpp
-        Builder.cpp
+        AbstractFactory.h
+        Builder.h
 )
 
 target_link_libraries(po8_210641_task_08 Qt${QT_VERSION_MAJOR}::Widgets)
