@@ -6,17 +6,23 @@
 
 class Head {
 public:
-    std::string getInfo() const;
+    std::string getInfo() const {
+        return "Robot Head";
+    }
 };
 
 class Body {
 public:
-    std::string getInfo() const;
+    std::string getInfo() const {
+        return "Robot Body";
+    }
 };
 
 class Engine {
 public:
-    std::string getInfo() const;
+    std::string getInfo() const {
+        return "Robot Engine";
+    }
 };
 
 class Robot {
@@ -24,23 +30,18 @@ private:
     Head* head{ nullptr };
     Body* body{ nullptr };
     Engine* engine{ nullptr };
-
 public:
-    Head* getHead() const {
-        return head;
+    void setHead(Head* newHead) {
+        head = newHead;
     }
 
-    Body* getBody() const {
-        return body;
+    void setBody(Body* newBody) {
+        body = newBody;
     }
 
-    Engine* getEngine() const {
-        return engine;
+    void setEngine(Engine* newEngine) {
+        engine = newEngine;
     }
-
-    void setHead(Head* newHead);
-    void setBody(Body* newBody);
-    void setEngine(Engine* newEngine);
 };
 
 class RobotBuilder {
@@ -49,7 +50,6 @@ public:
     virtual void buildBody() = 0;
     virtual void buildEngine() = 0;
     virtual ~RobotBuilder() {}
-    virtual Robot* getRobot() = 0;
 };
 
 class ConcreteRobotBuilder : public RobotBuilder {
@@ -57,18 +57,30 @@ private:
     Robot* robot;
 
 public:
-    ConcreteRobotBuilder();
-    ~ConcreteRobotBuilder();
+    void buildHead() override {
+        robot->setHead(new Head());
+    }
 
-    void buildHead() override;
-    void buildBody() override;
-    void buildEngine() override;
-    Robot* getRobot() override;
+    void buildBody() override {
+        robot->setBody(new Body());
+    }
+
+    void buildEngine() override {
+        robot->setEngine(new Engine());
+    }
+
+    Robot* getRobot() {
+        return robot;
+    }
 };
 
 class Director {
 public:
-    void buildRobot(RobotBuilder* builder);
+    void buildRobot(RobotBuilder* builder) {
+        builder->buildHead();
+        builder->buildBody();
+        builder->buildEngine();
+    }
 };
 
 #endif // BUILDER_H

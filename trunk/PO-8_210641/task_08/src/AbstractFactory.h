@@ -31,6 +31,7 @@ public:
     virtual ~Language() {}
 };
 
+
 class WindowsList : public List {
 public:
     void render() const override {
@@ -75,6 +76,7 @@ public:
     }
 };
 
+
 class AbstractFactory {
 public:
     virtual List* createList() const = 0;
@@ -86,14 +88,35 @@ public:
 
 class AbstractPrototypeFactory : public AbstractFactory {
 public:
-    AbstractPrototypeFactory(List* ls, InputField* ifl, Button* btn, Language* lng);
-    virtual ~AbstractPrototypeFactory();
+    AbstractPrototypeFactory(List* ls, InputField* ifl, Button* btn, Language* lng) {
+        listPrototype = ls;
+        inputFieldPrototype = ifl;
+        buttonPrototype = btn;
+        languagePrototype = lng;
+    }
 
-    List* createList() const override;
-    InputField* createInputField() const override;
-    Button* createButton() const override;
-    Language* createLanguage() const override;
+    virtual ~AbstractPrototypeFactory() {
+        delete listPrototype;
+        delete inputFieldPrototype;
+        delete buttonPrototype;
+        delete languagePrototype;
+    }
 
+    List* createList() const override {
+        return listPrototype->clone();
+    }
+
+    InputField* createInputField() const override {
+        return inputFieldPrototype->clone();
+    }
+
+    Button* createButton() const override {
+        return buttonPrototype->clone();
+    }
+
+    Language* createLanguage() const override {
+        return languagePrototype->clone();
+    }
 private:
     List* listPrototype;
     InputField* inputFieldPrototype;
@@ -101,25 +124,57 @@ private:
     Language* languagePrototype;
 };
 
+
 class WindowsFactory : public AbstractFactory {
 public:
-    List* createList() const override;
-    InputField* createInputField() const override;
-    Button* createButton() const override;
-    Language* createLanguage() const override;
+    List* createList() const override {
+        return new WindowsList();
+    }
+
+    InputField* createInputField() const override {
+        return new WindowsInputField();
+    }
+
+    Button* createButton() const override {
+        return new WindowsButton();
+    }
+
+    Language* createLanguage() const override {
+        return new WindowsLanguage();
+    }
 };
+
 
 class SingletonWindowsFactory : public AbstractFactory {
 private:
-    SingletonWindowsFactory();
+    SingletonWindowsFactory() {}
     static SingletonWindowsFactory* instance;
 
 public:
-    static SingletonWindowsFactory* getInstance();
-    List* createList() const override;
-    InputField* createInputField() const override;
-    Button* createButton() const override;
-    Language* createLanguage() const override;
+    static SingletonWindowsFactory* getInstance() {
+        if (instance == nullptr) {
+            instance = new SingletonWindowsFactory();
+        }
+        return instance;
+    }
+
+    List* createList() const override {
+        return new WindowsList();
+    }
+
+    InputField* createInputField() const override {
+        return new WindowsInputField();
+    }
+
+    Button* createButton() const override {
+        return new WindowsButton();
+    }
+
+    Language* createLanguage() const override {
+        return new WindowsLanguage();
+    }
 };
+
+SingletonWindowsFactory* SingletonWindowsFactory::instance = nullptr;
 
 #endif // ABSTRACTFACTORY_H

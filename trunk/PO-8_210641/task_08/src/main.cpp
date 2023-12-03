@@ -1,36 +1,25 @@
-﻿#include "AbstractFactory.h"
-#include "Builder.h"
+#include <iostream>
+
+#include "AbstractFactory.h"
 
 int main() {
-    AbstractFactory* windowsFactory = new WindowsFactory();
+    AbstractFactory* winFactory = new WindowsFactory();
 
-    List* list = windowsFactory->createList();
-    InputField* inputField = windowsFactory->createInputField();
-    Button* button = windowsFactory->createButton();
-    Language* language = windowsFactory->createLanguage();
+    List* list = winFactory->createList();
+    InputField* inputField = winFactory->createInputField();
+    Button* button = winFactory->createButton();
+    Language* language = winFactory->createLanguage();
 
     list->render();
     inputField->render();
     button->render();
     language->display();
 
-    delete windowsFactory;
+    delete winFactory;
     delete list;
     delete inputField;
     delete button;
     delete language;
-
-    ConcreteRobotBuilder concreteBuilder;
-    Director director;
-    director.buildRobot(&concreteBuilder);
-    Robot* robot = concreteBuilder.getRobot();
-
-    std::cout << "Robot Information:" << std::endl;
-    std::cout << "Head: " << robot->getHead()->getInfo() << std::endl;
-    std::cout << "Body: " << robot->getBody()->getInfo() << std::endl;
-    std::cout << "Engine: " << robot->getEngine()->getInfo() << std::endl;
-
-    delete robot;
 
     return 0;
 }
