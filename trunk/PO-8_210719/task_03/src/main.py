@@ -72,6 +72,7 @@ class SecondExercise(QMainWindow):
 class ThirdExercise(QWidget):
     def __init__(self):
         super().__init__()
+        self.my_list = []
         self.setGeometry(650, 200, 400, 200)
         self.setWindowTitle('The Third Exercise')
         self.init_ui()
