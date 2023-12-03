@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>WinExe</OutputType>
+        <TargetFramework>net7.0-windows</TargetFramework>
+        <Nullable>enable</Nullable>
+        <UseWPF>true</UseWPF>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <None Remove="res\copy.png" />
+      <Resource Include="res\copy.png" />
+      <None Remove="res\new.png" />
+      <Resource Include="res\new.png" />
+      <None Remove="res\cut.png" />
+      <Resource Include="res\cut.png" />
+      <None Remove="res\open.png" />
+      <Resource Include="res\open.png" />
+      <None Remove="res\paste.png" />
+      <Resource Include="res\paste.png" />
+      <None Remove="res\save.png" />
+      <Resource Include="res\save.png" />
+      <None Remove="res\bold.png" />
+      <Resource Include="res\bold.png" />
+      <None Remove="res\italic.png" />
+      <Resource Include="res\italic.png" />
+      <None Remove="res\underline.png" />
+      <Resource Include="res\underline.png" />
+    </ItemGroup>
+
+</Project>
