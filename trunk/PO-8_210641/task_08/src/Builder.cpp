@@ -1,6 +1,8 @@
 #include "Builder.h"
 
-ConcreteRobotBuilder::ConcreteRobotBuilder() : robot(new Robot()) {}
+ConcreteRobotBuilder::ConcreteRobotBuilder() {
+    robot = new Robot();
+}
 
 void ConcreteRobotBuilder::buildHead() {
     robot->setHead(new Head());
