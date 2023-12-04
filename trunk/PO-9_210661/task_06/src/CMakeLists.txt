@@ -10,5 +10,7 @@ add_executable(po9_210661_task_02
         main.cpp
         texteditor.cpp
         texteditor.h
+        texteditor.ui
+        icons.qrc
 )
 target_link_libraries(po9_210661_task_02 Qt${QT_VERSION_MAJOR}::Widgets)
