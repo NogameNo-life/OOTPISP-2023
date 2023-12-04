@@ -5,7 +5,7 @@ namespace LR5
 {
     public partial class Form1 : Form
     {
-        string connectionString = "Data Source=C:/Users/Dmitriy/Documents/OOTPISP-Kukharev/trunk/PO-9_210658/task_05/src/lr5database.sqlite";
+        readonly string connectionString = "Data Source=C:/Users/Dmitriy/Documents/OOTPISP-Kukharev/trunk/PO-9_210658/task_05/src/lr5database.sqlite";
         int userId;
 
         public Form1()
@@ -45,15 +45,12 @@ namespace LR5
                     command.Parameters.AddWithValue("@PCname", PCname);
                     using (var reader = command.ExecuteReader())
                     {
-                        if (reader.Read())
-                        {
-                            host_id = reader.GetInt32(0);
-                        }
-                        else
+                        if (!reader.Read())
                         {
                             MessageBox.Show("ID не найден", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
                             return;
                         }
+                        
                     }
                 }
 
@@ -63,13 +60,9 @@ namespace LR5
                     command.Parameters.AddWithValue("@name", name);
                     using (var reader = command.ExecuteReader())
                     {
-                        if (reader.Read())
+                        if (!reader.Read())
                         {
-                            user_id = reader.GetInt32(0);
-                        }
-                        else
-                        {
-                            
+                            MessageBox.Show("ID не найден", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
                             return;
                         }
                     }
@@ -111,7 +104,6 @@ namespace LR5
                     {
                         if (reader.Read())
                         {
-                            int id = reader.GetInt32(0);
                             reader.Close(); 
                         }
                         else

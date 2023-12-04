@@ -15,9 +15,9 @@ namespace LR5
 {
     public partial class Form2 : Form
     {
-        private Form1 previousForm;
-        string connectionString = "Data Source=C:/Users/Dmitriy/Documents/OOTPISP-Kukharev/trunk/PO-9_210658/task_05/src/lr5database.sqlite";
-        TimeSpan start; string user, host;
+        private readonly Form1 previousForm;
+        readonly string connectionString = "Data Source=C:/Users/Dmitriy/Documents/OOTPISP-Kukharev/trunk/PO-9_210658/task_05/src/lr5database.sqlite";
+        TimeSpan start; private string user, host;
         int hours, minutes, seconds;
         public Form2(string name, string host_name1, Form1 previous)
         {
@@ -36,17 +36,6 @@ namespace LR5
             using (var connection = new SqliteConnection(connectionString))
             {
                 connection.Open();
-
-                string query = "SELECT hour FROM users WHERE user = @name";
-                using (var command = new SqliteCommand(query, connection))
-                {
-                    command.Parameters.AddWithValue("@name", name);
-                    var result = command.ExecuteScalar();
-                    if (result != null)
-                    {
-                        string n = Convert.ToString(result);
-                    }
-                }
 
                 query = "INSERT INTO users_time (host_name, user_name, start_hour, start_minute, start_second, end_hour, end_minute, end_second) VALUES (@host_name, @user_name, @start_hour, @start_minute, @start_second, 0, 0, 0)";
                 using (var command = new SqliteCommand(query, connection))
@@ -109,7 +98,7 @@ namespace LR5
                 using (var command = new SqliteCommand(updateQuery, connection))
                 {
                     command.CommandText = updateQuery;
-                    var result = command.ExecuteScalar();
+                    command.ExecuteScalar();
                 }
             }
 
@@ -124,7 +113,7 @@ namespace LR5
                     command.Parameters.AddWithValue("@minutes", minutes);
                     command.Parameters.AddWithValue("@seconds", seconds);
 
-                    var result = command.ExecuteScalar();
+                    command.ExecuteScalar();
                 }
             }
 

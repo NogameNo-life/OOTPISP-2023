@@ -14,8 +14,8 @@ namespace LR5
 {
     public partial class Form3 : Form
     {
-        private Form1 previousForm;
-        string connectionString = "Data Source=C:/Users/Dmitriy/Documents/OOTPISP-Kukharev/trunk/PO-9_210658/task_05/src/lr5database.sqlite";
+        private readonly Form1 previousForm;
+        readonly string connectionString = "Data Source=C:/Users/Dmitriy/Documents/OOTPISP-Kukharev/trunk/PO-9_210658/task_05/src/lr5database.sqlite";
         public Form3(Form1 previous)
         {
             previousForm = previous;
