@@ -34,7 +34,7 @@ namespace LR5
 
         private void AddPCUser(string name, string PCname)
         {
-            int host_id = 0, user_id = 0;
+            
             using (var connection = new SqliteConnection(connectionString))
             {
                 connection.Open();
@@ -63,7 +63,6 @@ namespace LR5
                         if (!reader.Read())
                         {
                             MessageBox.Show("ID не найден", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                            return;
                         }
                     }
                 }

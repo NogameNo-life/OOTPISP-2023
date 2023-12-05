@@ -17,7 +17,8 @@ namespace LR5
     {
         private readonly Form1 previousForm;
         readonly string connectionString = "Data Source=C:/Users/Dmitriy/Documents/OOTPISP-Kukharev/trunk/PO-9_210658/task_05/src/lr5database.sqlite";
-        TimeSpan start; private string user, host;
+        TimeSpan start; 
+        readonly string user; string host;
         int hours, minutes, seconds;
         public Form2(string name, string host_name1, Form1 previous)
         {
@@ -37,7 +38,7 @@ namespace LR5
             {
                 connection.Open();
 
-                query = "INSERT INTO users_time (host_name, user_name, start_hour, start_minute, start_second, end_hour, end_minute, end_second) VALUES (@host_name, @user_name, @start_hour, @start_minute, @start_second, 0, 0, 0)";
+                var query = "INSERT INTO users_time (host_name, user_name, start_hour, start_minute, start_second, end_hour, end_minute, end_second) VALUES (@host_name, @user_name, @start_hour, @start_minute, @start_second, 0, 0, 0)";
                 using (var command = new SqliteCommand(query, connection))
                 {
                     command.Parameters.AddWithValue("@host_name", host);
