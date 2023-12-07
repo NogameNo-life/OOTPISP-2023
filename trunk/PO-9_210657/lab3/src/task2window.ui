@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Task2Window</class>
+ <widget class="QDialog" name="Task2Window">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>374</height>
+   </rect>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QTextEdit" name="textEditOutput"/>
+   </item>
+   <item>
+    <widget class="QPushButton" name="pushButtonGenerateArray">
+     <property name="text">
+      <string>Generate Array</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QPushButton" name="pushButtonFindElement">
+     <property name="text">
+      <string>Find Element</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="labelFindElementResult">
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLineEdit" name="lineEditRows">
+     <property name="text">
+      <string>Enter number of rows</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLineEdit" name="lineEditColumns">
+     <property name="text">
+      <string>Enter number of columns</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QTextEdit" name="textEditMatrixOutput"/>
+   </item>
+   <item>
+    <widget class="QPushButton" name="pushButtonGenerateMatrix">
+     <property name="text">
+      <string>Generate Matrix</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QComboBox" name="comboBoxOperation">
+     <property name="editable">
+      <bool>false</bool>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
