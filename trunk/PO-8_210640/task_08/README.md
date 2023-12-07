@@ -7,8 +7,8 @@
 4. Применить паттерн “Строитель” для построения
 
    Отчета по частям
-      - Части: Header – Заголовок, Block – Блок содержащий данные по отчету (результат SQL запроса), Ending – Концевик
-      - ConcreteBuilder: HtmlBuilder, TxtBuilder, XlsBuilder, DocBuilder
+      1. Части: Header – Заголовок, Block – Блок содержащий данные по отчету (результат SQL запроса), Ending – Концевик
+      2. ConcreteBuilder: HtmlBuilder, TxtBuilder, XlsBuilder, DocBuilder
 
 5. Применить паттерн  “Фабричный метод” при создании конкретного строителя и передачи его клиенту.  Самостоятельно продумать контекст в каркасе для вызова шаблонного метода.
 #### Abstract Factory (+Singleton)
