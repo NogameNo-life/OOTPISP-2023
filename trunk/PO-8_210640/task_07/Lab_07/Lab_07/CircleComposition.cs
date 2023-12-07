@@ -53,7 +53,7 @@ internal class CircleComposition
                 color = Color.FromRgb(r, g, b);
             }
 
-            var ellipse = new Ellipse()
+            var ellipse = new Ellipse
             {
                 Height = radius,
                 Width = radius,

@@ -7,7 +7,8 @@ namespace Lab_07
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    /// add 'partial' keyword
+    public class MainWindow : Window
     {
         public MainWindow()
         {
@@ -18,7 +19,7 @@ namespace Lab_07
         private Point Center { get; set; }
         private double Angle { get; set; }
 
-        private bool rendering = false;
+        private bool rendering;
 
         private void Start_Clicked(object sender, RoutedEventArgs e)
         {
