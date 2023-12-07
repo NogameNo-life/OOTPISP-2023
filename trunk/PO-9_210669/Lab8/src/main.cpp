@@ -4,6 +4,7 @@
 // Абстрактный строитель
 class Builder {
 public:
+    virtual ~Builder() {}
     virtual void buildPart1() = 0;
     virtual void buildPart2() = 0;
     virtual std::string getResult() const = 0;
@@ -31,6 +32,7 @@ public:
 // Интерфейс фабрики
 class Creator {
 public:
+    virtual ~Creator() {}
     virtual Builder* createBuilder() const = 0;
 
     std::string construct() const {
@@ -39,7 +41,11 @@ public:
         builder->buildPart1();
         builder->buildPart2();
 
-        return builder->getResult();
+        std::string result = builder->getResult();
+
+        delete builder;
+
+        return result;
     }
 };
 
