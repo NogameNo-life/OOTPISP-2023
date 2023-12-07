@@ -2,7 +2,7 @@
 
 public abstract class Ellipse
 {
-    public Ellipse()
+    protected Ellipse()
     {
         Console.WriteLine("Ellipse");
     }

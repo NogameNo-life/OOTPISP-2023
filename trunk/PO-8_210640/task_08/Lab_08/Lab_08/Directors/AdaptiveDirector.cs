@@ -7,7 +7,6 @@ public class AdaptiveDirector
 {
     public AdaptiveDirector()
     {
-        // var creator = new Settings().Creator;
         var creator = new TxtCreator();
         builder = creator.Create();
     }

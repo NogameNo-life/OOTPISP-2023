@@ -5,10 +5,10 @@ namespace Lab_08.Factories;
 
 public class PrototypeFactory : ShapeFactory
 {
-    private PrototypeEllipse ellipse;
-    private PrototypeLine line;
-    private PrototypeRectangle rectangle;
-    private PrototypeText text;
+    private readonly PrototypeEllipse ellipse;
+    private readonly PrototypeLine line;
+    private readonly PrototypeRectangle rectangle;
+    private readonly PrototypeText text;
 
     public PrototypeFactory(PrototypeEllipse ellipse, PrototypeLine line, PrototypeRectangle rectangle, PrototypeText text)
     {

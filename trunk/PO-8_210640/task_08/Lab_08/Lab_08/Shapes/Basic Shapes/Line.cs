@@ -3,7 +3,7 @@
 
 public abstract class Line
 {
-    public Line()
+    protected Line()
     {
         Console.WriteLine("Line");
     }

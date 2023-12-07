@@ -3,7 +3,7 @@
 
 public abstract class Rectangle
 {
-    public Rectangle()
+    protected Rectangle()
     {
         Console.WriteLine("Rectangle");
     }

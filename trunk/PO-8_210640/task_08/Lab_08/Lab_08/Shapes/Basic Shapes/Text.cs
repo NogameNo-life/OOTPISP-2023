@@ -3,7 +3,7 @@
 
 public abstract class Text
 {
-    public Text()
+    protected Text()
     {
         Console.WriteLine("Text");
     }

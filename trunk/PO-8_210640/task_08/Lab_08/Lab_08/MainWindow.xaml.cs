@@ -14,7 +14,8 @@ namespace Lab_08
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    /// add 'partial' keyword
+    public class MainWindow : Window
     {
         public MainWindow()
         {

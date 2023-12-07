@@ -4,7 +4,7 @@ namespace Lab_08.Factories;
 
 public abstract class ShapeFactory
 {
-    protected static ShapeFactory? _instance = null;
+    protected readonly static ShapeFactory? _instance;
 
     protected ShapeFactory() { }
 
