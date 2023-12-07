@@ -68,7 +68,7 @@ private:
 
 class MedicalRecord {
 public:
-    MedicalRecord(const Patient& patient)
+   explicit MedicalRecord(const Patient& patient)
         : patient(patient) {}
 
     Patient getPatient() const {
