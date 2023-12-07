@@ -11,6 +11,7 @@ find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets)
 add_executable(po9_210653_task_01
         main.cpp
 	mainwindow.cpp
+        mainwindow.h
         mainwindow.ui
 
 )
