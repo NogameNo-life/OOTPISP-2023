@@ -92,7 +92,7 @@ private:
 // Класс, представляющий категорию товаров
 class ProductCategory {
 public:
-    ProductCategory(const std::string& name)
+    explicit ProductCategory(const std::string& name)
         : name(name) {}
 
     std::string getName() const {
@@ -106,7 +106,7 @@ private:
 // Класс, представляющий бренд товаров
 class Brand {
 public:
-    Brand(const std::string& name)
+   explicit Brand(const std::string& name)
         : name(name) {}
 
     std::string getName() const {
@@ -181,8 +181,11 @@ public:
 int main() {
     // Пример использования классов
     ProductCategory laptops("Laptops");
+    std::cout << "Категория товаров: " << laptops.getName() << std::endl;
     Brand dell("Dell");
+    std::cout << "Название бренда: " << dell.getName() << std::endl;
     Promotion discount("Black Friday Sale", 0.2);
+    std::cout << "Акция: " << discount.getName() << ", Скидка: " << discount.getDiscount() << std::endl;
     PaymentSystem paymentSystem;
     DeliverySystem deliverySystem;
 
