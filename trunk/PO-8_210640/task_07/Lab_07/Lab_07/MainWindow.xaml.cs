@@ -7,8 +7,7 @@ namespace Lab_07
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
-    /// add 'partial' keyword
-    public class MainWindow : Window
+    public partial class MainWindow : Window
     {
         public MainWindow()
         {
