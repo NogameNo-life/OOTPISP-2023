@@ -31,10 +31,13 @@ class Teacher {
 private:
     std::string name = "Tek";
     std::string surname = "New";
-    int age;
+    int age = 0; // Инициализация значения по умолчанию
     std::vector<std::string> subjects;
 
 public:
+    // Конструктор класса Teacher
+    Teacher(int teacherAge) : age(teacherAge) {}
+
     void ManageProcess() {
         std::cout << "Teacher " << name << " " << surname << " is managing the educational process." << std::endl;
     }
@@ -42,11 +45,14 @@ public:
 
 class Subject {
 private:
-    std::string name;
+    std::string name = ""; // Инициализация значения по умолчанию
     std::vector<int> grades;
     std::vector<Student> students;
 
 public:
+    // Конструктор класса Subject
+    Subject(std::string subjectName) : name(subjectName) {}
+
     void AddStudent(Student student) {
         students.push_back(student);
     }
@@ -58,12 +64,15 @@ public:
 
 class Classroom {
 private:
-    std::string className;
+    std::string className = ""; // Инициализация значения по умолчанию
     std::vector<Student> students;
     std::vector<Subject> subjects;
-    std::string schedule;
+    std::string schedule = ""; // Инициализация значения по умолчанию
 
 public:
+    // Конструктор класса Classroom
+    Classroom(std::string name) : className(name) {}
+
     void AddStudent(Student student) {
         students.push_back(student);
     }
@@ -79,11 +88,14 @@ public:
 
 class School {
 private:
-    std::string schoolName;
+    std::string schoolName = ""; // Инициализация значения по умолчанию
     std::vector<Classroom> classes;
     std::vector<Teacher> teachers;
 
 public:
+    // Конструктор класса School
+    School(std::string name) : schoolName(name) {}
+
     void AddTeacher(Teacher teacher) {
         teachers.push_back(teacher);
     }
@@ -98,11 +110,12 @@ public:
 };
 
 int main() {
-    School mySchool;
-    Teacher teacher;
+    // Используем конструкторы для инициализации объектов
+    School mySchool("My School");
+    Teacher teacher(30);
     Student student;
-    Subject subject;
-    Classroom classroom;
+    Subject subject("Math");
+    Classroom classroom("Class A");
 
     mySchool.AddTeacher(teacher);
     mySchool.AddClass(classroom);
