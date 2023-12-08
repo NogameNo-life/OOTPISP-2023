@@ -7,8 +7,7 @@ namespace Lab_08
     /// <summary>
     /// Interaction logic for App.xaml
     /// </summary>
-    /// add 'partial' keyword
-    public class App : Application
+    public partial class App : Application
     {
     }
 
