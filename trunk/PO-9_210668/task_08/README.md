@@ -32,11 +32,11 @@
 
 - Представления робота в игровой программе
 
-![img1](image/Screenshot_2.png)
+![img2](image/Screenshot_2.png)
 
 - Представления лица героя в ролевой игровой программе
 
-![img1](image/Screenshot_3.png)
+![img3](image/Screenshot_3.png)
 
 ## Вывод
 
