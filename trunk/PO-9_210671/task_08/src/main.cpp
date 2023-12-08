@@ -1,7 +1,7 @@
 #include <iostream>
 #include <unordered_map>
 
-// Абстрактные продукты
+// Абстра1ктные продукты
 class Widget {
 public:
     virtual void draw() = 0;
