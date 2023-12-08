@@ -5,6 +5,7 @@
 // Интерфейс Строителя для отчета
 class ReportBuilder {
 public:
+    virtual ~ReportBuilder() = default;
     virtual void buildHeader() = 0;
     virtual void buildBlock() = 0;
     virtual void buildEnding() = 0;
@@ -94,7 +95,7 @@ private:
     ReportBuilder *builder;
 
 public:
-    ReportDirector(ReportBuilder *b) : builder(b) {}
+    explicit ReportDirector(ReportBuilder *b) : builder(b) {}
 
     void constructReport() {
         builder->buildHeader();
@@ -114,6 +115,7 @@ public:
 // Конкретные строители робота
 class RobotBuilder {
 public:
+    virtual ~RobotBuilder() = default;
     virtual void buildHead() = 0;
     virtual void buildBody() = 0;
     virtual void buildEngine() = 0;
@@ -158,6 +160,7 @@ public:
 // Конкретные строители лица
 class FaceBuilder {
 public:
+    virtual ~FaceBuilder() = default;
     virtual void buildEyes() = 0;
     virtual void buildNose() = 0;
     virtual void buildMouth() = 0;
@@ -243,6 +246,13 @@ int main(int argc, char *argv[]) {
     uglyFaceBuilder.buildEars();
     uglyFaceBuilder.buildHair();
     Face uglyFace = uglyFaceBuilder.getFace();
+
+    Q_UNUSED(htmlReport)
+    Q_UNUSED(txtReport)
+    Q_UNUSED(xlsReport)
+    Q_UNUSED(docReport)
+    Q_UNUSED(simpleRobot)
+    Q_UNUSED(uglyFace)
 
     return a.exec();
 }
