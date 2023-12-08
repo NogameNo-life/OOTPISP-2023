@@ -18,7 +18,7 @@ public:
         std::cout << "Grade: " << grade << std::endl;
     }
 
-    void AddSubject(std::string subject) {
+    void AddSubject(const std::string& subject) {
         subjects.push_back(subject);
     }
 
@@ -31,12 +31,10 @@ class Teacher {
 private:
     std::string name = "Tek";
     std::string surname = "New";
-    int age = 0; // Инициализация значения по умолчанию
-    std::vector<std::string> subjects;
+    int age = 0;
 
 public:
-    // Конструктор класса Teacher
-    Teacher(int teacherAge) : age(teacherAge) {}
+    explicit Teacher(int teacherAge) : age(teacherAge) {}
 
     void ManageProcess() {
         std::cout << "Teacher " << name << " " << surname << " is managing the educational process." << std::endl;
@@ -45,15 +43,14 @@ public:
 
 class Subject {
 private:
-    std::string name = ""; // Инициализация значения по умолчанию
+    std::string name = "";
     std::vector<int> grades;
     std::vector<Student> students;
 
 public:
-    // Конструктор класса Subject
-    Subject(std::string subjectName) : name(subjectName) {}
+    explicit Subject(const std::string& subjectName) : name(subjectName) {}
 
-    void AddStudent(Student student) {
+    void AddStudent(const Student& student) {
         students.push_back(student);
     }
 
@@ -64,20 +61,19 @@ public:
 
 class Classroom {
 private:
-    std::string className = ""; // Инициализация значения по умолчанию
+    std::string className = "";
     std::vector<Student> students;
     std::vector<Subject> subjects;
-    std::string schedule = ""; // Инициализация значения по умолчанию
+    std::string schedule = "";
 
 public:
-    // Конструктор класса Classroom
-    Classroom(std::string name) : className(name) {}
+    explicit Classroom(const std::string& name) : className(name) {}
 
-    void AddStudent(Student student) {
+    void AddStudent(const Student& student) {
         students.push_back(student);
     }
 
-    void AddSubject(Subject subject) {
+    void AddSubject(const Subject& subject) {
         subjects.push_back(subject);
     }
 
@@ -88,19 +84,18 @@ public:
 
 class School {
 private:
-    std::string schoolName = ""; // Инициализация значения по умолчанию
+    std::string schoolName = "";
     std::vector<Classroom> classes;
     std::vector<Teacher> teachers;
 
 public:
-    // Конструктор класса School
-    School(std::string name) : schoolName(name) {}
+    explicit School(const std::string& name) : schoolName(name) {}
 
-    void AddTeacher(Teacher teacher) {
+    void AddTeacher(const Teacher& teacher) {
         teachers.push_back(teacher);
     }
 
-    void AddClass(Classroom classroom) {
+    void AddClass(const Classroom& classroom) {
         classes.push_back(classroom);
     }
 
@@ -110,7 +105,6 @@ public:
 };
 
 int main() {
-    // Используем конструкторы для инициализации объектов
     School mySchool("My School");
     Teacher teacher(30);
     Student student;
