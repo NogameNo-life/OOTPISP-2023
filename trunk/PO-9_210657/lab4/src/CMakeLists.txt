@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.5)
-set(PROJECT_NAME PO-9_210657_task_4 )
-project(${PROJECT_NAME} VERSION 0.1 LANGUAGES CXX)
+
+project(lab4 VERSION 0.1 LANGUAGES CXX)
 
 set(CMAKE_AUTOUIC ON)
 set(CMAKE_AUTOMOC ON)
@@ -13,14 +13,14 @@ find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS Widgets)
 find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets)
 
 set(PROJECT_SOURCES
-    main.cpp
-    mainwindow.cpp
-    mainwindow.h
-    mainwindow.ui
+        main.cpp
+        mainwindow.cpp
+        mainwindow.h
+        mainwindow.ui
 )
 
-add_executable(${PROJECT_NAME}
-    ${PROJECT_SOURCES}
-)
+add_executable(lab4
+        ${PROJECT_SOURCES}
+    )
 
-target_link_libraries(${PROJECT_NAME} PRIVATE Qt${QT_VERSION_MAJOR}::Widgets)
+target_link_libraries(lab4 PRIVATE Qt${QT_VERSION_MAJOR}::Widgets)
