@@ -4,6 +4,7 @@
 
 class ReportBuilder {
 public:
+    virtual ~ReportBuilder() = default;
     virtual void buildHeader() = 0;
     virtual void buildBlock() = 0;
     virtual void buildEnding() = 0;
@@ -91,7 +92,7 @@ private:
     ReportBuilder *builder;
 
 public:
-    ReportDirector(ReportBuilder *b) : builder(b) {}
+    explicit ReportDirector(ReportBuilder *b) : builder(b) {}
 
     void constructReport() {
         builder->buildHeader();
@@ -109,6 +110,7 @@ public:
 
 class RobotBuilder {
 public:
+    virtual ~RobotBuilder() = default;
     virtual void buildHead() = 0;
     virtual void buildBody() = 0;
     virtual void buildEngine() = 0;
@@ -151,6 +153,7 @@ public:
 
 class FaceBuilder {
 public:
+    virtual ~FaceBuilder() = default;
     virtual void buildEyes() = 0;
     virtual void buildNose() = 0;
     virtual void buildMouth() = 0;
@@ -202,6 +205,7 @@ int main(int argc, char *argv[]) {
     htmlDirector.constructReport();
     QString htmlReport = htmlBuilder.getReport();
 
+
     TxtBuilder txtBuilder;
     ReportDirector txtDirector(&txtBuilder);
     txtDirector.constructReport();
@@ -212,10 +216,12 @@ int main(int argc, char *argv[]) {
     xlsDirector.constructReport();
     QString xlsReport = xlsBuilder.getReport();
 
+
     DocBuilder docBuilder;
     ReportDirector docDirector(&docBuilder);
     docDirector.constructReport();
     QString docReport = docBuilder.getReport();
+
 
     IronRobotBuilder robotBuilder;
     robotBuilder.buildHead();
@@ -223,13 +229,27 @@ int main(int argc, char *argv[]) {
     robotBuilder.buildEngine();
     Robot IronRobot = robotBuilder.getRobot();
 
-    PersonFaceBuilder personFaceBuilder;
-    personFaceBuilder.buildEyes();
-    personFaceBuilder.buildNose();
-    personFaceBuilder.buildMouth();
-    personFaceBuilder.buildEars();
-    personFaceBuilder.buildHair();
-    Face personFace = personFaceBuilder.getFace();
+
+    PersonFaceBuilder PersonFaceBuilder;
+    PersonFaceBuilder.buildEyes();
+    PersonFaceBuilder.buildNose();
+    PersonFaceBuilder.buildMouth();
+    PersonFaceBuilder.buildEars();
+    PersonFaceBuilder.buildHair();
+    Face personFace = PersonFaceBuilder.getFace();
+
+
+    std::cout << "IronRobot details: " << std::endl;
+    std::cout << "Head: " << IronRobot.head.toStdString() << std::endl;
+    std::cout << "Body: " << IronRobot.body.toStdString() << std::endl;
+    std::cout << "Engine: " << IronRobot.engine.toStdString() << std::endl;
+
+    std::cout << "Person's Face details: " << std::endl;
+    std::cout << "Eyes: " << personFace.eyes.toStdString() << std::endl;
+    std::cout << "Nose: " << personFace.nose.toStdString() << std::endl;
+    std::cout << "Mouth: " << personFace.mouth.toStdString() << std::endl;
+    std::cout << "Ears: " << personFace.ears.toStdString() << std::endl;
+    std::cout << "Hair: " << personFace.hair.toStdString() << std::endl;
 
     return a.exec();
 }
