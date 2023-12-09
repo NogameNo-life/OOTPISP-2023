@@ -21,19 +21,18 @@ public partial class MainWindow : Window
     public MainWindow()
     {
         InitializeComponent();
-        ComboBox.ItemsSource = new string[]
+        ComboBox.ItemsSource 
         {
             "zakaz",
             "tema"
         };
         
-        //ComboBox.SelectedIndex = 0;
         _dataTable = new DataTable();
     }
 
     private DataTable _dataTable;
-    private string _connectionString = "Server=YAKOVLAPTOP;Database=dblab5;TrustServerCertificate=True; Trusted_Connection=True;";
-    private string _connectionString1 = "Server=YAKOVLAPTOP;Database=master; TrustServerCertificate=True; Trusted_Connection=True;";
+    private readonly string _connectionString = "Server=YAKOVLAPTOP;Database=dblab5;TrustServerCertificate=True; Trusted_Connection=True;";
+    private readonly string _connectionString1 = "Server=YAKOVLAPTOP;Database=master; TrustServerCertificate=True; Trusted_Connection=True;";
 
     private void ButtonCreateDb_OnClick(object sender, RoutedEventArgs e)
     {
