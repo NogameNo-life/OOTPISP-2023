@@ -24,7 +24,7 @@
 |1|Аксютик Демьян|||||||||||||
 |2|Бердникова Вероника|[Veroniiika](https://github.com/Veroniiika)|[210651](./trunk//PO-9_210651)|✅|✅|||||||||
 |3|Василюк Виктор|||||||||||||
-|4|Дарашкевич Дмитрий |||||||||||||
+|4|Дарашкевич Дмитрий ||||||||:white_check_mark:|||||
 |5|Зейденс Никита |||||||||||||
 |6|Зеленков Константин |[Pandus](https://github.com/Pandusss)|[210655](./trunk/PO-9_210655/)|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:||:white_check_mark:|||
 |7|Качаловский Данил |[dkachalovskiy](https://github.com/dkachalovskiy)|[210656](./trunk/PO-9_210656/)|✅|✅|✅|✅|✅|✅|✅|✅|✅|
