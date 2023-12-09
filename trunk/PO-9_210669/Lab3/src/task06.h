@@ -4,7 +4,7 @@
 #include <QMainWindow>
 #include <QTextEdit>
 #include <QPushButton>
-
+#include <sstream>
 namespace Ui {
 class task06;
 }
