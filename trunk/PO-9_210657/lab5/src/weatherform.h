@@ -25,7 +25,6 @@ private slots:
     void on_periodButton_clicked();
     void on_deleteButton_clicked();
 
-
 private:
     Ui::WeatherForm *ui;
     QSqlDatabase db;
@@ -33,7 +32,6 @@ private:
     void createTables();
     void loadWeatherData();
     void showResult(QSqlQuery& query);
-    void executeQueryAndShowResult(const QString& sql, const QVariantList& values = QVariantList());
 };
 
 #endif // WEATHERFORM_H

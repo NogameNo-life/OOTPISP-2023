@@ -42,22 +42,21 @@ void WeatherForm::createTables()
     query.exec("CREATE TABLE IF NOT EXISTS pogoda (id INTEGER PRIMARY KEY, davlenie REAL, temperat REAL, vid TEXT)");
 }
 
-void WeatherForm::executeQueryAndShowResult(const QString& sql, const QVariantList& values)
-{
-    QSqlQuery query;
-    query.prepare(sql);
-    for (int i = 0; i < values.size(); ++i) {
-        query.bindValue(i, values.at(i));
-    }
-    query.exec();
-    showResult(query);
-}
-
 void WeatherForm::on_populateButton_clicked()
 {
+    QSqlQuery query;
     for (int i = 1; i <= 30; ++i) {
-        executeQueryAndShowResult("INSERT INTO day (day, month, year) VALUES (?, ?, ?)", {i, 12, 2023});
-        executeQueryAndShowResult("INSERT INTO pogoda (davlenie, temperat, vid) VALUES (?, ?, ?)", {760 + rand() % 10, -10 + rand() % 20, (rand() % 2 == 0) ? "Солнечно" : "Облачно"});
+        query.prepare("INSERT INTO day (day, month, year) VALUES (?, ?, ?)");
+        query.bindValue(0, i);
+        query.bindValue(1, 12); // Месяц декабрь
+        query.bindValue(2, 2023); // Год 2023
+        query.exec();
+
+        query.prepare("INSERT INTO pogoda (davlenie, temperat, vid) VALUES (?, ?, ?)");
+        query.bindValue(0, 760 + rand() % 10);
+        query.bindValue(1, -10 + rand() % 20);
+        query.bindValue(2, (rand() % 2 == 0) ? "Солнечно" : "Облачно");
+        query.exec();
     }
 
     loadWeatherData();
@@ -117,7 +116,7 @@ void WeatherForm::on_periodButton_clicked()
 
     while (query.next()) {
         ui->dataTableView->insertRow(row);
-
+        // Загружаем davlenie, temperat из таблицы pogoda
         ui->dataTableView->setItem(row, 0, new QTableWidgetItem(query.value(0).toString()));
         ui->dataTableView->setItem(row, 1, new QTableWidgetItem(query.value(1).toString()));
         row++;
@@ -126,6 +125,27 @@ void WeatherForm::on_periodButton_clicked()
     QMessageBox::information(this, tr("Query Result"), tr("Result: %1 rows found").arg(row));
 }
 
+void WeatherForm::loadWeatherData()
+{
+    QSqlQuery query("SELECT * FROM day JOIN pogoda ON day.id = pogoda.id");
+    int row = 0;
+
+    ui->dataTableView->setRowCount(0);
+    ui->dataTableView->setColumnCount(6);
+
+    while (query.next()) {
+        ui->dataTableView->insertRow(row);
+        // Загружаем day, month, year из таблицы day
+        ui->dataTableView->setItem(row, 0, new QTableWidgetItem(query.value(1).toString()));
+        ui->dataTableView->setItem(row, 1, new QTableWidgetItem(query.value(2).toString()));
+        ui->dataTableView->setItem(row, 2, new QTableWidgetItem(query.value(3).toString()));
+        // Загружаем davlenie, temperat, vid из таблицы pogoda
+        ui->dataTableView->setItem(row, 3, new QTableWidgetItem(query.value(5).toString()));
+        ui->dataTableView->setItem(row, 4, new QTableWidgetItem(query.value(6).toString()));
+        ui->dataTableView->setItem(row, 5, new QTableWidgetItem(query.value(7).toString()));
+        row++;
+    }
+}
 
 void WeatherForm::showResult(QSqlQuery& query)
 {
@@ -136,11 +156,11 @@ void WeatherForm::showResult(QSqlQuery& query)
 
     while (query.next()) {
         ui->dataTableView->insertRow(row);
-        // day, month, year из таблицы day
+        // Загружаем day, month, year из таблицы day
         ui->dataTableView->setItem(row, 0, new QTableWidgetItem(query.value(1).toString()));
         ui->dataTableView->setItem(row, 1, new QTableWidgetItem(query.value(2).toString()));
         ui->dataTableView->setItem(row, 2, new QTableWidgetItem(query.value(3).toString()));
-        // davlenie, temperat, vid из таблицы pogoda
+        // Загружаем davlenie, temperat, vid из таблицы pogoda
         ui->dataTableView->setItem(row, 3, new QTableWidgetItem(query.value(5).toString()));
         ui->dataTableView->setItem(row, 4, new QTableWidgetItem(query.value(6).toString()));
         ui->dataTableView->setItem(row, 5, new QTableWidgetItem(query.value(7).toString()));
@@ -148,11 +168,6 @@ void WeatherForm::showResult(QSqlQuery& query)
     }
 
     QMessageBox::information(this, tr("Query Result"), tr("Result: %1 rows found").arg(row));
-}
-
-void WeatherForm::loadWeatherData()
-{
-    executeQueryAndShowResult("SELECT * FROM day JOIN pogoda ON day.id = pogoda.id");
 }
 
 void WeatherForm::on_deleteButton_clicked() {
