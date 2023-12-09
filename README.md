@@ -26,7 +26,7 @@
 |3|Василюк Виктор|||||||||||||
 |4|Дарашкевич Дмитрий |||||||||||||
 |5|Зейденс Никита |||||||||||||
-|6|Зеленков Константин |[Pandus](https://github.com/Pandusss)|[210655](./trunk/PO-9_210655/)|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:||:white_check_mark:|||
+|6|Зеленков Константин |[Pandus](https://github.com/Pandusss)|[210655](./trunk/PO-9_210655/)|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:||:white_check_mark:|:white_check_mark:||
 |7|Качаловский Данил |[dkachalovskiy](https://github.com/dkachalovskiy)|[210656](./trunk/PO-9_210656/)|✅|✅|✅|✅|✅|✅|✅|✅|✅|
 |8|Кот Анастасия |[peppemintu](https://github.com/peppemintu)|[210657](./trunk//PO-9_210657)|✅|✅|||||||||
 |9|Кухарев Дмитрий |[Ian3707](https://github.com/Ian3707)|[210658](./trunk//PO-9_210658)|✅|✅|||||||||||
@@ -39,7 +39,7 @@
 |16|Николайчик Николай | [ProstoMyk](https://github.com/ProstoMyk) | [210665](./trunk/PO-9_210665) | :white_check_mark: | :white_check_mark: | :white_check_mark: |:white_check_mark:| :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
 |17|Ничингер Кирилл |[HeyJIOBUM](https://github.com/HeyJIOBUM)|[210666](./trunk/PO-9_210666/)|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:||
 |18|Оводок Вадим | [Vodemus](https://github.com/Vodemus) | [210667](./trunk/PO-9_210667/)| :white_check_mark: | :white_check_mark: | :white_check_mark: || :white_check_mark: ||||||
-|19|Солышко Дмитрий |[dimasolyshko](https://github.com/dimasolyshko)|[210668](./trunk/PO-9_210668/)|:white_check_mark:|:white_check_mark:||:white_check_mark:|:white_check_mark:|||:white_check_mark:|||
+|19|Солышко Дмитрий |[dimasolyshko](https://github.com/dimasolyshko)|[210668](./trunk/PO-9_210668/)|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|||:white_check_mark:|||
 |20|Ступак Дмитрий |[Papriosa](https://github.com/Papirosa225) | [210669](./trunk/PO-9_210669/)|:white_check_mark:|:white_check_mark:|:white_check_mark:||:white_check_mark:|||||:white_check_mark:||
 |21|Тупик Юлия |||||||||||||
 |22|Тусюк Тимофей |[HuKtoHe3HaeT](https://github.com/HuKtoHe3HaeT)|[210671](./trunk/PO-9_210671/)|||||||||:white_check_mark:||
