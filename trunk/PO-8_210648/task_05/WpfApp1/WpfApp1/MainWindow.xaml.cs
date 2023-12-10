@@ -25,7 +25,7 @@ public partial class MainWindow : Window
         {
             "zakaz",
             "tema"
-        };
+        }
         
         _dataTable = new DataTable();
     }
