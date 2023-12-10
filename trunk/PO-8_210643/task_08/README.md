@@ -115,8 +115,30 @@ public class FabricPrototype : Fabric
 
 ### Результат работы программы ###
 
-![img.png](images/img.png)
-![img_1.png](images/img_1.png)
+
+```c++
+
+Rectangle a: 1 b: 2
+Line Length: 6
+Oval radius: 10
+Text Length: 4
+Beautiful Rectangle a: 1 b: 2 color: 7
+Beautiful Line length: 6 color: 5
+Beautiful Oval radius: 10 color: 8
+Beautiful Text length: 4 color: 5
+Beautiful Rectangle a: 1 b: 2 color: 1
+Beautiful Line length: 6 color: 0
+Beautiful Oval radius: 10 color: 1
+Beautiful Text length: 4 color: 6
+
+```
+
+```c++
+
+Header text \n
+Table data Created by Sasha
+
+```
 
 ### Вывод ###
 
