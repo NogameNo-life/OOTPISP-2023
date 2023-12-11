@@ -17,6 +17,7 @@ public:
     virtual ~InputField() {}
 };
 
+
 class Button {
 public:
     virtual void render() const = 0;
