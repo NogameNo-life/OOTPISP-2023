@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+#include <memory>  // Include for std::unique_ptr
 
 // Product Parts
 class Eyes {
@@ -59,13 +60,29 @@ protected:
 public:
     FaceBuilder() : face(new Face()) {}
 
+    // Copy constructor
+    FaceBuilder(const FaceBuilder& other) : face(new Face(*(other.face))) {}
+
+    // Assignment operator
+    FaceBuilder& operator=(const FaceBuilder& other) {
+        if (this != &other) {
+            delete face;
+            face = new Face(*(other.face));
+        }
+        return *this;
+    }
+
     virtual void buildEyes() = 0;
     virtual void buildNose() = 0;
     virtual void buildMouth() = 0;
     virtual void buildEars() = 0;
     virtual void buildHair() = 0;
-    virtual Face* getFace() {
-        return face;
+
+    // Transfer ownership in getFace method
+    virtual std::unique_ptr<Face> getFace() {
+        std::unique_ptr<Face> result(face);
+        face = nullptr;  // Release ownership
+        return result;
     }
 
     virtual ~FaceBuilder() {
@@ -152,12 +169,12 @@ int main() {
 
     std::cout << "Ugly Face:" << std::endl;
     director.buildFace(&uglyBuilder);
-    Face* uglyFace = uglyBuilder.getFace();
+    std::unique_ptr<Face> uglyFace = uglyBuilder.getFace();
     uglyFace->display();
 
     std::cout << "\nGood Face:" << std::endl;
     director.buildFace(&goodBuilder);
-    Face* goodFace = goodBuilder.getFace();
+    std::unique_ptr<Face> goodFace = goodBuilder.getFace();
     goodFace->display();
 
     return 0;
