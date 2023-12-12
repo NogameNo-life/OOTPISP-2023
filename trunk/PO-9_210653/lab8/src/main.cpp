@@ -94,7 +94,7 @@ private:
     ReportBuilder *builder;
 
 public:
-    ReportDirector(ReportBuilder *b) : builder(b) {}
+    explict ReportDirector(ReportBuilder *b) : builder(b) {}
 
     void constructReport() {
         builder->buildHeader();
@@ -231,7 +231,6 @@ int main(int argc, char *argv[]) {
     robotBuilder.buildHead();
     robotBuilder.buildBody();
     robotBuilder.buildEngine();
-    Robot IronRobot = robotBuilder.getRobot();
 
     // Создание лица героя
     PersonFaceBuilder personFaceBuilder;
@@ -240,7 +239,6 @@ int main(int argc, char *argv[]) {
     personFaceBuilder.buildMouth();
     personFaceBuilder.buildEars();
     personFaceBuilder.buildHair();
-    Face personFace = personFaceBuilder.getFace();
 
     return a.exec();
 }
