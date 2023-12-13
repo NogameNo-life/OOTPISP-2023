@@ -94,7 +94,7 @@ private:
     ReportBuilder *builder;
 
 public:
-    explict ReportDirector(ReportBuilder *b) : builder(b) {}
+    explicit ReportDirector(ReportBuilder *b) : builder(b) {}
 
     void constructReport() {
         builder->buildHeader();
