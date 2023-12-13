@@ -10,7 +10,7 @@ private:
     double salary;
 
 public:
-    Employee(int id, std::string empName, std::string dept, std::string pos, double sal)
+    Employee(int id, const std::string& empName, std::string dept, std::string pos, double sal)
         : employeeID(id), name(empName), department(dept), position(pos), salary(sal) {}
 
     int getEmployeeID() const { return employeeID; }
