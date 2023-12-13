@@ -66,3 +66,5 @@ void ReportGenerator::generateEmployeeReport(const Employee& emp) {
 
 void ReportGenerator::generateDepartmentReport(const std::string& department) {
 }
+
+//А вдруг теперь заработает ?
