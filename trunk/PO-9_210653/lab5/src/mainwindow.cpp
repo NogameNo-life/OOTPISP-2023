@@ -210,3 +210,5 @@ void MainWindow::uspeh(){
     model2->setQuery("SELECT * FROM student WHERE id IN (SELECT id FROM result WHERE itog=1)");
     ui->tableView_2->setModel(model2);
 }
+
+//Пытаюсь разбудить кодаси 
