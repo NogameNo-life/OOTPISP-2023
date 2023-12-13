@@ -19,19 +19,19 @@ public class Fabric
         return new Oval(radius);
     }
 
-    public virtual Text CreateText(int lenght)
+    public virtual Text CreateText(int length)
     {
-        return new Text(lenght);
+        return new Text(length);
     }
     
 }
 
 public class FabricPrototype : Fabric
 {
-    private Rectangle _rectanglePrototype;
-    private Line _linePrototype;
-    private Oval _ovalPrototype;
-    private Text _textPrototype;
+    private readonly Rectangle _rectanglePrototype;
+    private readonly Line _linePrototype;
+    private readonly Oval _ovalPrototype;
+    private readonly Text _textPrototype;
 
     public FabricPrototype(Rectangle rectangle, Line line, Oval oval, Text text)
     {

@@ -2,7 +2,7 @@
 
 public class Director
 {
-    private Builder _bilder;
+    private readonly Builder _bilder;
 
     public Director(Builder builder)
     {

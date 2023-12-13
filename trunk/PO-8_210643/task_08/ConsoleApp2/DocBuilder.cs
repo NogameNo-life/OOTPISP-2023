@@ -2,7 +2,7 @@
 
 public class DocBuilder : Builder
 {
-    private Product _product = new Product();
+    private readonly Product _product = new Product();
     public override void BuildHeader()
     {
         _product.AddHeader("Document");
