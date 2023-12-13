@@ -8,8 +8,7 @@ class Student {
 private:
     std::string name = "Alexandra";
     std::string surname = "Serko";
-    int age = 18;
-    int grade = 5;
+    int age;
     std::vector<class Subject*> subjects; 
 
 public:
@@ -57,7 +56,7 @@ public:
         professors.push_back(professor);
     }
 
-    friend std::ostream& operator<<(std::ostream& os, const Subject& subject ) {
+     friend std::ostream& operator<<(std::ostream& os, const Subject& subject ) {
         os << "Subject: " << subject.name<<" ";
         return os;
     }
