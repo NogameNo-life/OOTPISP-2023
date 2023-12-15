@@ -38,7 +38,7 @@ classDiagram
     }
 
     
-    DepositTransaction <|-- Transaction
-    WithdrawTransaction <|-- Transaction
+    Transaction <|-- DepositTransaction 
+    Transaction <|-- WithdrawTransaction
 
 ```
