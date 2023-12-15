@@ -5,22 +5,22 @@
 // Базовый класс для управления балансом счета
 class Account {
 public:
-    Account(QString accountHolder, double initialBalance = 0.0)
-        : accountHolder(accountHolder), balance(initialBalance) {}
+    Account(QString holder, double initialBalance = 0.0)
+        : accountHolder(holder), balance(initialBalance) {}
 
     virtual ~Account() {}
 
     // Внести средства на счет
     virtual void deposit(double amount) {
         balance += amount;
-        qDebug() << accountHolder << "внесено: $" << amount;
+        qDebug() << holder << "внесено: $" << amount;
     }
 
     // Снять средства со счета
     virtual void withdraw(double amount) {
         if (amount <= balance) {
             balance -= amount;
-            qDebug() << accountHolder << "снято: $" << amount;
+            qDebug() << holder << "снято: $" << amount;
         } else {
             qDebug() << "Недостаточно средств на счете для снятия.";
         }
