@@ -14,7 +14,7 @@
 |8|Соколовский Никита| | | | | | | | | | | | |
 |9|Сорока Вадим| | | | | | | | | | | | |
 |10|Таразевич Никита|[lolkeklal](https://github.com/lolkeklal) |[210647](./trunk/PO-8_210647/) |✅ |✅ |✅ |✅ | ✅|✅ |✅ |✅ |✅ | |
-|11|Шлыков Андрей|[HarWeasttt](https://github.com/HarWeasttt) |[210648](./trunk/PO-8_210648/)|:white_check_mark:|:x:|:x::white_check_mark:| | | | | | |
+|11|Шлыков Андрей|[HarWeasttt](https://github.com/HarWeasttt) |[210648](./trunk/PO-8_210648/)|:white_check_mark:|:x:|:x:|:white_check_mark: | | | | | |
 |12|Янчук Артем| | | | | | | | | | | | |
 
 ## Группа ПО-9
