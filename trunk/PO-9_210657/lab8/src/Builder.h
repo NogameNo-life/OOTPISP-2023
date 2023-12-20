@@ -60,7 +60,7 @@ public:
     virtual void buildHead() = 0;
     virtual void buildBody() = 0;
     virtual void buildEngine() = 0;
-    virtual ~RobotBuilder() {}
+    virtual ~RobotBuilder() = default;
 };
 
 class ConcreteRobotBuilder : public RobotBuilder {
@@ -88,9 +88,6 @@ public:
         return robot;
     }
 
-    ~ConcreteRobotBuilder() {
-        delete robot;
-    }
 };
 
 class Director {
