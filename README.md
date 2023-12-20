@@ -8,7 +8,7 @@
 |2|Липовик Илья|[KARMA-143](https://github.com/KARMA-143)| [210639](./trunk/PO-8_210639/) |:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:||
 |3|Лобарев Антон| [ToxaChiter](https://github.com/ToxaChiter "GitHub link")| [210661](./trunk/PO-8_210640/) |:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark: |:white_check_mark: |:white_check_mark: |:white_check_mark: |:white_check_mark: |:white_check_mark: | 
 |4|Макаревич Екатерина|[Mkrshkk](https://github.com/Mkrshkk)| [210641](./trunk/PO-8_210641/) |:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:||
-|5|Печко Валерия| [ValeriaPJul](https://github.com/ValeriaPJul)| [210642](./trunk/PO-8_210642/) |:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark: | |:white_check_mark: | :white_check_mark:|
+|5|Печко Валерия| [ValeriaPJul](https://github.com/ValeriaPJul)| [210642](./trunk/PO-8_210642/) |:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark: |:white_check_mark: |:white_check_mark: | :white_check_mark:|
 |6|Серко Александра|[AlexaBailey](https://github.com/AlexaBailey)| [210643](./trunk/PO-8_210643/) |:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark: |:white_check_mark:|:white_check_mark: |:white_check_mark: |:white_check_mark: |:white_check_mark: |
 |7|Соколов Семен| | | | | | | | | | | | |
 |8|Соколовский Никита| | | | | | | | | | | | |
@@ -28,7 +28,7 @@
 |5|Зейденс Никита |||||||||||||
 |6|Зеленков Константин |[Pandus](https://github.com/Pandusss)|[210655](./trunk/PO-9_210655/)|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:||:white_check_mark:|:white_check_mark:||
 |7|Качаловский Данил |[dkachalovskiy](https://github.com/dkachalovskiy)|[210656](./trunk/PO-9_210656/)|✅|✅|✅|✅|✅|✅|✅|✅|✅|
-|8|Кот Анастасия |[peppemintu](https://github.com/peppemintu)|[210657](./trunk//PO-9_210657)|✅|✅|||||||||
+|8|Кот Анастасия |[peppemintu](https://github.com/peppemintu)|[210657](./trunk//PO-9_210657)|✅|✅||||||✅|||
 |9|Кухарев Дмитрий |[Ian3707](https://github.com/Ian3707)|[210658](./trunk//PO-9_210658)|✅|✅|||||||||||
 |10|Кучко Ярослав |[YaroslavKuchko26](https://github.com/YaroslavKuchko26)|[210659](./trunk//PO-9_210659)|✅|✅|||||||||
 |11|Лебедович Вадим|||||||||||||
