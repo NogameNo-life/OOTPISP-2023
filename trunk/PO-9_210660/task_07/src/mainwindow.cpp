@@ -63,6 +63,7 @@ void MainWindow::updateRect(){
     update();
 }
 
+// for codacy
 int MainWindow::calculateY(int x){
     return (int) (0.029 * pow(x, (double) 3/2));
 }
