@@ -2,7 +2,7 @@
 
 #include "AbstractFactory.h"
 
-
+// for cadacy
 int main() {
     setlocale(LC_ALL, "");
 
