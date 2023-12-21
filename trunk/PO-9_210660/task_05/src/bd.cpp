@@ -60,7 +60,6 @@ void BD::initializeDatabase()
     query.exec("DROP TABLE IF EXISTS zakaz");
     query.exec("DROP TABLE IF EXISTS tema");
 
-    // Создание таблицы zakaz
     if (query.exec("CREATE TABLE IF NOT EXISTS zakaz (id INTEGER PRIMARY KEY, day INTEGER, month INTEGER, year INTEGER, vip BOOLEAN, theme_id INTEGER, FOREIGN KEY(theme_id) REFERENCES tema(id))")) {
         qDebug() << "Table zakaz created successfully.";
     } else {
@@ -104,7 +103,6 @@ void BD::initializeDatabase()
     int temaCount = checkThemeQuery.value(0).toInt();
 
     if (temaCount == 0) {
-        // Вставка тестовых данных в таблицу tema
         QString insertThemeQuery = "INSERT INTO tema (tema, text) VALUES ";
         for (int i = 0; i < QRandomGenerator::global()->bounded(3, 11); ++i) {
             insertThemeQuery += QString("('Theme %1', 'Text for theme %1'), ").arg(i + 1);
