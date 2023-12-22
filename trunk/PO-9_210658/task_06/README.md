@@ -20,7 +20,6 @@
 ![1.png](./images/1.png)
 
 Код программы:
-
 [Lab6.cpp](./src/Lab6.cpp)
 
 ![Результат](./images/5.png)
@@ -28,12 +27,13 @@
 #### Создадим UML-диаграммы для лабораторной работы №8:
 
 ![2.png](./images/2.png)
-
-
+[Report](./src/Report/Program.cs)
 
 ![3.png](./images/3.png)
+[Robot](./src/Robot/Program.cs)
 
 ![4.png](./images/4.png)
+[Face](./src/Face/Program.cs)
 
 ## Вывод
 
