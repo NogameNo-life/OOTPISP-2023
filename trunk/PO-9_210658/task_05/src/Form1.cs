@@ -1,5 +1,6 @@
 using Microsoft.Data.Sqlite;
 using System.Data;
+using System.Diagnostics;
 
 namespace LR5
 {
@@ -11,6 +12,24 @@ namespace LR5
         public Form1()
         {
             InitializeComponent();
+
+            using (OpenFileDialog openFileDialog = new OpenFileDialog())
+            {
+                openFileDialog.Filter = "SQLite Database File|*.sqlite";
+                openFileDialog.Title = "Выберите файл базы данных (!В ПАПКЕ SRC!)";
+                if (openFileDialog.ShowDialog() == DialogResult.OK)
+                {
+                    connectionString = $"Data Source={openFileDialog.FileName}";
+                    connectionString = connectionString.Replace("\\", "/");
+                }
+                else
+                {
+                    MessageBox.Show("Не выбран файл базы данных. Программа будет закрыта.");
+                    Close();
+                    return;
+                }
+            }
+
             using (var connection = new SqliteConnection(connectionString))
             {
                 connection.Open();
@@ -30,6 +49,12 @@ namespace LR5
                     }
                 }
             }
+        }
+
+        private void OpenFileExplorerInCurrentDirectory()
+        {
+            string currentDirectory = Directory.GetCurrentDirectory();
+            Process.Start("explorer.exe", currentDirectory);
         }
 
         private void AddPCUser(string name, string PCname)
@@ -118,7 +143,7 @@ namespace LR5
             }
             if(name == "admin")
             {
-                Form3 form3 = new Form3(this);
+                Form3 form3 = new Form3(this, connectionString);
                 form3.Show();
                 this.Hide();
             }
@@ -126,7 +151,7 @@ namespace LR5
             {
                 AddPCUser(name, PCname);
 
-                Form2 form2 = new Form2(name, comboBox1.Text , this);
+                Form2 form2 = new Form2(name, comboBox1.Text , this, connectionString);
                 form2.Show();
                 this.Hide();
             }

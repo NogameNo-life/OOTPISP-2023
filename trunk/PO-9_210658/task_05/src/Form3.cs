@@ -15,9 +15,10 @@ namespace LR5
     public partial class Form3 : Form
     {
         private readonly Form1 previousForm;
-        readonly string connectionString = "Data Source=C:/Users/Dmitriy/Documents/OOTPISP-Kukharev/trunk/PO-9_210658/task_05/src/lr5database.sqlite";
-        public Form3(Form1 previous)
+        readonly string connectionString;
+        public Form3(Form1 previous, string connectionString)
         {
+            connectionString = connectionString;
             previousForm = previous;
             InitializeComponent();
             using (var connection = new SqliteConnection(connectionString))

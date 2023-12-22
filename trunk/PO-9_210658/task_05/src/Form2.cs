@@ -16,12 +16,13 @@ namespace LR5
     public partial class Form2 : Form
     {
         private readonly Form1 previousForm;
-        readonly string connectionString = "Data Source=C:/Users/Dmitriy/Documents/OOTPISP-Kukharev/trunk/PO-9_210658/task_05/src/lr5database.sqlite";
+        readonly string connectionString;
         TimeSpan start; 
         readonly string user; string host;
         int hours, minutes, seconds;
-        public Form2(string name, string host_name1, Form1 previous)
+        public Form2(string name, string host_name1, Form1 previous, string connString)
         {
+            connectionString = connString;
             InitializeComponent();
             DateTime check1 = DateTime.Now;
             start = check1.TimeOfDay;
