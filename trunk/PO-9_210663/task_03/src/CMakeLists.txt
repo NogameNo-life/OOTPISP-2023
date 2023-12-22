@@ -1,0 +1,10 @@
+cmake_minimum_required(VERSION 3.5)
+project(po9_210663_task_03)
+
+add_subdirectory(t1)
+add_subdirectory(t2/graph)
+add_subdirectory(t3/graph)
+add_subdirectory(t4/1)
+add_subdirectory(t4/2)
+add_subdirectory(t5)
+add_subdirectory(t6)
