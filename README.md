@@ -15,14 +15,14 @@
 |9|Сорока Вадим| | | | | | | | | | | | |
 |10|Таразевич Никита| | | | | | | | | | | | |
 |11|Шлыков Андрей|[HarWeasttt](https://github.com/HarWeasttt) |[210648](./trunk/PO-8_210648/)|:white_check_mark:|:x:|:x:|:white_check_mark:|:white_check_mark:| | |:white_check_mark: |:white_check_mark:|
-|12|Янчук Артем| | | | | | | | | | | | |
+|12|Янчук Артем|[ArtyomYanchuk](https://github.com/ArtyomYanchuk)|[210649](./trunk/PO-8_210649/)|:white_check_mark:| | |:white_check_mark:|:white_check_mark:| | |:white_check_mark: |:white_check_mark:|
 
 ## Группа ПО-9
 
 |№|ФИО|GitHub username|№ зачетки/студенческого|#0|#1|#2|#3|#4|#5|#6|#7|#8|
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
 |1|Аксютик Демьян|||||||||||||
-|2|Бердникова Вероника|[Veroniiika](https://github.com/Veroniiika)|[210651](./trunk//PO-9_210651)|✅|✅||||✅|||||
+|2|Бердникова Вероника|[Veroniiika](https://github.com/Veroniiika)|[210651](./trunk//PO-9_210651)|✅|✅||||✅||✅|✅|
 |3|Василюк Виктор|||||||||||||
 |4|Дарашкевич Дмитрий |||||||||||||
 |5|Зейденс Никита |||||||||||||
