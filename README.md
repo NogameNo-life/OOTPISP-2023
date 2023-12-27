@@ -24,8 +24,8 @@
 |1|Аксютик Демьян|||||||||||||
 |2|Бердникова Вероника|[Veroniiika](https://github.com/Veroniiika)|[210651](./trunk//PO-9_210651)|✅|✅|||✅|✅||✅|✅|
 |3|Василюк Виктор|||||||||||||
-|4|Дарашкевич Дмитрий |||||||||||||
-|5|Зейденс Никита |||||||||||||
+|4|Дарашкевич Дмитрий |[DarashkevichDmitriy](https://github.com/DarashkevichDmitriy)|[210653](./trunk/PO-9_210653/)|:white_check_mark:|:x:|:x:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:x:|:white_check_mark:|:x:|
+|5|Зейденс Никита |[NiKiTjAOFF](https://github.com/NIKITJAOFF)|[210654](./trunk/PO-9_210654/)|:white_check_mark:|:x:|:x:|:white_check_mark:|:x:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:x:|
 |6|Зеленков Константин |[Pandus](https://github.com/Pandusss)|[210655](./trunk/PO-9_210655/)|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
 |7|Качаловский Данил |[dkachalovskiy](https://github.com/dkachalovskiy)|[210656](./trunk/PO-9_210656/)|✅|✅|✅|✅|✅|✅|✅|✅|✅|
 |8|Кот Анастасия |[peppemintu](https://github.com/peppemintu)|[210657](./trunk//PO-9_210657)|✅|✅|||||✅|✅|✅||
@@ -42,7 +42,7 @@
 |19|Солышко Дмитрий |[dimasolyshko](https://github.com/dimasolyshko)|[210668](./trunk/PO-9_210668/)|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:||:white_check_mark:||
 |20|Ступак Дмитрий |[Papriosa](https://github.com/Papirosa225) | [210669](./trunk/PO-9_210669/)|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
 |21|Тупик Юлия |[dljulia](https://github.com/dljulia)|[210670](./trunk/PO-9_210670/)|:white_check_mark:|:x:|:x:|:x:|:x:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
-|22|Тусюк Тимофей |[HuKtoHe3HaeT](https://github.com/HuKtoHe3HaeT)|[210671](./trunk/PO-9_210671/)|||||||||:white_check_mark:||
+|22|Тусюк Тимофей |[HuKtoHe3HaeT](https://github.com/HuKtoHe3HaeT)|[210671](./trunk/PO-9_210671/)|:white_check_mark:|:white_check_mark:|:x:|:x:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:x:|
 |23|Харитонович Захар |[ZakharTS](https://github.com/ZakharTS)|[210672](./trunk/PO-9_210672/)|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
 |24|Шубич Дарья|[Dashubaa](https://github.com/Dashubaa)|[210674](./trunk/PO-9_210674)|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
 |25|Зайд Халдун А. Алькатури|||||||||||||
