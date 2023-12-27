@@ -10,12 +10,12 @@
 |4|Макаревич Екатерина|[Mkrshkk](https://github.com/Mkrshkk)| [210641](./trunk/PO-8_210641/) |:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:||
 |5|Печко Валерия| [ValeriaPJul](https://github.com/ValeriaPJul)| [210642](./trunk/PO-8_210642/) |:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark: |:white_check_mark: |:white_check_mark: | :white_check_mark:|
 |6|Серко Александра|[AlexaBailey](https://github.com/AlexaBailey)| [210643](./trunk/PO-8_210643/) |:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark: |:white_check_mark:|:white_check_mark: |:white_check_mark: |:white_check_mark: |:white_check_mark: |
-|7|Соколов Семен|[Semas2309](https://github.com/Semas2309) |[210644](./trunk/PO-8_210644/) | :white_check_mark:|:white_check_mark: | | |:white_check_mark: |:white_check_mark:| | | |
+|7|Соколов Семен|[Semas2309](https://github.com/Semas2309) |[210644](./trunk/PO-8_210644/) | :white_check_mark:|:white_check_mark: |:x:|:x:|:white_check_mark: |:white_check_mark:|:x:|:x:|:x:|
 |8|Соколовский Никита| | | | | | | | | | | | |
 |9|Сорока Вадим| [Va-041](https://github.com/Va-041) | [210646](./trunk/PO-8_210646/) | ✅ | ✅ |✅ | | | | | | | |
 |10|Таразевич Никита| [lolkeklal](https://github.com/lolkeklal)|[210647](./trunk/PO-8_210647/) |:white_check_mark: |:white_check_mark: | |:white_check_mark: |:white_check_mark: |:white_check_mark: | | | | 
 |11|Шлыков Андрей|[HarWeasttt](https://github.com/HarWeasttt) |[210648](./trunk/PO-8_210648/)|:white_check_mark:|:x:|:x:|:white_check_mark:|:white_check_mark:| | |:white_check_mark: |:white_check_mark:|
-|12|Янчук Артем|[ArtyomYanchuk](https://github.com/ArtyomYanchuk)|[210649](./trunk/PO-8_210649/)|:white_check_mark:| | |:white_check_mark:|:white_check_mark:| | |:white_check_mark: |:white_check_mark:|
+|12|Янчук Артем|[ArtyomYanchuk](https://github.com/ArtyomYanchuk)|[210649](./trunk/PO-8_210649/)|:white_check_mark:|:x:|:x:|:white_check_mark:|:white_check_mark:| | |:white_check_mark: |:white_check_mark:|
 
 ## Группа ПО-9
 
@@ -30,7 +30,7 @@
 |7|Качаловский Данил |[dkachalovskiy](https://github.com/dkachalovskiy)|[210656](./trunk/PO-9_210656/)|✅|✅|✅|✅|✅|✅|✅|✅|✅|
 |8|Кот Анастасия |[peppemintu](https://github.com/peppemintu)|[210657](./trunk//PO-9_210657)|✅|✅|||||✅|✅|✅||
 |9|Кухарев Дмитрий |[Ian3707](https://github.com/Ian3707)|[210658](./trunk//PO-9_210658)|✅|✅|✅|:white_check_mark: | |:white_check_mark:|:white_check_mark: |:white_check_mark:|:white_check_mark:|
-|10|Кучко Ярослав |[YaroslavKuchko26](https://github.com/YaroslavKuchko26)|[210659](./trunk//PO-9_210659)|✅|✅||||✅||||
+|10|Кучко Ярослав |[YaroslavKuchko26](https://github.com/YaroslavKuchko26)|[210659](./trunk//PO-9_210659)|✅|✅||✅||✅||||
 |11|Лебедович Вадим|[thet1xx](https://github.com/thet1xx)|[210660](./trunk/PO-9_210660)|✅|:x:|:x:|:x:|✅|✅|:x:|✅|✅|
 |12|Марзан Андрей | [Nenroin](https://github.com/Nenroin) | [210661](./trunk/PO-9_210661/) | :white_check_mark: | :white_check_mark: |:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
 |13|Матюшик Екатерина |||||||||||||
@@ -45,4 +45,5 @@
 |22|Тусюк Тимофей |[HuKtoHe3HaeT](https://github.com/HuKtoHe3HaeT)|[210671](./trunk/PO-9_210671/)|:white_check_mark:|:white_check_mark:|:x:|:x:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:x:|
 |23|Харитонович Захар |[ZakharTS](https://github.com/ZakharTS)|[210672](./trunk/PO-9_210672/)|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:x:|:white_check_mark:|:white_check_mark:|:x:|
 |24|Шубич Дарья|[Dashubaa](https://github.com/Dashubaa)|[210674](./trunk/PO-9_210674)|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
-|25|Зайд Халдун А. Алькатури|||||||||||||
+|25|Зайд Халдун А. Алькатури| | |:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|
+
