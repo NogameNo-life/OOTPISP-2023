@@ -31,7 +31,7 @@
 |8|Кот Анастасия |[peppemintu](https://github.com/peppemintu)|[210657](./trunk//PO-9_210657)|✅|✅|||||✅|✅|✅||
 |9|Кухарев Дмитрий |[Ian3707](https://github.com/Ian3707)|[210658](./trunk//PO-9_210658)|✅|✅|✅| | | | |:white_check_mark:| |
 |10|Кучко Ярослав |[YaroslavKuchko26](https://github.com/YaroslavKuchko26)|[210659](./trunk//PO-9_210659)|✅|✅|||||||||
-|11|Лебедович Вадим|[thet1xx](https://github.com/thet1xx)|[210660](./trunk/PO-9_210660)|||||✅||||||
+|11|Лебедович Вадим|[thet1xx](https://github.com/thet1xx)|[210660](./trunk/PO-9_210660)|✅|:x:|:x:|:x:|✅|✅|:x:|✅|✅|
 |12|Марзан Андрей | [Nenroin](https://github.com/Nenroin) | [210661](./trunk/PO-9_210661/) | :white_check_mark: | :white_check_mark: |:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
 |13|Матюшик Екатерина |||||||||||||
 |14|Мельничук Владислав | [nikalow1](https://github.com/nikalow1) | [210663](./trunk/PO-9_210663/) | :white_check_mark: | :white_check_mark: ||| :white_check_mark: ||||||
