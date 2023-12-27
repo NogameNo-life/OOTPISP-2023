@@ -1,0 +1,663 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>0</y>
+      <width>781</width>
+      <height>551</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>1</number>
+    </property>
+    <widget class="QWidget" name="Task_1">
+     <attribute name="title">
+      <string>Task 1</string>
+     </attribute>
+     <widget class="QWidget" name="verticalLayoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>547</width>
+        <height>114</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="QLabel" name="text">
+         <property name="text">
+          <string>Введите 3 числа. Например: 1, -2.2, 3. На самом деле вводите что угодно: компьютер вас поймёт</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="numbersEdit"/>
+       </item>
+       <item>
+        <widget class="QLabel" name="maxText">
+         <property name="text">
+          <string>max</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="differenceText">
+         <property name="text">
+          <string>difference</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="resultText">
+         <property name="text">
+          <string>result</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="Task_2">
+     <attribute name="title">
+      <string>Task 2</string>
+     </attribute>
+     <widget class="QWidget" name="verticalLayoutWidget_2">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>771</width>
+        <height>94</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item>
+        <widget class="QLabel" name="label">
+         <property name="text">
+          <string>Исходный одномерный масив</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QTableWidget" name="oneDimmensionalArrayPreview"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="verticalLayoutWidget_3">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>100</y>
+        <width>771</width>
+        <height>94</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_3">
+       <item>
+        <widget class="QLabel" name="label_2">
+         <property name="text">
+          <string>Одномерный массив, с порядком: чётные, нечётные</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QTableWidget" name="evenAndOddNumbersPreview"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="verticalLayoutWidget_4">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>200</y>
+        <width>771</width>
+        <height>141</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_4">
+       <item>
+        <widget class="QLabel" name="label_3">
+         <property name="text">
+          <string>Исходный двумерный массив:</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QTableWidget" name="twoDimmensionalArrayPreview"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="verticalLayoutWidget_5">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>340</y>
+        <width>771</width>
+        <height>141</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_5">
+       <item>
+        <widget class="QLabel" name="label_4">
+         <property name="text">
+          <string>Двумерный массив, но максимальные и минимальные элементы в каждой строке поменяны местами</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QTableWidget" name="mainAndMaxNumbersPreview"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QPushButton" name="generateSelectionArray">
+      <property name="geometry">
+       <rect>
+        <x>340</x>
+        <y>490</y>
+        <width>91</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Сгенерировать</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="Task_3">
+     <attribute name="title">
+      <string>Task 3</string>
+     </attribute>
+     <widget class="QWidget" name="verticalLayoutWidget_6">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>100</y>
+        <width>771</width>
+        <height>94</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_6">
+       <item>
+        <widget class="QLabel" name="label_5">
+         <property name="text">
+          <string>Первый список, но все положительные элементы заменены на минимальный элемент из второго списка</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QTableWidget" name="listOneButMinInsteadPositive"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QPushButton" name="generateSelectionList">
+      <property name="geometry">
+       <rect>
+        <x>340</x>
+        <y>490</y>
+        <width>91</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Сгенерировать</string>
+      </property>
+     </widget>
+     <widget class="QWidget" name="verticalLayoutWidget_8">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>200</y>
+        <width>771</width>
+        <height>101</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_8">
+       <item>
+        <widget class="QLabel" name="label_7">
+         <property name="text">
+          <string>Исходный список</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QTableWidget" name="list"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="verticalLayoutWidget_9">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>300</y>
+        <width>771</width>
+        <height>101</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_9">
+       <item>
+        <widget class="QLabel" name="listName">
+         <property name="text">
+          <string>Список в котором удалены элементы больше k = </string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QTableWidget" name="listButSmallerThanKDeleted"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="horizontalLayoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>771</width>
+        <height>96</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_7">
+         <item>
+          <widget class="QLabel" name="label_6">
+           <property name="text">
+            <string>Первый список</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QTableWidget" name="listOne"/>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_10">
+         <item>
+          <widget class="QLabel" name="label_9">
+           <property name="text">
+            <string>Второй список</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QTableWidget" name="listTwo"/>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="Task_4">
+     <attribute name="title">
+      <string>Task 4</string>
+     </attribute>
+     <widget class="QWidget" name="verticalLayoutWidget_7">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>771</width>
+        <height>94</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_11">
+       <item>
+        <widget class="QLabel" name="label_8">
+         <property name="text">
+          <string>Исходный стек</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QTableWidget" name="stack"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="verticalLayoutWidget_10">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>100</y>
+        <width>771</width>
+        <height>94</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_12">
+       <item>
+        <widget class="QLabel" name="label_10">
+         <property name="text">
+          <string>Стек, но максимальный и минимальный элемент поменяны местами</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QTableWidget" name="stackButMinAndMaxSwapped"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="verticalLayoutWidget_11">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>200</y>
+        <width>771</width>
+        <height>94</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_13">
+       <item>
+        <widget class="QLabel" name="label_11">
+         <property name="text">
+          <string>Исходная очередь</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QTableWidget" name="queue"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="verticalLayoutWidget_12">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>300</y>
+        <width>771</width>
+        <height>94</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_14">
+       <item>
+        <widget class="QLabel" name="queueText">
+         <property name="text">
+          <string>Очередь, но все чётные числа заменены их средним арифметическим k = </string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QTableWidget" name="queueButEvenReplacedAverage"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QPushButton" name="generateSelectionStackAndQueue">
+      <property name="geometry">
+       <rect>
+        <x>330</x>
+        <y>490</y>
+        <width>91</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Сгенерировать</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="Task_5">
+     <attribute name="title">
+      <string>Task 5</string>
+     </attribute>
+     <widget class="QPushButton" name="generateSelectionOfFishes">
+      <property name="geometry">
+       <rect>
+        <x>339</x>
+        <y>490</y>
+        <width>101</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Сгенерировать</string>
+      </property>
+     </widget>
+     <widget class="QWidget" name="verticalLayoutWidget_13">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>9</y>
+        <width>761</width>
+        <height>101</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_15">
+       <item>
+        <widget class="QLabel" name="lakeText">
+         <property name="text">
+          <string>Виды рыб в озере:</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QTextEdit" name="lake"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="verticalLayoutWidget_14">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>112</y>
+        <width>761</width>
+        <height>94</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_16">
+       <item>
+        <widget class="QLabel" name="proFisherText">
+         <property name="text">
+          <string>Рыбак-профессионал, спустя час, поймал следующий набор рыб:</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QTextEdit" name="proFisher"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="verticalLayoutWidget_15">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>184</y>
+        <width>761</width>
+        <height>94</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_17">
+       <item>
+        <widget class="QLabel" name="intermediateFisherText">
+         <property name="text">
+          <string>Рыбак-любитель, спустя час, поймал следующий набор рыб:</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QTextEdit" name="intermediateFisher"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="verticalLayoutWidget_16">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>249</y>
+        <width>761</width>
+        <height>94</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_18">
+       <item>
+        <widget class="QLabel" name="noobyFisherText">
+         <property name="text">
+          <string>Рыбак-новичок, спустя час, поймал следующий набор рыб:</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QTextEdit" name="noobyFisher"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="verticalLayoutWidget_17">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>313</y>
+        <width>761</width>
+        <height>94</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_19">
+       <item>
+        <widget class="QLabel" name="fishersFishPoolText">
+         <property name="text">
+          <string>У каждого рыбака, спустя час, есть следующие виды рыб:</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QTextEdit" name="fishersFishPool"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="verticalLayoutWidget_18">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>377</y>
+        <width>761</width>
+        <height>101</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_20">
+       <item>
+        <widget class="QLabel" name="notFishersFishPoolText">
+         <property name="text">
+          <string>Виды рыб, которые остались в озере, не пойманные рыбаками:</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QTextEdit" name="notFishersFishPool"/>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="Task_6">
+     <attribute name="title">
+      <string>Task 6</string>
+     </attribute>
+     <widget class="QWidget" name="verticalLayoutWidget_19">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>100</y>
+        <width>771</width>
+        <height>94</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_21">
+       <item>
+        <widget class="QLabel" name="label_12">
+         <property name="text">
+          <string>Содержимое файла G - чётные числа из файла F</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QTableWidget" name="fileG"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QPushButton" name="generateSelectionFile">
+      <property name="geometry">
+       <rect>
+        <x>340</x>
+        <y>490</y>
+        <width>91</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Сгенерировать</string>
+      </property>
+     </widget>
+     <widget class="QWidget" name="verticalLayoutWidget_20">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>771</width>
+        <height>94</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_22">
+       <item>
+        <widget class="QLabel" name="label_13">
+         <property name="text">
+          <string>Содержимое файла F</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QTableWidget" name="fileF"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="verticalLayoutWidget_21">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>201</y>
+        <width>771</width>
+        <height>94</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_23">
+       <item>
+        <widget class="QLabel" name="label_14">
+         <property name="text">
+          <string>Содержимое файла H - нечётные числа из файла F</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QTableWidget" name="fileH"/>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
