@@ -33,7 +33,7 @@
 |10|Кучко Ярослав |[YaroslavKuchko26](https://github.com/YaroslavKuchko26)|[210659](./trunk//PO-9_210659)|✅|✅|||||||||
 |11|Лебедович Вадим|[thet1xx](https://github.com/thet1xx)|[210660](./trunk/PO-9_210660)|✅|:x:|:x:|:x:|✅|✅|:x:|✅|✅|
 |12|Марзан Андрей | [Nenroin](https://github.com/Nenroin) | [210661](./trunk/PO-9_210661/) | :white_check_mark: | :white_check_mark: |:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
-|13|Матюшик Екатерина |||||||||||||
+|13|Матюшик Екатерина |[Katriiiiiiinaaaa](https://github.com/Katriiiiiiinaaaa)|[210662](./trunk/PO-9_210662)|||||||||||
 |14|Мельничук Владислав | [nikalow1](https://github.com/nikalow1) | [210663](./trunk/PO-9_210663/) | :white_check_mark: | :white_check_mark: ||| :white_check_mark: ||||||
 |15|Мисиюк Алексей | [11ALX11](https://github.com/11ALX11) | [210664](./trunk/PO-9_210664/) | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: ||
 |16|Николайчик Николай | [ProstoMyk](https://github.com/ProstoMyk) | [210665](./trunk/PO-9_210665) | :white_check_mark: | :white_check_mark: | :white_check_mark: |:white_check_mark:| :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
