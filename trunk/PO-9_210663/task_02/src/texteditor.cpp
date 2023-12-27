@@ -47,7 +47,7 @@ void TextEditor::on_actionNew_triggered()
     newTextEditor->show();
 }
 
- //210669_texteditor.cpp
+//210669_texteditor.cpp
 void TextEditor::on_actionClose_triggered()
 {
 
@@ -57,7 +57,7 @@ void TextEditor::on_actionExit_triggered()
 {
 
 }
-void TextEditor::documentEdited210663(){
+void TextEditor::documentEdited(){
     setWindowModified(true);
 }
 void TextEditor::closeEvent(QCloseEvent *e) //210663_texteditor.cpp
@@ -106,10 +106,10 @@ void TextEditor::on_actionAbout_triggered()
 {
     QMessageBox::about(this, "О программе", "Папагимабади защитайте мне все лабы");
 }
-void TextEditor::setFileName(const QString &fileName) { //210663_texteditor.cpp
-    fileName210667 = fileName;
+void TextEditor::setFileName(const QString &filesName) { //210663_texteditor.cpp
+    fileName = filesName;
     this->setWindowTitle(QString("%1[*] - %2")
-                             .arg(fileName210663.isNull() ? "untitled" : QFileInfo(fileName210663).fileName())
+                             .arg(fileName.isNull() ? "untitled" : QFileInfo(fileName).fileName())
                              .arg(QApplication::applicationName())
                          );
 }
@@ -140,7 +140,7 @@ void TextEditor::on_actionOpen_triggered() //21066_texteditor.cpp
                                                     QDir::currentPath(), "Text documents (*.txt)");
     if (fileName.isNull())
         return;
-    if (this->fileName210663.isNull() && !this->isWindowModified()) //210663_texteditor.cpp
+    if (this->fileName.isNull() && !this->isWindowModified()) //210663_texteditor.cpp
         loadFile(fileName);
     else {
         TextEditor* text_editor = new TextEditor(fileName);
@@ -149,10 +149,10 @@ void TextEditor::on_actionOpen_triggered() //21066_texteditor.cpp
 }
 
 bool TextEditor::saveFile(){ //210663_texteditor.cpp
-    if (this->fileName210663.isNull())
+    if (this->fileName.isNull())
         return saveFileAs();
 
-    QFile file(this->fileName210663);
+    QFile file(this->fileName);
     if (!file.open(QIODevice::WriteOnly | QIODevice::Text)){
         QMessageBox::warning(this, "Warning", "The file is not open");
         setFileName(QString());
@@ -169,7 +169,7 @@ bool TextEditor::saveFile(){ //210663_texteditor.cpp
 
 bool TextEditor::saveFileAs(){
     QString fileName = QFileDialog::getSaveFileName(this, "Save document",
-                                                    fileName210663.isNull() ? QDir::currentPath() : fileName210663,
+                                                    fileName.isNull() ? QDir::currentPath() : fileName,
                                                     "Text documents (*.txt)");
     if (fileName.isNull())
         return false;

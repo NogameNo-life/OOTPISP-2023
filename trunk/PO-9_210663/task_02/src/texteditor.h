@@ -36,7 +36,7 @@ public:
 
 
 private slots:
-    void documentEdited210667(); //210663_texteditor.h
+    void documentEdited(); //210663_texteditor.h
 
 
     void on_actionNew_triggered(); //210663_texteditor.h
@@ -69,7 +69,7 @@ private: //210663_texteditor.h
 
     void setFileName(const QString &fileName); //210663_texteditor.h
 
-    QString fileName210667; //210663_texteditor.h
+    QString fileName; //210663_texteditor.h
 
     Ui::TextEditor *ui; //210663_texteditor.h
 
