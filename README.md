@@ -13,7 +13,7 @@
 |7|Соколов Семен|[Semas2309](https://github.com/Semas2309) |[210644](./trunk/PO-8_210644/) | :white_check_mark:|:white_check_mark: | | |:white_check_mark: |:white_check_mark:| | | |
 |8|Соколовский Никита| | | | | | | | | | | | |
 |9|Сорока Вадим| | | | | | | | | | | | |
-|10|Таразевич Никита| | | | | | | | | | | | |
+|10|Таразевич Никита| [lolkeklal](https://github.com/lolkeklal)|[210647](./trunk/PO-8_210647/) |:white_check_mark: |:white_check_mark: | |:white_check_mark: |:white_check_mark: |:white_check_mark: | | | | 
 |11|Шлыков Андрей|[HarWeasttt](https://github.com/HarWeasttt) |[210648](./trunk/PO-8_210648/)|:white_check_mark:|:x:|:x:|:white_check_mark:|:white_check_mark:| | |:white_check_mark: |:white_check_mark:|
 |12|Янчук Артем|[ArtyomYanchuk](https://github.com/ArtyomYanchuk)|[210649](./trunk/PO-8_210649/)|:white_check_mark:| | |:white_check_mark:|:white_check_mark:| | |:white_check_mark: |:white_check_mark:|
 
@@ -22,7 +22,7 @@
 |№|ФИО|GitHub username|№ зачетки/студенческого|#0|#1|#2|#3|#4|#5|#6|#7|#8|
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
 |1|Аксютик Демьян|||||||||||||
-|2|Бердникова Вероника|[Veroniiika](https://github.com/Veroniiika)|[210651](./trunk//PO-9_210651)|✅|✅||||✅||✅|✅|
+|2|Бердникова Вероника|[Veroniiika](https://github.com/Veroniiika)|[210651](./trunk//PO-9_210651)|✅|✅|||✅|✅||✅|✅|
 |3|Василюк Виктор|||||||||||||
 |4|Дарашкевич Дмитрий |||||||||||||
 |5|Зейденс Никита |||||||||||||
@@ -38,8 +38,8 @@
 |15|Мисиюк Алексей | [11ALX11](https://github.com/11ALX11) | [210664](./trunk/PO-9_210664/) | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: ||
 |16|Николайчик Николай | [ProstoMyk](https://github.com/ProstoMyk) | [210665](./trunk/PO-9_210665) | :white_check_mark: | :white_check_mark: | :white_check_mark: |:white_check_mark:| :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
 |17|Ничингер Кирилл |[HeyJIOBUM](https://github.com/HeyJIOBUM)|[210666](./trunk/PO-9_210666/)|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:||
-|18|Оводок Вадим | [Vodemus](https://github.com/Vodemus) | [210667](./trunk/PO-9_210667/)| :white_check_mark: | :white_check_mark: | :white_check_mark: || :white_check_mark: |:white_check_mark:|:white_check_mark:|:white_check_mark:||
-|19|Солышко Дмитрий |[dimasolyshko](https://github.com/dimasolyshko)|[210668](./trunk/PO-9_210668/)|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:||:white_check_mark:|||
+|18|Оводок Вадим | [Vodemus](https://github.com/Vodemus) | [210667](./trunk/PO-9_210667/)| :white_check_mark: | :white_check_mark: | :white_check_mark: || :white_check_mark: |:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
+|19|Солышко Дмитрий |[dimasolyshko](https://github.com/dimasolyshko)|[210668](./trunk/PO-9_210668/)|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:||:white_check_mark:||
 |20|Ступак Дмитрий |[Papriosa](https://github.com/Papirosa225) | [210669](./trunk/PO-9_210669/)|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
 |21|Тупик Юлия |[dljulia](https://github.com/dljulia)|[210670](./trunk/PO-9_210670/)|:white_check_mark:|||:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|||
 |22|Тусюк Тимофей |[HuKtoHe3HaeT](https://github.com/HuKtoHe3HaeT)|[210671](./trunk/PO-9_210671/)|||||||||:white_check_mark:||
